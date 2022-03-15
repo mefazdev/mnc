@@ -10,7 +10,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { bsDatas, hsDatas } from "../assets/data/data.js";
-import { Head } from "next/head";
+import  Head  from "next/head";
 
 export default function BsProgrammes() {
   const hsData = hsDatas;
