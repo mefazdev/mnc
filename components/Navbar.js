@@ -241,7 +241,7 @@ export default function Navbar() {
                     <p>JAMIA</p>
                   </div>
                 </Link>
-                <Link href="">
+                <Link href="/Faculty">
                   <div className="collapse_collapse__row">
                     <p>FACULTY</p>
                   </div>
