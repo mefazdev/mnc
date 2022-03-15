@@ -1,34 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import banner1 from '../assets/images/one.jpg'
 import banner2 from '../assets/images/two.jpg'
 import banner3 from '../assets/images/three.jpg'
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Carousel } from 'react-responsive-carousel'; // requires a loader
+
+import Modal from "@mui/material/Modal";
 import Image from 'next/image';
+import CloseIcon from '@mui/icons-material/Close';
 import Carousel from 'react-material-ui-carousel'
 export default function MainBanner() {
+  
+  const [open, setOpen] = useState(false);
+
+  function timeout(delay) {
+    return new Promise((res) => setTimeout(res, delay));
+  }
+  const controlOpen = async () => {
+    await timeout(5000);
+    setOpen(true);
+  };
+  useEffect(() => {
+    controlOpen();
+  }, []);
   return (
   <div className='banner__carousel'>
  <Carousel
-//   ariaLabel={false}
-  // autoPlay={false}
-  // animation='slide'
+// autoPlay={false}
   indicators={false}
-  // interval={3000}
+
   infiniteLoop={true}
-  // transitionTime={2000}
-//   interval={3000}
-//   useKeyboardArrows={true}
-//   showThumbs={false}
-//   showArrows={false}
-//   showStatus={false}
-//   showIndicators={false}
+
 stopAutoPlayOnHover={false}
-//   axis={"horizontal"}
-//   verticalSwipe='standard'
+
  >
                 <div className='banner__img'>
-                   {/* <Image  src={banner1}/> */}
+                   
 
                    <div className='main__banner__text'>
                      <div className='main__banner__text__first__row'>
@@ -37,6 +42,7 @@ stopAutoPlayOnHover={false}
                      </div>
                      <div className='main__banner__text__second__row'>
                      <h3>PIONEERING A PROMISING FUTURE</h3>
+                     {/* <p>Science Academy - (8th Std.)</p> */}
                      </div>
                     
                    </div>
@@ -74,6 +80,26 @@ stopAutoPlayOnHover={false}
                 </div>
                 
             </Carousel>
+
+            <Modal 
+            open={open}
+            id='modal'
+              >
+              <div className='modal'>
+                <div className='modal__close'>
+<CloseIcon id='close__icon' onClick={()=>setOpen(false)} />
+                </div>
+                <div className='modal__main'>
+                  <h2>Jamia Madeenathunnoor</h2>
+              <h3>Science Academy - (8th Std.)</h3>
+              <div className='modal__btn'>
+                <a href='https://forms.gle/qQ7rSh96pf2L5Ftf8'>
+                <button>REGISTER NOW</button>
+                </a>
+              </div>
+                </div>
+              </div>
+            </Modal>
   </div>
   );
 }

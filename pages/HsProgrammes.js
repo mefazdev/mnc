@@ -3,7 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
 // import hs2 from "../assets/images/hs.JPG";
-import hs1 from "../assets/images/hs1.jpg";
+// import hs1 from "../assets/images/hs1.jpg";
+import hs1 from '../assets/images/students/img-1.jpeg'
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -48,6 +49,8 @@ export default function HsProgrammes() {
                   preference will be vested in the Jamia Madeenathunnoor
                   authority
                 </p>
+                <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
+                <button id='admision__btn'>Get an admission</button></a>
               </div>
             </div>
 

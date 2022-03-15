@@ -12,24 +12,13 @@ import Head from "next/head";
 import mnc from "../assets/images/admission.jpg";
 import mah from '../assets/images/asathida/director.jpg'
 import apUsthad from '../assets/images/asathida/ap-usthad.jpg'
+import Admission from "../components/Admission";
 import Modal from "@mui/material/Modal";
 import {  useState } from "react";
  
 
 export default function index() {
 
-  // const [open, setOpen] = useState(false);
-
-  function timeout(delay) {
-    return new Promise((res) => setTimeout(res, delay));
-  }
-  const controlOpen = async () => {
-    await timeout(6000);
-    // setOpen(true);
-  };
-  // useEffect(() => {
-  //   controlOpen();
-  // }, []);
   return (
     <div>
      <Head>
@@ -122,13 +111,7 @@ export default function index() {
 
         {/* <<<<<< HOME ADMISSION >>>>>>>>>> */}
 
-        <div className='home__admission'>
-          <div className='home__admission__content'>
-         <h3> It is an initiative ,whereby,the students are well trained to radiate the noble
-ideals of Islam across the world</h3>
-<button>GET AN ADMISSION</button>
-          </div>
-        </div>
+        <Admission/>
         <div className="home__director__two ">
           <div className="home__director__content ">
             <h2>RECTOR&apos;S MESSAGE</h2>
