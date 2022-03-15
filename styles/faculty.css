@@ -1,0 +1,102 @@
+
+.faculty__header{
+    /* background-color: rgb(5, 73, 25); */
+    height: 300px;
+    /* background: url('../assets/images/bg.JPG'); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.911)), url("../assets/images/bg.JPG"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.157), rgba(0, 0, 0, 0.911)), url("../assets/images/header-background.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.faculty__header h2{
+    color: #fff;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    /* box-shadow: green 4px; */
+    
+    /* border-bottom: 2px solid rgb(4, 58, 20); */
+    /* max-wid
+    .about__content{
+        th: 170px; */
+}
+
+@media only screen and (min-width: 800px) {
+    .faculty__content{
+       max-width: 85%;
+       margin: auto;
+    }
+}
+.faculty__content{
+    /* border: solid green; */
+    /* height: 100vh; */
+    margin-top: 40px;
+    margin-bottom: 60px;
+    }
+ .faculty__row{
+     /* max-height: 300px; */
+    margin-top: 50px;
+ }  
+.faculty__box{
+    /* border: solid rgba(128, 128, 128, 0.37) 1px ; */
+    /* max-height: 200px; */
+    width: 100%;
+    padding: 20px;
+ 
+    /* height: initial; */
+    box-shadow: rgba(128, 128, 128, 0.226) 1px 3px 3px 3px;
+}
+
+.faculty__box h5{
+    font: normal normal bold 20px/25px Poppins;
+    font-family: "Poppins", sans-serif;
+    color: rgba(66, 62, 62, 0.883);
+}
+.faculty__box p{
+    font: normal normal normal 15px/22px Poppins;
+    font-family: "Poppins", sans-serif;
+    color: rgba(66, 62, 62, 0.829);
+}
+.faculty__box h6{
+    font: normal normal normal 15px/22px Poppins;
+    font-family: "Poppins", sans-serif;
+    color: rgba(66, 62, 62, 0.698);
+    margin-top: 10px;
+}
+.faculty__box h6:hover{
+   cursor: pointer;
+    color: rgba(8, 8, 8, 0.877);
+  
+}
+@media only screen and (max-width: 800px) {
+    .faculty__content{
+        
+   
+   padding: 15px;
+   margin-top: 0px;
+        }
+        .faculty__box{
+           
+          
+            padding: 10px;
+        }
+        .faculty__box h5{
+          text-align: center;
+        
+        }
+        .faculty__box h6{
+            text-align: center;
+           
+          }
+        .faculty__box p{
+         text-align: justify;
+         margin-top: 10px;
+        }
+        .faculty__row{
+            /* max-height: 300px; */
+           margin-top: 20PX;
+        } 
+}
