@@ -160,7 +160,7 @@ font-weight: 500;
 .about__status{
     /* border: solid green; */
     /* height: 400px; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.671)), url("../assets/images/about-bg.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.671)), url("../assets/images/about-bg.jpg");
     background-size: cover;
     background-position: center;
     padding: 50px;

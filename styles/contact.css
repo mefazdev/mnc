@@ -39,7 +39,7 @@
     background-size: cover;
     /* background-repeat: no-repeat; */
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.911)), url("../assets/images/garden.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.911)), url("../assets/images/garden.jpg");
 }
 .contact__row__left{
     margin: auto;
