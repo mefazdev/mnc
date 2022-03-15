@@ -72,7 +72,7 @@ export default function index() {
             <h2>CHAIRMAN&apos;S MESSAGE</h2>
             <h3 className=" invisible lg:visible ">Sheikh Aboobakar Ahmed</h3>
             <div className="grid    lg:gap-10 lg:grid-cols-3">
-              <div className="home__director__left col-span-3  lg:col-span-2">
+              <div className="home__director__left order-last    lg:col-span-2">
                 <p>
                   Since its humble beginning in 2001 as a college of Islamic
                   studies under its mother body Markaz Garden, today Jamia
@@ -92,17 +92,18 @@ export default function index() {
                   {/* <ArrowRightAltIcon  id='director__more__icon'/> */}
                 </div>
               </div>
-              <div className="chair__img__div">
-
-              <div className="chair__img col-span-3 lg:col-span-1 order-first lg:order-last">
+              <div className="chair__img__div order-first lg:order-last">
+{/* */}
+              {/* order-first lg:order-last */}
+              <div className="chair__img  ">
                 {/* <Image src='' /> */}
 
                <Image src={apUsthad} />
                 {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aI2UgebZOan0BpmpNYj23xwTgd9vFPtQOw&usqp=CAU" /> */}
-                <h3 className="visible lg:hidden mt-2">
+                
+              </div><h3 className="visible lg:hidden mt-2" style={{textAlign:'center'}}>
                   Sheikh Aboobakar Ahmed
                 </h3>
-              </div>
               </div>
 
             </div>
@@ -117,7 +118,7 @@ export default function index() {
             <h2>RECTOR&apos;S MESSAGE</h2>
             <h3 className=" invisible lg:visible ">Dr MAH Azhari</h3>
             <div className="grid    lg:gap-10 lg:grid-cols-3">
-              <div className="home__director__left col-span-3  lg:col-span-2">
+              <div className="home__director__left    lg:col-span-2">
                 <p>
                   Welcome to Jamia Madeenathunnoor, a nongovernmental and
                   philanthropic institute founded in 2001 to mould a highly
@@ -138,13 +139,16 @@ export default function index() {
                   {/* <ArrowRightAltIcon id='director__more__icon' /> */}
                 </div>
               </div>
-              <div className="chair__img col-span-3 lg:col-span-1 order-first lg:order-last">
+              <div className="chair__img__div order-first lg:order-last" >
+              <div className="chair__img  ">
                 <Image src={mah }/>
                 {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aI2UgebZOan0BpmpNYj23xwTgd9vFPtQOw&usqp=CAU" /> */}
-                {/* <h3 className="visible lg:hidden mt-2">
-                Dr MAH Azhari
-                </h3> */}
+               
               </div>
+               <h3 className="visible lg:hidden mt-2" style={{textAlign:'center'}}>
+                Dr MAH Azhari
+                </h3>
+                </div>
             </div>
           </div>
         </div>

@@ -14,7 +14,10 @@
     
     height: 100vh;
     background-size: cover;
-    background-image:url("../assets/images/one.jpg");
+    background-image: url('../assets/images/students/img-4.jpeg');
+    background-position: center;
+
+    /* background-image:url("../assets/images/one.jpg"); */
     background-attachment: fixed;
 }
 .banner__img__two{
@@ -23,7 +26,9 @@
   
     height: 100vh;
     background-size: cover;
-    background-image:url("../assets/images/two.jpg");
+    background-image: url('../assets/images/students/img-3.jpeg');
+   
+    /* background-image:url("../assets/images/two.jpg"); */
     background-attachment: fixed;
 }
 .banner__img__three{
@@ -32,6 +37,7 @@
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.911)), url("../assets/images/1.JPG"); */
     height: 100vh;
     background-size: cover;
+   
     background-image:url("../assets/images/three.jpg");
     background-attachment: fixed;
 }
@@ -211,8 +217,9 @@ font-family: "Poppins", sans-serif;
     border-radius: 3px;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
-    position: absolute;
-bottom: 0;
+    margin-top: 10px;
+    /* position: absolute; */
+/* bottom: 0; */
 }
 .home__about__more:hover{
     background-color: rgb(3, 39, 14);  
@@ -354,7 +361,7 @@ font-family: "Poppins", sans-serif;
  margin-top: -50px;
 }
 .chair__img{
-    
+    margin: auto    ;
     /* border: solid red; */
     /* margin-top: 20px; */
     /* max-width: 300px; */
@@ -380,12 +387,17 @@ overflow: hidden;
 
 
 @media only screen and (max-width: 800px) {
+    .chair__img__div{
+        /* border: solid red;     */
+        width: 100%;
+        margin-top: 0px;
+       }
     .home__director{
        
-        margin-top: 100px;
+        margin-top: 0px;
       
         
-         padding-top: 40px; 
+         padding-top: 20px; 
         padding-bottom: 40px;
         padding-right: 15px;
         padding-left: 15px;
@@ -405,7 +417,7 @@ overflow: hidden;
         .chair__img{
             /* margin-top: 10px; */
             margin: auto;
-            /* border: solid red; */
+            /* border: solid red;   */
         }
         /* .home__director__content h3{
          display: none;
@@ -615,17 +627,23 @@ font-family: "Poppins", sans-serif;
 }
 @media only screen and (max-width: 800px) {
     .home__news{
-        /* border: solid red; */
+        border: solid red;
         
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: 100px;
+        /* padding: 15px; */
         }
+    
         .home__news__head h2{
        
             text-align: center;
         }
         .home__news__more{
             /* display: none; */
+        }
+        .hm__blogs__content{
+            /* border: #043a07 solid; */
+            /* margin-top: 0px; */
         }
 }
 
@@ -756,6 +774,17 @@ color: #fff;
   color: #fff;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 800px) {
+    .hm__blogs{
+        padding: 15px;
+    }
+    .hm__blogs{
+        /* border: saddlebrown solid; */
+    padding-bottom: 50px;
+    margin-top: 0px;
+    }
+  }
 
 
 

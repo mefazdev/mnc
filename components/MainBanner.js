@@ -51,7 +51,8 @@ stopAutoPlayOnHover={false}
                    </div>
                     
                 </div>
-                <div className='banner__img__two'>
+                
+                <div className='banner__img__three'>
                    {/* <Image  src={banner1}/> */}
 
                    <div className='main__banner__text'>
@@ -69,7 +70,7 @@ stopAutoPlayOnHover={false}
                    </div>
                     
                 </div>
-                <div className='banner__img__three'>
+                <div className='banner__img__two'>
                    {/* <Image  src={banner1}/> */}
 
                    <div className='main__banner__text'>

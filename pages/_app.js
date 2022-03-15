@@ -10,6 +10,7 @@ import '../styles/status.css'
 import '../styles/alumni.css'
 import '../styles/blog.css'
 import '../styles/faculty.css'
+import '../styles/we.css'
 import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {

@@ -12,3 +12,20 @@ export const kavanurUstahd = `Muhyudheen Saqafi has a passion for teaching and t
 
 export const asafNurani = `Asaf Nurani is a veteran scholar and pro rector of Jamia Madeenathunnoor. A versatile and persevering scholar and professional in the field of education, he helps formulate learning programs, plans and strategies for Jamia Madeenathunnoor. He completed his masters in 
 Commerce and Management from University of Calicut and Maulavi Falil Saqafi from Jamia Markaz, Calicut and Nurani degree from Jamia Madeenathunnoor.`
+
+
+export const irshadnurani =`Irshad Nurani is a Islamic scholar and dean of faculty affairs of Jamia Madeenathunnoor. A versatile and 
+persevering scholar and professional in the field of Islamic studies. He completed M.com from Kamaraj  University; Maulavi Falil Saqafi from Jamia 
+Markaz, Calicut and Nurani degree from Jamia Madeenathunnoor.`
+
+export const sideeqnurani = `Sidheeque Nurani is a veteran scholar and dean of academics of Jamia Madeenathunnoor. A versatile and 
+persevering scholar and professional in the field of academics. He completed MBA from Pondicherry University; Maulavi Falil Saqafi from Jamia 
+Markaz, Calicut and Nurani degree from Jamia Madeenathunnoor. He qualified National Eligibility Test in Management.`
+
+export const thahanurani = `Sayyid Thaha Nurani is a Islamic scholar and dean of students affairs of Jamia Madeenathunnoor. A versatile and 
+persevering scholar and professional in the field of Islamic studies and commerce. He completed M.Phil in commerce from Bharathidasan University, MBA from Pondicherry  University; M.com from Kamaraj University; MSW from Bharathiar University; Maulavi Falil Saqafi from Jamia 
+Markaz, Calicut and Nurani degree from Jamia Madeenathunnoor.`
+
+export const yoonusah = `Yunus Ahsani is a Islamic scholar and chief librarian of Jamia Madeenathunnoor. A versatile and 
+persevering scholar and professional in the field of education. He completed Masters in Islamic Studies and Maulavi Falil Ahsani from Jamia 
+Ihyahussunna, Othukkungal.`

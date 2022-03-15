@@ -112,6 +112,7 @@
   }
   
   @media screen and (max-width: 800px) {
+   
     .blog__box__right p {
       display: none;
     }
