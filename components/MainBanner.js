@@ -42,7 +42,10 @@ stopAutoPlayOnHover={false}
                      </div>
                      <div className='main__banner__text__second__row'>
                      <h3>PIONEERING A PROMISING FUTURE</h3>
-                     {/* <p>Science Academy - (8th Std.)</p> */}
+                     <a href='https://forms.gle/qQ7rSh96pf2L5Ftf8'>
+                       <button>Register for HS Programmes</button>
+                     </a>
+                
                      </div>
                     
                    </div>
@@ -58,6 +61,9 @@ stopAutoPlayOnHover={false}
                      </div>
                      <div className='main__banner__text__second__row'>
                      <h3>PIONEERING A PROMISING FUTURE</h3>
+                     <a href='https://forms.gle/qQ7rSh96pf2L5Ftf8'>
+                       <button>Register for HS Programmes</button>
+                     </a>
                      </div>
                     
                    </div>
@@ -73,6 +79,9 @@ stopAutoPlayOnHover={false}
                      </div>
                      <div className='main__banner__text__second__row'>
                      <h3>PIONEERING A PROMISING FUTURE</h3>
+                     <a href='https://forms.gle/qQ7rSh96pf2L5Ftf8'>
+                       <button>Register for HS Programmes</button>
+                     </a>
                      </div>
                     
                    </div>
