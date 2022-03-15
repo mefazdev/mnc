@@ -29,7 +29,7 @@ export default function About() {
 <div className='about__content'>
  <div className='about__text grid gap-5 lg:gap-10 grid-cols-1 md:grid-cols-3'>
 <div className='about__text__left'>
-    <Image src={admission}/>
+    <Image src={admission} alt='Madeenthunnoor'/>
 </div>
 
 <div className='about__text__right col-span-2'>
@@ -47,7 +47,7 @@ export default function About() {
     <h2>OUR VISSION</h2>
     <p>To metamorphose into a unique Centre of Excellence, where, a cadre of spiritually holistic, professionally competent, intellectually vibrant scholars are molded & groomed, to meet the challenges of future.</p>
     <div className='vision__img'>
-    <Image src={dots} />
+    <Image src={dots} alt='Madeenthunnoor'/>
     </div>
 
 </div>
@@ -55,7 +55,7 @@ export default function About() {
 <h2>OUR MISSION</h2>
     <p>Arrive at the threshold of new world driven by traditional learning, wisdom and modern trends. Inspire innovative & out of the box thoughts through benchmarked curriculum, there by leading the community and nation to the apex of Islamic wisdom and culture.</p>
     <div className='mision__img'>
-    <Image src={dots} />
+    <Image src={dots} alt='Madeenthunnoor'/>
     </div>
 
 </div>
