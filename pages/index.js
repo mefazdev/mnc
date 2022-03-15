@@ -13,19 +13,19 @@ import mnc from "../assets/images/admission.JPG";
 import mah from '../assets/images/asathida/director.jpg'
 import apUsthad from '../assets/images/asathida/ap-usthad.jpg'
 import Modal from "@mui/material/Modal";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
  
 
 export default function index() {
 
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   function timeout(delay) {
     return new Promise((res) => setTimeout(res, delay));
   }
   const controlOpen = async () => {
     await timeout(6000);
-    setOpen(true);
+    // setOpen(true);
   };
   // useEffect(() => {
   //   controlOpen();

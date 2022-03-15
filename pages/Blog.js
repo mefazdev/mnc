@@ -50,11 +50,11 @@ export default function BlogMore({ initailValue }) {
       });
   };
 
-    // useEffect(() => {
-    //   fetchData();
+    useEffect(() => {
+      fetchData();
 
-    //   fetchSimilarBlog();
-    // }, []);
+      fetchSimilarBlog();
+    }, []);
 
   return (
     <>
