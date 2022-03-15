@@ -27,9 +27,9 @@ export default function index() {
     await timeout(6000);
     setOpen(true);
   };
-  useEffect(() => {
-    controlOpen();
-  }, []);
+  // useEffect(() => {
+  //   controlOpen();
+  // }, []);
   return (
     <div>
      <Head>
