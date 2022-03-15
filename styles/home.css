@@ -441,7 +441,7 @@ overflow: hidden;
 background-position: bottom;
 background-size: cover;
 
-background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.5)), url("../assets/images/admission.JPG");
+background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.5)), url("../assets/images/admission.jpg");
 align-items: center;
 display: flex;
 background-attachment: fixed;

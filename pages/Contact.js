@@ -5,7 +5,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import PhoneIcon from '@material-ui/icons/Phone';
-import garden from '../assets/images/garden.JPG'
+// import garden from '../assets/images/garden.jpg'
 import Head from 'next/head';
  
 export default function Contact() {

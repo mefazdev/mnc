@@ -2,14 +2,14 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import MainBanner from "../components/MainBanner";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
-import admission from "../assets/images/admission.JPG";
+// import admission from "../assets/images/admission.JPG";
 import Image from "next/image";
 import News from "../components/News";
 import Footer from "../components/Footer";
 import Status from "../components/Status";
 import Link from "next/link";
 import Head from "next/head";
-import mnc from "../assets/images/admission.JPG";
+import mnc from "../assets/images/admission.jpg";
 import mah from '../assets/images/asathida/director.jpg'
 import apUsthad from '../assets/images/asathida/ap-usthad.jpg'
 import Modal from "@mui/material/Modal";
