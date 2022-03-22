@@ -43,10 +43,10 @@ export default function MainBanner() {
               <h6>REGISTER NOW FOR</h6>
              
               <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
-                <button> hs Programmes</button>
+                <button> 8th STANDARD</button>
               </a>
               <a href="http://admission.jamiamadeenathunnoor.org">
-                <button className="ml-4"> bs Programmes</button>
+                <button className="ml-4">HSS PROGRAMMES</button>
               </a>
             </div>
           </div>
@@ -70,10 +70,10 @@ export default function MainBanner() {
               <h6>REGISTER NOW FOR</h6>
              
               <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
-                <button> hS Programmes</button>
+                <button> 8th STANDARD</button>
               </a>
               <a href="http://admission.jamiamadeenathunnoor.org">
-                <button className="ml-4"> bS Programmes</button>
+                <button className="ml-4"> HSS PROGRAMMES</button>
               </a>
             </div>
           </div>
@@ -95,10 +95,10 @@ export default function MainBanner() {
               <h6>REGISTER NOW FOR</h6>
              
               <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
-                <button> HS Programmes</button>
+                <button> 8th STANDARD</button>
               </a>
               <a href="http://admission.jamiamadeenathunnoor.org">
-                <button className="ml-4"> bS Programmes</button>
+                <button className="ml-4"> HSS PROGRAMMES</button>
               </a>
             </div>
           </div>
@@ -115,10 +115,10 @@ export default function MainBanner() {
             {/* <h3>Science Academy - (8th Std.)</h3> */}
             <div className="modal__btn">
               <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
-                <button>HS PROGRAMMES</button>
+                <button>8th STANDARD</button>
               </a>
               <a href="http://admission.jamiamadeenathunnoor.org">
-                <button>BS PROGRAMMES</button>
+                <button>HSS PROGRAMMES</button>
               </a>
             </div>
           </div>
