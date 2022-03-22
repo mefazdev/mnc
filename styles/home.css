@@ -69,11 +69,18 @@ padding-right: 20px;
     /* font-family: "Poppins", sans-serif; */
     background-color: rgb(9, 30, 58);
     /* color: rgb(11, 107, 11); */
-    padding: 10px;
+    padding: 7px;
     text-transform: uppercase;
     /* letter-spacing: 1px; */
-    margin-top: 15px;
+    margin-top: 5px;
     border-radius: 6px;
+}
+
+.main__banner__text h6{
+    color: #fff;
+    margin-top: 15px;
+    /* font-weight: bold; */
+    font-size: 18px;
 }
 .main__banner__text__second__row button:hover{
     color: #fff;
@@ -108,8 +115,12 @@ padding-left: 20px;
        
         padding: 6px;
        
-        margin-top: 10px;
+        margin-top: 5px;
        
+    }
+    .main__banner__text h6{
+       
+        font-size: 15px;
     }
     .main__banner__text{
        padding:5px;
@@ -899,9 +910,13 @@ margin-top: 30px;
 .modal__btn{
 display: flex;
 justify-content: center;
-margin-top: 10px;
+
+/* margin-top: 10px; */
+/* border: saddlebrown solid; */
 }
 .modal__btn button{
+    margin: 15px;
+    margin-top: 5px;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     background-color: #043a07;
@@ -935,3 +950,7 @@ max-width: 150px;
         padding: 15px;
     }
   }
+
+
+
+ 

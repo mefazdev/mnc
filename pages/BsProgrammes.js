@@ -28,31 +28,7 @@ export default function BsProgrammes() {
           <h1>BS PROGRAMMES</h1>
         </div>
         <div className="programmes__content">
-          {/* <div className="programmes__keynote gap-10 grid grid-cols-3">
-            <div className="col-span-2">
-              <h2>ACADEMIC PROGRAMMES</h2>
-              <p>
-                Jamia Madeenathunnoor offers different academic programs which
-                are designed to develop students into professionally competent
-                and socially committed Islamic graduates, fully equipped to take
-                on the challenges of the contemporary scenario. The programs
-                explores the critical areas of contemporary academic and
-                professional themes, in conjunction with comprehensive knowledge
-                and understanding of the Islamic tradition and knowledge.
-                <br />
-                The broad objectives of these programs are to familiarize
-                students to the social, political, economic, moral and
-                ecological environments of the society; to enable students to
-                become effective leaders and scholars to contribute to community
-                welfare; to develop a global perspective among students to
-                respond to global challenges; and to impart values of
-                intellectual honesty, justice, social compassion and fairness.
-              </p>
-            </div>
-            <div className="programme__img">
-              <Image src={hs2} className="rounded" />
-            </div>
-          </div> */}
+         
           <div className="hs__container">
             <div className="hs gap-5 grid lg:grid-cols-3">
               {/* <h2 className="visible lg:invisible mb-5">BACHLOR PROGRAMMES</h2> */}
@@ -70,6 +46,8 @@ export default function BsProgrammes() {
                   the preference and admission will be vested in the Jamia
                   Madeenathunnoor authority.
                 </p>
+                <a href="http://admission.jamiamadeenathunnoor.org/">
+                <button id='admision__btn'>REGISTER NOW</button></a>
               </div>
             </div>
 
@@ -114,31 +92,7 @@ export default function BsProgrammes() {
             </div>
           </div>
 
-          {/* <div className="programmes__keynote gap-10 grid grid-cols-3">
-            <div className="col-span-2">
-              <h2>ACADEMIC PROGRAMMES</h2>
-              <p>
-                Jamia Madeenathunnoor offers different academic programs which
-                are designed to develop students into professionally competent
-                and socially committed Islamic graduates, fully equipped to take
-                on the challenges of the contemporary scenario. The programs
-                explores the critical areas of contemporary academic and
-                professional themes, in conjunction with comprehensive knowledge
-                and understanding of the Islamic tradition and knowledge.
-                <br />
-                The broad objectives of these programs are to familiarize
-                students to the social, political, economic, moral and
-                ecological environments of the society; to enable students to
-                become effective leaders and scholars to contribute to community
-                welfare; to develop a global perspective among students to
-                respond to global challenges; and to impart values of
-                intellectual honesty, justice, social compassion and fairness.
-              </p>
-            </div>
-            <div className="programme__img">
-              <Image src={hs2} className="rounded" />
-            </div>
-          </div>  */}
+         
         </div>
       </div>
       <Footer />

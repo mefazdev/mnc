@@ -50,7 +50,7 @@ export default function HsProgrammes() {
                   authority
                 </p>
                 <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
-                <button id='admision__btn'>Get an admission</button></a>
+                <button id='admision__btn'>REGISTER NOW</button></a>
               </div>
             </div>
 
