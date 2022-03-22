@@ -22,15 +22,18 @@ ideals of Islam across the world</h3>
                 <div className='modal__close'>
 <CloseIcon id='close__icon' onClick={()=>setOpen(false)} />
                 </div>
-                <div className='modal__main'>
-                  <h2>Jamia Madeenathunnoor</h2>
-              <h3>Science Academy - (8th Std.)</h3>
-              <div className='modal__btn'>
-                <a href='https://forms.gle/qQ7rSh96pf2L5Ftf8'>
-                <button>REGISTER NOW</button>
-                </a>
-              </div>
-                </div>
+                <div className="modal__main">
+            <h2>GET AN ADMISSION</h2>
+            {/* <h3>Science Academy - (8th Std.)</h3> */}
+            <div className="modal__btn">
+              <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
+                <button>8th STANDARD</button>
+              </a>
+              <a href="http://admission.jamiamadeenathunnoor.org">
+                <button>HSS PROGRAMMES</button>
+              </a>
+            </div>
+          </div>
               </div>
             </Modal>
 
