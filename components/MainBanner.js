@@ -33,15 +33,14 @@ export default function MainBanner() {
             <div className="main__banner__text__first__row">
               <h2>
                 {" "}
-                <span className="font-normal">WELCOME TO</span>
-                 JAMIA
+                <span className="font-normal ">WELCOME TO</span> JAMIA
                 MADEENATHUNNOOR
               </h2>
             </div>
             <div className="main__banner__text__second__row">
               <h3>PIONEERING A PROMISING FUTURE</h3>
               <h6>REGISTER NOW FOR</h6>
-             
+
               <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
                 <button> 8th STANDARD</button>
               </a>
@@ -59,16 +58,14 @@ export default function MainBanner() {
             <div className="main__banner__text__first__row">
               <h2>
                 {" "}
-                <span className="font-normal">
-                  WELCOME TO</span>
-                   JAMIA
+                <span className="font-normal">WELCOME TO</span> JAMIA
                 MADEENATHUNNOOR
               </h2>
             </div>
             <div className="main__banner__text__second__row">
               <h3>PIONEERING A PROMISING FUTURE</h3>
               <h6>REGISTER NOW FOR</h6>
-             
+
               <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
                 <button> 8th STANDARD</button>
               </a>
@@ -85,15 +82,14 @@ export default function MainBanner() {
             <div className="main__banner__text__first__row">
               <h2>
                 {" "}
-                <span className="font-normal">WELCOME TO</span> 
-                JAMIA
+                <span className="font-normal">WELCOME TO</span> JAMIA
                 MADEENATHUNNOOR
               </h2>
             </div>
             <div className="main__banner__text__second__row">
               <h3>PIONEERING A PROMISING FUTURE</h3>
               <h6>REGISTER NOW FOR</h6>
-             
+
               <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
                 <button> 8th STANDARD</button>
               </a>
