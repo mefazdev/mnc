@@ -28,6 +28,8 @@ function MyApp({ Component, pageProps }) {
         strategy="lazyOnload"
         src="https://www.googletagmanager.com/gtag/js?id=G-2LS23QY6J6"
       />
+      </Head>
+      
     <Script strategy="lazyOnload" id='analytics'>
         {` window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -37,7 +39,6 @@ function MyApp({ Component, pageProps }) {
 
   `}
       </Script>
-      </Head>
    <Component {...pageProps} />
   </>
   
