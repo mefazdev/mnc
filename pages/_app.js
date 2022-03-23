@@ -24,10 +24,7 @@ function MyApp({ Component, pageProps }) {
 
        </style>
 
-       <Script id='googletagmanager'
-        strategy="lazyOnload"
-        src="https://www.googletagmanager.com/gtag/js?id=G-2LS23QY6J6"
-      />
+     
       </Head>
       
     <Script strategy="lazyOnload" id='analytics'>
