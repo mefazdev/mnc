@@ -12,7 +12,7 @@ import '../styles/blog.css'
 import '../styles/faculty.css'
 import '../styles/we.css'
 import Head from 'next/head'
-
+import Script from 'next/script'
 function MyApp({ Component, pageProps }) {
 
 
