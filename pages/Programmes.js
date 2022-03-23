@@ -18,8 +18,15 @@ export default function Programmes() {
   return (
     <>
      <Head>
-        <title>  Progrmmes</title>
-        <meta name="description" content="" />
+        <title>Madeenathunnoor  Progrmmes</title>
+        <meta name="description" content=" Jamia Madeenathunnoor offers different academic programs which
+                are designed to develop students into professionally competent
+                and socially committed Islamic graduates, fully equipped to take
+                on the challenges of the contemporary scenario. The programs
+                explores the critical areas of contemporary academic and
+                professional themes, in conjunction with comprehensive knowledge
+                and understanding of the Islamic tradition and knowledge.
+        " />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />

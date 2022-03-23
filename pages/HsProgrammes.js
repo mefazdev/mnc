@@ -20,8 +20,16 @@ export default function HsProgrammes() {
     <>
 
 <Head>
-        <title>  Hs programmes</title>
-        <meta name="description" content="" />
+        <title>Madeenathunnoor  Hs programmes</title>
+        <meta name="description" content="The students will parallelly complete Higher secondary course
+                  under the SCERT, Government of Kerala and with the foundation
+                  course in Islamic studies. For higher secondary program, Jamia
+                  Madeenathunnoor offers three streams viz Science, Commerce and
+                  Humanities. Students will be admitted based on their marks
+                  obtained in entrance examination for selection process and
+                  their preference of courses. The final decision on the course
+                  preference will be vested in the Jamia Madeenathunnoor
+                  authority" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />

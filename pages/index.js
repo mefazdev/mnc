@@ -10,27 +10,35 @@ import Status from "../components/Status";
 import Link from "next/link";
 import Head from "next/head";
 import mnc from "../assets/images/admission.jpg";
-import mah from '../assets/images/asathida/director.jpg'
-import apUsthad from '../assets/images/asathida/ap-usthad.jpg'
+import mah from "../assets/images/asathida/director.jpg";
+import apUsthad from "../assets/images/asathida/ap-usthad.jpg";
 import Admission from "../components/Admission";
 import Modal from "@mui/material/Modal";
-import {  useState } from "react";
- 
+import { useState } from "react";
 
 export default function index() {
-
   return (
     <div>
-     <Head>
+      <Head>
         <title>Jamia Madeenathunnoor</title>
-        <meta name="description" content="" />
+        <meta name="description" content="      Markaz Garden Group of Institutions was established on the onset
+              of these millennia by blending the religious wisdom and secular
+              studies with a sake to enable Islamic renaissance possible. Jamia
+              Madeenathunnoor is the chief institution under Markaz Garden Group
+              of Institutions. Currently Jamia Madeenathunnoor has become an
+              ensemble of multilayered educational system covering higher
+              secondary studies, bachelors and post-graduation levels.Spread
+              over a dozen of departments, more than three hundred students are
+              pursuing their studies here. The institution is also providing
+              residential facilities on the campus for students doing their
+              courses in various disciplines and subjects." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+  
       <Navbar />
 
       <div className="home">
         <div className="home__banner">
-          
           <MainBanner />
         </div>
 
@@ -51,7 +59,11 @@ export default function index() {
               Madeenathunnoor is the chief institution under Markaz Garden Group
               of Institutions. Currently Jamia Madeenathunnoor has become an
               ensemble of multilayered educational system covering higher
-              secondary studies, bachelors and post-graduation levels.Spread over a dozen of departments, more than three hundred students are pursuing their studies here. The institution is also providing residential facilities on the campus for students doing their courses in various disciplines and subjects.
+              secondary studies, bachelors and post-graduation levels.Spread
+              over a dozen of departments, more than three hundred students are
+              pursuing their studies here. The institution is also providing
+              residential facilities on the campus for students doing their
+              courses in various disciplines and subjects.
             </p>
             <div className="home__about__more flex">
               <Link href="/About">
@@ -84,7 +96,7 @@ export default function index() {
                   Madeenathunnoor as prestigious Islamic institution is that, it
                   is an autonomous institution under the aegis of Jamia Markaz,
                   which is a renowned university in South Asia, particularly in
-                  India. 
+                  India.
                 </p>
                 <div className="home__director__more flex">
                   <h6>READ MORE</h6>
@@ -93,26 +105,28 @@ export default function index() {
                 </div>
               </div>
               <div className="chair__img__div order-first lg:order-last">
-{/* */}
-              {/* order-first lg:order-last */}
-              <div className="chair__img  ">
-                {/* <Image src='' /> */}
+                {/* */}
+                {/* order-first lg:order-last */}
+                <div className="chair__img  ">
+                  {/* <Image src='' /> */}
 
-               <Image src={apUsthad} />
-                {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aI2UgebZOan0BpmpNYj23xwTgd9vFPtQOw&usqp=CAU" /> */}
-                
-              </div><h3 className="visible lg:hidden mt-2" style={{textAlign:'center'}}>
+                  <Image src={apUsthad} />
+                  {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aI2UgebZOan0BpmpNYj23xwTgd9vFPtQOw&usqp=CAU" /> */}
+                </div>
+                <h3
+                  className="visible lg:hidden mt-2"
+                  style={{ textAlign: "center" }}
+                >
                   Sheikh Aboobakar Ahmed
                 </h3>
               </div>
-
             </div>
           </div>
         </div>
 
         {/* <<<<<< HOME ADMISSION >>>>>>>>>> */}
 
-        <Admission/>
+        <Admission />
         <div className="home__director__two ">
           <div className="home__director__content ">
             <h2>RECTOR&apos;S MESSAGE</h2>
@@ -131,7 +145,6 @@ export default function index() {
                   is today without the constant succour and support of Markaz
                   community. Our goal is to be a “Centre of Excellence” so that
                   we remain relevant to our society.
-                
                 </p>
                 <div className="home__director__more flex">
                   <h6>READ MORE</h6>
@@ -139,25 +152,26 @@ export default function index() {
                   {/* <ArrowRightAltIcon id='director__more__icon' /> */}
                 </div>
               </div>
-              <div className="chair__img__div order-first lg:order-last" >
-              <div className="chair__img  ">
-                <Image src={mah }/>
-                {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aI2UgebZOan0BpmpNYj23xwTgd9vFPtQOw&usqp=CAU" /> */}
-               
-              </div>
-               <h3 className="visible lg:hidden mt-2" style={{textAlign:'center'}}>
-                Dr MAH Azhari
-                </h3>
+              <div className="chair__img__div order-first lg:order-last">
+                <div className="chair__img  ">
+                  <Image src={mah} />
+                  {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aI2UgebZOan0BpmpNYj23xwTgd9vFPtQOw&usqp=CAU" /> */}
                 </div>
+                <h3
+                  className="visible lg:hidden mt-2"
+                  style={{ textAlign: "center" }}
+                >
+                  Dr MAH Azhari
+                </h3>
+              </div>
             </div>
           </div>
         </div>
-        
 
         {/* <<<<< HOME NEWS >>>>>>>>> */}
-        <News/>
+        <News />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -18,8 +18,14 @@ export default function BsProgrammes() {
   return (
     <>
      <Head>
-        <title>Bs programmes</title>
-        <meta name="description" content="" />
+        <title>Madeenathunnoor Bs programmes</title>
+        <meta name="description" content="                  Jamia Madeenathunnoor offers seven courses in bachelor
+                  programs viz Science, Commerce, History, Sociology,
+                  Psychology, English literature and Arabic literature. Students
+                  will be admitted based on their score obtained in the
+                  selection process and their preference. The final decision on
+                  the preference and admission will be vested in the Jamia
+                  Madeenathunnoor authority" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
