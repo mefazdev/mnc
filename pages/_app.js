@@ -23,6 +23,20 @@ function MyApp({ Component, pageProps }) {
        @import url(&quothttps://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&family=Poppins:wght@100;200;400&family=Quicksand&family=Roboto:wght@100&display=swap&quot);
 
        </style>
+
+       <Script id='googletagmanager'
+        strategy="lazyOnload"
+        src="https://www.googletagmanager.com/gtag/js?id=G-2LS23QY6J6"
+      />
+    <Script strategy="lazyOnload" id='analytics'>
+        {` window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KBB4S1YKTW');
+
+  `}
+      </Script>
       </Head>
    <Component {...pageProps} />
   </>
