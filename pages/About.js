@@ -65,7 +65,7 @@ export default function About() {
           {/* <<<<<<< MISSSION >>>>>>>>>> */}
           <div className="mission__row gap-10 grid lg:grid-cols-2">
             <div className="vision">
-              <h2>OUR VISSION</h2>
+              <h2>OUR VISION</h2>
               <p>
                 To metamorphose into a unique Centre of Excellence, where, a
                 cadre of spiritually holistic, professionally competent,
