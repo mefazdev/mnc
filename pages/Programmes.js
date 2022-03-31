@@ -18,7 +18,7 @@ export default function Programmes() {
   return (
     <>
      <Head>
-        <title>Madeenathunnoor  Progrmmes</title>
+        <title>Madeenathunnoor  Programmes</title>
         <meta name="description" content=" Jamia Madeenathunnoor offers different academic programs which
                 are designed to develop students into professionally competent
                 and socially committed Islamic graduates, fully equipped to take
