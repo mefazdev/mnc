@@ -21,7 +21,7 @@ export default function index() {
     <div>
       <Head>
         <title>Jamia Madeenathunnoor</title>
-        <meta name="description" content="      Markaz Garden Group of Institutions was established on the onset
+        <meta name="description" content="Markaz Garden Group of Institutions was established on the onset
               of these millennia by blending the religious wisdom and secular
               studies with a sake to enable Islamic renaissance possible. Jamia
               Madeenathunnoor is the chief institution under Markaz Garden Group

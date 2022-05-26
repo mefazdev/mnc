@@ -16,7 +16,7 @@ ideals of Islam across the world</h3>
   
   
   <Modal 
-            open={open}
+            open={false}
               >
               <div className='modal'>
                 <div className='modal__close'>

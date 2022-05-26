@@ -46,7 +46,7 @@ export default function Contact() {
 <div className='flex contact__row__div'>
     <AlternateEmailIcon id='contact__icon'/>
     <div className='ml-3'>
-        <h6>info@markazgarden.com</h6>
+        <h6>info@jamiamadeenathunnoor.org</h6>
         {/* <h6>info@markazgarden.com</h6> */}
     </div>
 </div>

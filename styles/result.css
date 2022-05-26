@@ -1,0 +1,19 @@
+.result{
+
+}
+.result__head{
+    height: 100px;
+    background-color: black;
+    /* border: solid red; */
+}
+.result{
+border: solid red;
+padding-top: 40px;
+}
+
+@media only screen and (min-width: 800px) {
+    .result{
+       max-width: 85%;
+       margin: auto;
+    }
+}

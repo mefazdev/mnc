@@ -7,6 +7,7 @@ import Modal from "@mui/material/Modal";
 import Image from "next/image";
 import CloseIcon from "@mui/icons-material/Close";
 import Carousel from "react-material-ui-carousel";
+import Link from "next/link";
 export default function MainBanner() {
   const [open, setOpen] = useState(false);
 
@@ -28,7 +29,7 @@ export default function MainBanner() {
         infiniteLoop={true}
         stopAutoPlayOnHover={false}
       >
-        <div className="banner__img">
+         <div className="banner__img">
           <div className="main__banner__text">
             <div className="main__banner__text__first__row">
               <h2>
@@ -39,20 +40,18 @@ export default function MainBanner() {
             </div>
             <div className="main__banner__text__second__row">
               <h3>PIONEERING A PROMISING FUTURE</h3>
-              <h6>REGISTER NOW FOR</h6>
+              {/* <h6>ENTRANCE EXAM RESULTS FOR</h6>
 
-              <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
-                <button> 8th STANDARD</button>
-              </a>
-              <a href="http://admission.jamiamadeenathunnoor.org">
-                <button className="ml-4">HSS PROGRAMMES</button>
-              </a>
+               <button> 8th STANDARD</button>
+              
+                <button className="ml-4">HSS PROGRAMMES</button> */}
+             
             </div>
           </div>
         </div>
 
         <div className="banner__img__three">
-          {/* <Image  src={banner1}/> */}
+         
 
           <div className="main__banner__text">
             <div className="main__banner__text__first__row">
@@ -64,19 +63,18 @@ export default function MainBanner() {
             </div>
             <div className="main__banner__text__second__row">
               <h3>PIONEERING A PROMISING FUTURE</h3>
-              <h6>REGISTER NOW FOR</h6>
+              {/* <h6>ENTRANCE EXAM RESULTS FOR</h6>
 
-              <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
+              
                 <button> 8th STANDARD</button>
-              </a>
-              <a href="http://admission.jamiamadeenathunnoor.org">
-                <button className="ml-4"> HSS PROGRAMMES</button>
-              </a>
+              
+                <button className="ml-4"> HSS PROGRAMMES</button> */}
+             
             </div>
           </div>
-        </div>
+        </div> 
         <div className="banner__img__two">
-          {/* <Image  src={banner1}/> */}
+           
 
           <div className="main__banner__text">
             <div className="main__banner__text__first__row">
@@ -87,21 +85,28 @@ export default function MainBanner() {
               </h2>
             </div>
             <div className="main__banner__text__second__row">
-              <h3>PIONEERING A PROMISING FUTURE</h3>
-              <h6>REGISTER NOW FOR</h6>
+                 <h3>PIONEERING A PROMISING FUTURE</h3>
+           {/* <div className="main__banner__text__third__row">
+           <h6>ENTRANCE EXAM RESULTS FOR</h6>
+           <button> 8th STANDARD</button>
+           <Link href='/Result'><button className="ml-4"> HSS PROGRAMMES</button></Link>
+           
 
-              <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
-                <button> 8th STANDARD</button>
-              </a>
-              <a href="http://admission.jamiamadeenathunnoor.org">
-                <button className="ml-4"> HSS PROGRAMMES</button>
-              </a>
+           </div> */}
+            
+              
+
+              {/* <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8"> */}
+          
+              {/* </a> */}
+              {/* <a href="http://admission.jamiamadeenathunnoor.org"> */}
+                            {/* </a> */}
             </div>
           </div>
         </div>
       </Carousel>
 
-      <Modal open={open} id="modal">
+      <Modal open={false} id="modal">
         <div className="modal">
           <div className="modal__close">
             <CloseIcon id="close__icon" onClick={() => setOpen(false)} />
