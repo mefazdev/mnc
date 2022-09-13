@@ -98,16 +98,27 @@ export default function Footer() {
 
 <div className='footer___bottom  '>
 <div className='footer__bottom__content flex'>
-    <div className='flex footer__bottom__left'>
-    <p>Privacy policy</p>
+    {/* <div className='flex footer__bottom__left'>
+      <Link href='/'><p>Home</p></Link>
+    
     <p className='ml-1'>|</p>
-    <p className='ml-1'>Cookie policy </p>
+    <Link href='/About'><p className='ml-1'>About </p></Link>
+    
     <p className='ml-1'>|</p>
-    <p className='ml-1'>Disclaimer</p>
-    </div>
+    <Link href='/Contact'><p className='ml-1'>Contact</p></Link>
+    
+    </div> */}
     <div className='footer__bottom__right'>
         <p>
-All rights reserved. Made with <span><FavoriteBorderOutlinedIcon/> salahzain139@gmail.com</span> </p>
+All rights reserved. Developed by <a href="whatsapp://send?phone=+918606256402" data-action="share/whatsapp/share" style={{textDecoration:'underline',cursor:'pointer'}}  >
+              {/* <p style={{textDecoration:'underline',cursor:'pointer'}} className="ml-2"> */}
+                
+               
+                Booreact 
+               
+             {/* </p> */}
+  </a>
+ </p>
     </div>
 </div>
 
