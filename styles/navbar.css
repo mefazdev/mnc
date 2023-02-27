@@ -1,28 +1,31 @@
 .navbar{
 
-    height: 65px;
+    min-height: 65px;
     position: absolute;
    
     width: 100%;
     z-index: 100;
     position: fixed;
     display: flex;
+    overflow: hidden;
    
 }
 .navbar__on__scroll{
     /* background-color: rgba(0, 0, 0, 0.705); */
-    height: 65px;
+    min-height: 65px;
     position: absolute;
    background-color: rgba(0, 0, 0, 0.911);
     width: 100%;
     z-index: 100;
     position: fixed;
-    display: flex;
+    display: flex; 
 }
 .navbar__left{
 /* border: green solid; */
 width: 100%;
+/* margin-left: 5%;  */
 /* background-color: #fff; */
+
 
 }
 .navbar__right{
@@ -86,6 +89,7 @@ width: 100%;
  
     padding: 10px;
     display: flex;
+  
     
 }
 .nav__name{

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/LOGO-2.png";
 import caligraphy from "../assets/images/caligraphy.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -48,7 +48,7 @@ export default function Navbar() {
       <div className="navbar__left ">
         <div className="navbar__left__div flex">
           <div className="flex">
-            <div className="nav__logo ">
+            <div className="nav__logo">
               <Link href="/">
                 <Image src={logo} />
               </Link>
