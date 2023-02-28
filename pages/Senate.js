@@ -22,7 +22,7 @@ export default function Senate() {
       </div>
       <div className="we" style={{ scrollBehavior: "smooth" }}>
         <div className="we__content">
-          <div className="we__row grid gap-6 grid-cols-2   lg:grid-cols-5">
+          <div className="we__row grid gap-6 grid-cols-2   lg:grid-cols-4">
             <div className="we__item">
               <div className="we__img">
                 <Image src={apUsthad} />
