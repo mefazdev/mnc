@@ -14,6 +14,8 @@ import VisibilitySensor from "react-visibility-sensor-v2";
 import CountUp from 'react-countup';
 import {useState} from 'react'
 import LogoSlider from './LogoSlider';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 export default function Status() {
 
     const [didViewCountUp, setState] = useState(false);
@@ -72,7 +74,8 @@ export default function Status() {
  </div>
  <div className='status__count__box'>
  <div className='rounded-full status__count__box__circle'>
-  <VerifiedUserIcon  id='status__icons'/>
+  {/* <VerifiedUserIcon  id='status__icons'/> */}
+  <EmojiEventsIcon   id='status__icons'/>
   </div>
   <VisibilitySensor
                     scrollCheck={true}
@@ -117,7 +120,7 @@ export default function Status() {
  </div>
  <div className='status__count__box'>
  <div className='rounded-full status__count__box__circle'>
-  <ThumbUpIcon id='status__icons'/>
+  <BusinessCenterIcon id='status__icons'/>
   </div>
   <VisibilitySensor
                     scrollCheck={true}

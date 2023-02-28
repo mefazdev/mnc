@@ -362,7 +362,7 @@ export default function Navbar() {
                     <p>SENATE</p>
                   </div>
                 </Link>
-                <Link href="/Academmic">
+                <Link href="/Academic">
                   <div className="mt-2">
                     <p>ACADEMIC COUNCIL</p>
                   </div>
