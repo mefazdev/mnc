@@ -100,7 +100,7 @@ export default function Blogs() {
           });
       };
       useEffect(() => {
-        fetchData();
+        // fetchData();
   
       }, []);
   return (

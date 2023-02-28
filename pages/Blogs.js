@@ -31,7 +31,7 @@ export default function Blog() {
   };
 
   useEffect(() => {
-    fetchData();
+    // fetchData();
   }, []);
   return (
     <>

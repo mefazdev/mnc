@@ -24,8 +24,7 @@ function MyApp({ Component, pageProps }) {
        @import url(&quothttps://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&family=Poppins:wght@100;200;400&family=Quicksand&family=Roboto:wght@100&display=swap&quot);
 
        </style>
-
-     
+        
       </Head>
       
     <Script strategy="lazyOnload" id='analytics'>

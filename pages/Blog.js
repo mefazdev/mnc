@@ -51,9 +51,9 @@ export default function BlogMore({ initailValue }) {
   };
 
     useEffect(() => {
-      fetchData();
+      // fetchData();
 
-      fetchSimilarBlog();
+      // fetchSimilarBlog();
     }, []);
 
   return (

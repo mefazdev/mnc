@@ -9,6 +9,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { useEffect, useState } from "react";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import CloseIcon from '@mui/icons-material/Close';
+
 export default function Navbar() {
   const [collapse, setCollapse] = useState(false);
   const [about, setAbout] = useState(false);
@@ -16,7 +18,8 @@ export default function Navbar() {
   const [programmes, setProgrammes] = useState(false);
   const router = useRouter();
   const [changeNav, setChangeNav] = useState(false);
-  const changeNavBar = () => {
+  const [leaderSHip,setLeaderShip ] = useState(false)
+   const changeNavBar = () => {
     if (window.scrollY >= 5) {
       setChangeNav(true);
     }
@@ -43,6 +46,11 @@ export default function Navbar() {
     setProgrammes(false);
     setMedia(!media);
   };
+
+  const controlLeaderShip = ()=>{
+    setLeaderShip(true)
+    // setAbout(false)
+  }
   return (
     <div className={changeNav ? "navbar__on__scroll" : "navbar"}>
       <div className="navbar__left ">
@@ -73,11 +81,11 @@ export default function Navbar() {
             </h3>
           </Link>
 
-          <span className="flex group cursor-pointer ">
+          {/* <span className="flex group cursor-pointer">
             <h3>ABOUT</h3>
             <ArrowDropDownIcon id="dropdown__icon" />
 
-            <div className="dorpdown__div">
+            <div className="dorpdown__div" style={{zIndex:"100"}}>
               <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-6">
                 <span className="development__head cursor-pointer group">
                   <Link href="/About">
@@ -102,23 +110,113 @@ export default function Navbar() {
                       </li>
                     </div>
                   </Link>
-                  <Link href="/Faculty">
+          
                     <div
                       className={
-                        router.pathname == "/Faculty"
+                        
+                         
+                          "service__group__span py-2"
+                      }
+                    >
+                      <div className="flex">
+                      <li className=" px-4 block whitespace-no-wrap text-sm ">
+                        LEADERSHIP
+                      </li>
+                      <ArrowRightIcon style={{color:"#fff"}}/>
+                      </div>
+                    
+                    </div>
+               
+                  
+                </span>
+                
+              </ul>
+            </div>
+           
+          </span> */}
+
+<span className=" group cursor-pointer ">
+  <div className="flex">
+  <h3>ABOUT</h3>
+            <ArrowDropDownIcon id="dropdown__icon" />
+
+
+  </div>
+
+            <span style={{ textAlign: "left", zIndex: "1" }}>
+              <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-2">
+                <span className="development__head cursor-pointer group">
+                  <div className="flex   service__group__spa rounded-t  py-2">
+                  <Link href="/About">
+                    <div style={{minWidth:'100%' }}
+                      className={
+                        router.pathname == "/About"
                           ? "active__dropdown py-2"
                           : "service__group__span py-2"
                       }
                     >
-                      <li className=" px-4 block whitespace-no-wrap text-sm ">
-                        FACULTY PROFILE
+                      <li className=" px-4 block whitespace-no-wrap text-sm "
+                      
+                      >
+                        <p
+                          className={
+                            router.pathname == "/About"
+                              ? "active__dropdown"
+                              : ""
+                          }
+                        >
+                          {" "}
+                          JAMIA
+                        </p>
                       </li>
                     </div>
                   </Link>
+
+                    {/* <ArrowRightIcon id="service__group__arrow" /> */}
+                  </div>
+
+               
                 </span>
+
+                <span className="design__head">
+                  <div className="flex rounded-b  service__group__span  bg-gray-200 hover:bg-gray-400 py-2">
+                    <li className=" px-4 block whitespace-no-wrap text-sm ">
+                     LEADERSHIP
+                    </li>
+                    <ArrowRightIcon style={{color:'#fff'}} />
+                  </div>
+                  <ul className="design__list">
+                    <Link href="/Senate">
+                      <li className=" bg-gray-800 hover:bg-green-800 pt-3 py-2 px-2 block whitespace-no-wrap text-sm">
+                        SENATE
+                      </li>
+                    </Link>
+
+                    <Link href="/Academic">
+                      <li className=" bg-gray-800 hover:bg-green-800 pb-3 py-2 px-2 block whitespace-no-wrap text-sm">
+                        ACADEMIC COUNCIL
+                      </li>
+                    </Link>
+                    <Link href="/Exicutive">
+                      <li className=" bg-gray-800 hover:bg-green-800 pb-3 py-2 px-2 block whitespace-no-wrap text-sm">
+                       EXICUTIVE COUNCIL
+                      </li>
+                    </Link>
+                    <Link href="/Finance">
+                      <li className=" bg-gray-800 hover:bg-green-800 pb-3 py-2 px-2 block whitespace-no-wrap text-sm">
+                       FINANCE COMMITTEE
+                      </li>
+                    </Link>
+                  </ul>
+                </span>
+
+              
+            
+  
               </ul>
-            </div>
+            </span>
           </span>
+         
           <span className="flex group cursor-pointer ">
             <Link href="/Programmes">
               <h3>PROGRAMMES</h3>
@@ -241,15 +339,44 @@ export default function Navbar() {
                     <p>JAMIA</p>
                   </div>
                 </Link>
-                <Link href="/Faculty">
-                  <div className="collapse_collapse__row">
-                    <p>FACULTY</p>
+               
+                  <div className="collapse_collapse__row flex" onClick={controlLeaderShip}>
+                    <p>LEADERSHIP</p>
+                    <ArrowRightIcon/>
                   </div>
-                </Link>
+                 
+                 
+                
               </div>
             ) : (
               ""
             )}
+             {leaderSHip ? <div  
+                  className=' absolute right-0 mr-10 mt-10 bg-gray-800 p-2'
+                  >
+                    <CloseIcon style={{position:'absolute',right:'0',marginRight:'5px'}}
+                    onClick={()=>setLeaderShip(false)}
+                    />
+                 <Link href="/Senate">
+                  <div className="mt-6">
+                    <p>SENATE</p>
+                  </div>
+                </Link>
+                <Link href="/Academmic">
+                  <div className="mt-2">
+                    <p>ACADEMIC COUNCIL</p>
+                  </div>
+                </Link>
+                <Link href="/Exicutive">
+                  <div className="mt-2">
+                    <p>EXICUTIVE COUNCIL</p>
+                  </div>
+                </Link><Link href="/Finance">
+                  <div className="mt-2">
+                    <p>FINANCE COMMITTEE</p>
+                  </div>
+                </Link>
+                 </div> : ''}
           </div>
 
           <div className="collapse_row flex">

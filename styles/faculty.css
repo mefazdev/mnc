@@ -36,41 +36,10 @@
     margin-top: 40px;
     margin-bottom: 60px;
     }
- .faculty__row{
-     /* max-height: 300px; */
-    margin-top: 50px;
- }  
-.faculty__box{
-    /* border: solid rgba(128, 128, 128, 0.37) 1px ; */
-    /* max-height: 200px; */
-    width: 100%;
-    padding: 20px;
  
-    /* height: initial; */
-    box-shadow: rgba(128, 128, 128, 0.226) 1px 3px 3px 3px;
-}
 
-.faculty__box h5{
-    font: normal normal bold 20px/25px Poppins;
-    font-family: "Poppins", sans-serif;
-    color: rgba(66, 62, 62, 0.883);
-}
-.faculty__box p{
-    font: normal normal normal 15px/22px Poppins;
-    font-family: "Poppins", sans-serif;
-    color: rgba(66, 62, 62, 0.829);
-}
-.faculty__box h6{
-    font: normal normal normal 15px/22px Poppins;
-    font-family: "Poppins", sans-serif;
-    color: rgba(66, 62, 62, 0.698);
-    margin-top: 10px;
-}
-.faculty__box h6:hover{
-   cursor: pointer;
-    color: rgba(8, 8, 8, 0.877);
   
-}
+ 
 @media only screen and (max-width: 800px) {
     .faculty__content{
         

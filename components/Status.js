@@ -46,7 +46,7 @@ export default function Status() {
      <div className='status__content__left col-span-3 lg:col-span-1 '>
 
 
-     <h3>JOURNEY OF 20 YEARS</h3> 
+     <h3>JOURNEY OF 22 YEARS</h3> 
 <div className='status__left__row grid gap-5 lg:grid-cols-2'>
  <div className='status__count__box'>
   <div className='rounded-full status__count__box__circle'>
@@ -60,7 +60,7 @@ export default function Status() {
                     <p>
                       <CountUp
                         start={0}
-                        end={didViewCountUp ? 12 : 0}
+                        end={didViewCountUp ? 13 : 0}
                         duration={3}
                       />
                       +
@@ -82,14 +82,14 @@ export default function Status() {
                     <p>
                       <CountUp
                         start={0}
-                        end={didViewCountUp ? 240 : 0}
+                        end={didViewCountUp ? 284 : 0}
                         duration={3}
                       />
                       +
                     </p>
                   </VisibilitySensor>
 
-  <h6>Post graduates</h6>
+  <h6>Alumni</h6>
  </div>
 </div>
 <div className='status__left__row grid gap-5 lg:grid-cols-2'>
@@ -105,7 +105,7 @@ export default function Status() {
                     <p>
                       <CountUp
                         start={0}
-                        end={didViewCountUp ? 48 : 0}
+                        end={didViewCountUp ? 53 : 0}
                         duration={3}
                       />
                       +
@@ -127,7 +127,7 @@ export default function Status() {
                     <p>
                       <CountUp
                         start={0}
-                        end={didViewCountUp ? 89 : 0}
+                        end={didViewCountUp ? 80 : 0}
                         duration={3}
                       />
                       +
@@ -150,7 +150,7 @@ export default function Status() {
                     <p>
                       <CountUp
                         start={0}
-                        end={didViewCountUp ? 27 : 0}
+                        end={didViewCountUp ? 53 : 0}
                         duration={3}
                       />
                       +
@@ -172,7 +172,7 @@ export default function Status() {
                     <p>
                       <CountUp
                         start={0}
-                        end={didViewCountUp ? 36 : 0}
+                        end={didViewCountUp ? 40 : 0}
                         duration={3}
                       />
                       +
@@ -195,7 +195,7 @@ export default function Status() {
                     <p>
                       <CountUp
                         start={0}
-                        end={didViewCountUp ? 35 : 0}
+                        end={didViewCountUp ? 58 : 0}
                         duration={3}
                       />
                       +
@@ -217,7 +217,7 @@ export default function Status() {
                     <p>
                       <CountUp
                         start={0}
-                        end={didViewCountUp ? 5 : 0}
+                        end={didViewCountUp ? 7 : 0}
                         duration={3}
                       />
                       +

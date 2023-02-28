@@ -10,12 +10,13 @@ import Status from "../components/Status";
 import Link from "next/link";
 import Head from "next/head";
 import mnc from "../assets/images/admission.jpg";
-import mah from "../assets/images/asathida/director.jpg";
-import apUsthad from "../assets/images/asathida/ap-usthad.jpg";
+// import mah from "../assets/images/senate/director.jpg";
+// import apUsthad from "../assets/images/senate/apusthad.jpeg";
 import Admission from "../components/Admission";
 import Modal from "@mui/material/Modal";
 import { useState } from "react";
-
+import apUsthad from "../assets/images/senate/ap-usthad.jpg";
+import mah from "../assets/images/senate/hakkim-usthad.jpg";
 export default function index() {
   return (
     <div>
@@ -82,7 +83,7 @@ export default function index() {
         <div className="home__director ">
           <div className="home__director__content ">
             <h2>CHAIRMAN&apos;S MESSAGE</h2>
-            <h3 className=" invisible lg:visible ">Sheikh Aboobakar Ahmed</h3>
+            <h3 className=" invisible lg:visible ">Sheikh Abubakr Ahmad</h3>
             <div className="grid    lg:gap-10 lg:grid-cols-3">
               <div className="home__director__left order-last    lg:col-span-2">
                 <p>
@@ -109,7 +110,7 @@ export default function index() {
                 {/* order-first lg:order-last */}
                 <div className="chair__img  ">
                   {/* <Image src='' /> */}
-
+                  {/* <img  className="rounded-full" src='https://scontent.fcok10-4.fna.fbcdn.net/v/t39.30808-6/317306164_131852579708059_6379877850093454167_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=fSQVqkdc2kIAX8TBbcB&_nc_ht=scontent.fcok10-4.fna&oh=00_AfDlgZxAySKl5u32mfDuitMojAe9Ccjk4i6BQuYFrJhYRg&oe=640269F1'/> */}
                   <Image src={apUsthad} />
                   {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aI2UgebZOan0BpmpNYj23xwTgd9vFPtQOw&usqp=CAU" /> */}
                 </div>
@@ -117,7 +118,7 @@ export default function index() {
                   className="visible lg:hidden mt-2"
                   style={{ textAlign: "center" }}
                 >
-                  Sheikh Aboobakar Ahmed
+                  Sheikh Abubakr Ahmad
                 </h3>
               </div>
             </div>
@@ -130,7 +131,7 @@ export default function index() {
         <div className="home__director__two ">
           <div className="home__director__content ">
             <h2>RECTOR&apos;S MESSAGE</h2>
-            <h3 className=" invisible lg:visible ">Dr MAH Azhari</h3>
+            <h3 className=" invisible lg:visible ">Dr. Muhammed Abdul Hakkim Azhari</h3>
             <div className="grid    lg:gap-10 lg:grid-cols-3">
               <div className="home__director__left    lg:col-span-2">
                 <p>
@@ -161,7 +162,7 @@ export default function index() {
                   className="visible lg:hidden mt-2"
                   style={{ textAlign: "center" }}
                 >
-                  Dr MAH Azhari
+                  Dr. Muhammed Abdul Hakkim Azhari
                 </h3>
               </div>
             </div>

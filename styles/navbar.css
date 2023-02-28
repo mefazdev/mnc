@@ -7,7 +7,8 @@
     z-index: 100;
     position: fixed;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* border: solid red; */
    
 }
 .navbar__on__scroll{
@@ -214,4 +215,135 @@ margin-left: 5px;
     padding: 10px;
     width: 100%;
     background-color: rgb(7, 56, 7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service__group__span{
+    align-items: center;
+    justify-content: space-between;
+}
+#service__group__arrow{
+    margin-right: 5px;
+}
+
+.development__list{
+    
+    display: none;
+    position: absolute;
+   
+    float: right;
+    margin-left: 200px;
+    margin-top: -37px;
+    flex-direction: column;
+}
+.development__list > li{
+    width: 180px;
+   
+   
+}
+.development__head:hover .development__list  {
+display: flex;
+}
+
+.design__list{
+    display: none;
+    position: absolute;
+   
+    float: right;
+    
+    margin-top: -40px;
+    margin-left: 150px;
+    flex-direction: column;
+    
+}
+.design__list > li{
+    width: 180px;
+   
+   
+}
+.design__head:hover .design__list{
+display: flex;
+}
+
+.marketing__list{
+    display: none;
+    position: absolute;
+   
+    float: right;
+    margin-left: 200px;
+    margin-top: -40px;
+    flex-direction: column;
+}
+.marketing__list > li{
+    width: 180px;
+   
+   
+}
+.marketing__head:hover .marketing__list{
+display: flex;
+}
+
+
+
+.hosting__list{
+    display: none;
+    position: absolute;
+   
+    float: right;
+    margin-left: 200px;
+    margin-top: -40px;
+    flex-direction: column;
+}
+.hosting__list > li{
+    width: 180px;
+   
+   
+}
+.hosting__head:hover .hosting__list{
+display: flex;
+}
+
+
+
+.expert__list{
+    display: none;
+    position: absolute;
+   
+    float: right;
+    margin-left: 200px;
+    margin-top: -40px;
+    flex-direction: column;
+}
+.expert__list > li{
+    width: 180px;
+   
+   
+}
+.expert__head:hover .expert__list{
+display: flex;
 }
