@@ -27,7 +27,7 @@ export default function Exicutive() {
     <div>
       <Navbar />
       <div className="faculty__header">
-        <h2>EXICUTIVE COUNCIL</h2>
+        <h2>EXECUTIVE COUNCIL</h2>
       </div>
       <div className="we" style={{ scrollBehavior: "smooth" }}>
         <div className="we__content">
