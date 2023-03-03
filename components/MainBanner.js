@@ -50,7 +50,7 @@ export default function MainBanner() {
           </div>
         </div>
 
-        {/* <div className="banner__img__three">
+        <div className="banner__img__three">
          
 
           <div className="main__banner__text">
@@ -85,7 +85,7 @@ export default function MainBanner() {
 
                 </div>
           </div>
-        </div> */}
+        </div> 
       </Carousel>
 
       <Modal open={false} id="modal">
