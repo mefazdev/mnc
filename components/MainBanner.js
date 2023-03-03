@@ -50,7 +50,7 @@ export default function MainBanner() {
           </div>
         </div>
 
-        <div className="banner__img__three">
+        {/* <div className="banner__img__three">
          
 
           <div className="main__banner__text">
@@ -63,14 +63,7 @@ export default function MainBanner() {
             </div>
             <div className="main__banner__text__second__row">
               <h3>PIONEERING A PROMISING FUTURE</h3>
-              {/* <h6>ENTRANCE EXAM RESULTS FOR</h6>
-
-              
-                <button> 8th STANDARD</button>
-              
-                <button className="ml-4"> HSS PROGRAMMES</button> */}
-             
-            </div>
+                </div>
           </div>
         </div> 
         <div className="banner__img__two">
@@ -86,24 +79,13 @@ export default function MainBanner() {
             </div>
             <div className="main__banner__text__second__row">
                  <h3>PIONEERING A PROMISING FUTURE</h3>
-           {/* <div className="main__banner__text__third__row">
-           <h6>ENTRANCE EXAM RESULTS FOR</h6>
-           <button> 8th STANDARD</button>
-           <Link href='/Result'><button className="ml-4"> HSS PROGRAMMES</button></Link>
-           
-
-           </div> */}
+       
             
               
 
-              {/* <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8"> */}
-          
-              {/* </a> */}
-              {/* <a href="http://admission.jamiamadeenathunnoor.org"> */}
-                            {/* </a> */}
-            </div>
+                </div>
           </div>
-        </div>
+        </div> */}
       </Carousel>
 
       <Modal open={false} id="modal">

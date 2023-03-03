@@ -8,7 +8,7 @@ export const hsDatas = [
       'Complete HS in Science (Biology)']
     },
     {
-      course : 'Foundation in Islamic Studies & HS Commerce with Maths(FICM) ',
+      course : 'Foundation in Islamic Studies & HS Commerce with Maths(FICM)',
       intake :25,
       outcome:[
         'Integrated studies between Islam & commerce',
@@ -18,7 +18,7 @@ export const hsDatas = [
       ]
     },
     {
-      course : 'Foundation in Islamic Studies & HS Commerce with Politics(FICP) ',
+      course : 'Foundation in Islamic Studies & HS Commerce with Politics(FICP)',
       intake :25,
       outcome:[
         'Integrated studies between Islam & commerce',
