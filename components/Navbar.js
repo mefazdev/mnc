@@ -199,7 +199,7 @@ export default function Navbar() {
                     </Link>
                     <Link href="/Exicutive">
                       <li className=" bg-gray-800 hover:bg-green-800 pb-3 py-2 px-2 block whitespace-no-wrap text-sm">
-                       EXICUTIVE COUNCIL
+                       EXECUTIVE COUNCIL
                       </li>
                     </Link>
                     <Link href="/Finance">
@@ -369,7 +369,7 @@ export default function Navbar() {
                 </Link>
                 <Link href="/Exicutive">
                   <div className="mt-2">
-                    <p>EXICUTIVE COUNCIL</p>
+                    <p>EXECUTIVE COUNCIL</p>
                   </div>
                 </Link><Link href="/Finance">
                   <div className="mt-2">
