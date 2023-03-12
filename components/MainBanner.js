@@ -33,18 +33,18 @@ export default function MainBanner() {
           <div className="main__banner__text">
             <div className="main__banner__text__first__row">
               <h2>
-                {" "}
+              
                 <span className="font-normal ">WELCOME TO</span> JAMIA
                 MADEENATHUNNOOR
               </h2>
             </div>
             <div className="main__banner__text__second__row">
               <h3>PIONEERING A PROMISING FUTURE</h3>
-              {/* <h6>ENTRANCE EXAM RESULTS FOR</h6>
+              <h6>GET AN ADMISSION</h6>
 
-               <button> 8th STANDARD</button>
+               <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button>
               
-                <button className="ml-4">HSS PROGRAMMES</button> */}
+                <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
              
             </div>
           </div>
@@ -56,14 +56,20 @@ export default function MainBanner() {
           <div className="main__banner__text">
             <div className="main__banner__text__first__row">
               <h2>
-                {" "}
+             
                 <span className="font-normal">WELCOME TO</span> JAMIA
                 MADEENATHUNNOOR
               </h2>
             </div>
             <div className="main__banner__text__second__row">
               <h3>PIONEERING A PROMISING FUTURE</h3>
-                </div>
+              <h6>GET AN ADMISSION</h6>
+
+               <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button>
+              
+                <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
+             
+            </div>
           </div>
         </div> 
         <div className="banner__img__two">
@@ -72,23 +78,25 @@ export default function MainBanner() {
           <div className="main__banner__text">
             <div className="main__banner__text__first__row">
               <h2>
-                {" "}
+                
                 <span className="font-normal">WELCOME TO</span> JAMIA
                 MADEENATHUNNOOR
               </h2>
             </div>
             <div className="main__banner__text__second__row">
-                 <h3>PIONEERING A PROMISING FUTURE</h3>
-       
-            
-              
+              <h3>PIONEERING A PROMISING FUTURE</h3>
+              <h6>GET AN ADMISSION</h6>
 
-                </div>
+               <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button>
+              
+                <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
+             
+            </div>
           </div>
         </div> 
       </Carousel>
 
-      <Modal open={false} id="modal">
+      <Modal open={open} id="modal">
         <div className="modal">
           <div className="modal__close">
             <CloseIcon id="close__icon" onClick={() => setOpen(false)} />
@@ -97,10 +105,10 @@ export default function MainBanner() {
             <h2>GET AN ADMISSION</h2>
             {/* <h3>Science Academy - (8th Std.)</h3> */}
             <div className="modal__btn">
-              <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
+              <a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">
                 <button>8th STANDARD</button>
               </a>
-              <a href="http://admission.jamiamadeenathunnoor.org">
+              <a href="https://admission.jamiamadeenathunnoor.org">
                 <button>HSS PROGRAMMES</button>
               </a>
             </div>

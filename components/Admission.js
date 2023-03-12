@@ -16,7 +16,7 @@ ideals of Islam across the world</h3>
   
   
   <Modal 
-            open={false}
+            open={open}
               >
               <div className='modal'>
                 <div className='modal__close'>
@@ -26,10 +26,10 @@ ideals of Islam across the world</h3>
             <h2>GET AN ADMISSION</h2>
             {/* <h3>Science Academy - (8th Std.)</h3> */}
             <div className="modal__btn">
-              <a href="https://forms.gle/qQ7rSh96pf2L5Ftf8">
+              <a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">
                 <button>8th STANDARD</button>
               </a>
-              <a href="http://admission.jamiamadeenathunnoor.org">
+              <a href="https://admission.jamiamadeenathunnoor.org">
                 <button>HSS PROGRAMMES</button>
               </a>
             </div>

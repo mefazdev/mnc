@@ -17,8 +17,7 @@
     background-image: url('../assets/images/students/img-4.jpg');
     background-position: center;
     background-size: cover;
-    /* background-image:url("../assets/images/one.jpg"); */
-    background-attachment: fixed;
+       background-attachment: fixed;
       -webkit-background-size: cover;
 }
 .banner__img__two{
