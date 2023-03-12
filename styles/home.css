@@ -865,8 +865,8 @@ margin-top: 30px;
 
 .modal{
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.226)), url("../assets/images/students/img-2.jpeg");
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.226)), url("../assets/images/students/img-1.jpeg");
+/* background-position: bottom; */
 
     /* border: rgba(7, 73, 7, 0.411) solid; */
     outline: none;
