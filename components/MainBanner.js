@@ -40,11 +40,11 @@ export default function MainBanner() {
             </div>
             <div className="main__banner__text__second__row">
               <h3>PIONEERING A PROMISING FUTURE</h3>
-              <h6>GET AN ADMISSION</h6>
+              {/* <h6>GET AN ADMISSION</h6> */}
 
-               <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button>
+               {/* <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button> */}
               
-                <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
+                {/* <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button> */}
              
             </div>
           </div>
@@ -63,11 +63,11 @@ export default function MainBanner() {
             </div>
             <div className="main__banner__text__second__row">
               <h3>PIONEERING A PROMISING FUTURE</h3>
-              <h6>GET AN ADMISSION</h6>
+              {/* <h6>GET AN ADMISSION</h6> */}
 
-               <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button>
+               {/* <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button> */}
               
-                <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
+                {/* <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button> */}
              
             </div>
           </div>
@@ -85,11 +85,11 @@ export default function MainBanner() {
             </div>
             <div className="main__banner__text__second__row">
               <h3>PIONEERING A PROMISING FUTURE</h3>
-              <h6>GET AN ADMISSION</h6>
+              {/* <h6>GET AN ADMISSION</h6> */}
 
-               <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button>
+               {/* <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button> */}
               
-                <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
+                {/* <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button> */}
              
             </div>
           </div>
