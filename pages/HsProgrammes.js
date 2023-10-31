@@ -57,7 +57,7 @@ export default function HsProgrammes() {
                   preference will be vested in the Jamia Madeenathunnoor
                   authority
                 </p>
-                <a href="https://admission.jamiamadeenathunnoor.org">
+                <a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">
                 <button id='admision__btn'>REGISTER NOW</button></a>
               </div>
             </div>

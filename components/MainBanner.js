@@ -19,7 +19,7 @@ export default function MainBanner() {
     setOpen(true);
   };
   useEffect(() => {
-    controlOpen();
+//     controlOpen();
   }, []);
   return (
     <div className="banner__carousel">
