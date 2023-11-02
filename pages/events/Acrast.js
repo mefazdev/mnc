@@ -3,9 +3,9 @@ import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import one from "../../assets/images/events/orbit-1.jpeg";
-import two from "../../assets/images/events/eve-1.jpeg";
+import two from "../../assets/images/events/eve-1.jpg";
 import three from "../../assets/images/events/2.jpeg"
-import four from "../../assets/images/events/3.jpeg"
+import four from "../../assets/images/events/3.jpg"
 
 export default function Events() {
   const [more, setMore] = useState(false);
