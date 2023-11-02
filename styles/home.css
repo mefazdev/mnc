@@ -725,7 +725,7 @@ margin-top: 30px;
 
 .modal{
     
-background-image: url('../assets/images/events/eve-1.jpg');
+background-image: url('../assets/images/events/eve-1.jpeg');
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.226)), url("../assets/images/students/img-1.jpeg"); */
  
     outline: none;
@@ -804,7 +804,7 @@ max-width: 170px;
 
 @media only screen and (max-width: 800px) {
     .modal{
-        background-image: url('../assets/images/events/eve-1.jpg');
+        background-image: url('../assets/images/events/eve-1.jpeg');
 
         /* background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.226)), url("../assets/images/students/img-2.jpeg"); */
     
