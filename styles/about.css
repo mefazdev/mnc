@@ -1,4 +1,5 @@
 .about{
+    font-family: 'Nunito', sans-serif;
     background: transparent linear-gradient(369deg, rgba(229, 229, 226, 0.527) 0%, rgba(5, 73, 25, 0.233) 100%) 0% 0% no-repeat padding-box;
 }
 .about__header{
@@ -24,12 +25,7 @@
     .about__content{
         th: 170px; */
 }
-.about__content{
-    
-  
-/* border: solid green; */
-/* height: 100vh; */
-}
+ 
 
 @media only screen and (min-width: 800px) {
     .about__content{
@@ -53,7 +49,7 @@ margin-top: 60px;
  text-align: left;
  color: rgb(5, 73, 25);
  font: normal normal bold 24px/25px Poppins;
-font-family: "Poppins", sans-serif;
+/* font-family: "Poppins", sans-serif; */
  /* font: normal normal bold 25px/35px Heebo;
  font-family: "Heebo", sans-serif; */
 

@@ -19,7 +19,7 @@ export default function MainBanner() {
     setOpen(true);
   };
   useEffect(() => {
-//     controlOpen();
+    controlOpen();
   }, []);
   return (
     <div className="banner__carousel">
@@ -29,17 +29,18 @@ export default function MainBanner() {
         infiniteLoop={true}
         stopAutoPlayOnHover={false}
       >
-         <div className="banner__img">
-          <div className="main__banner__text">
+         <div className="banner__img bg-black">
+          <div className="main__banner__text ">
             <div className="main__banner__text__first__row">
-              <h2>
+              <h2 className="text-center  w-full">
               
-                <span className="font-normal ">WELCOME TO</span> JAMIA
+                {/* <span className="font-normal ">WELCOME TO</span> */}
+                 JAMIA
                 MADEENATHUNNOOR
               </h2>
             </div>
             <div className="main__banner__text__second__row">
-              <h3>PIONEERING A PROMISING FUTURE</h3>
+              <h3 className="text-center  w-full">PIONEERING A PROMISING FUTURE</h3>
               {/* <h6>GET AN ADMISSION</h6> */}
 
                {/* <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button> */}
@@ -54,15 +55,16 @@ export default function MainBanner() {
          
 
           <div className="main__banner__text">
-            <div className="main__banner__text__first__row">
-              <h2>
-             
-                <span className="font-normal">WELCOME TO</span> JAMIA
+          <div className="main__banner__text__first__row">
+              <h2 className="text-center  w-full">
+              
+                {/* <span className="font-normal ">WELCOME TO</span> */}
+                 JAMIA
                 MADEENATHUNNOOR
               </h2>
             </div>
             <div className="main__banner__text__second__row">
-              <h3>PIONEERING A PROMISING FUTURE</h3>
+              <h3 className="text-center  w-full">PIONEERING A PROMISING FUTURE</h3>
               {/* <h6>GET AN ADMISSION</h6> */}
 
                {/* <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button> */}
@@ -76,15 +78,16 @@ export default function MainBanner() {
            
 
           <div className="main__banner__text">
-            <div className="main__banner__text__first__row">
-              <h2>
-                
-                <span className="font-normal">WELCOME TO</span> JAMIA
+          <div className="main__banner__text__first__row">
+              <h2 className="text-center  w-full">
+              
+                {/* <span className="font-normal ">WELCOME TO</span> */}
+                 JAMIA
                 MADEENATHUNNOOR
               </h2>
             </div>
             <div className="main__banner__text__second__row">
-              <h3>PIONEERING A PROMISING FUTURE</h3>
+              <h3 className="text-center  w-full">PIONEERING A PROMISING FUTURE</h3>
               {/* <h6>GET AN ADMISSION</h6> */}
 
                {/* <button><a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">8th STANDARD</a> </button> */}
@@ -96,14 +99,32 @@ export default function MainBanner() {
         </div> 
       </Carousel>
 
-      <Modal open={open} id="modal">
+      <Modal open={open} id="modal" >
+         
+          <div className="modal   ">
+          <div className="modal__close mr-3 mt-3 rounded" >
+            <CloseIcon   id="close__icon" onClick={() => setOpen(false)} />
+          </div>
+         <div className="modal__main pt-2 pb-2 ">
+              <button className="m-auto flex text-sm rounded-sm text-white border border-white p-1 px-4">Know More</button> 
+          </div> 
+           
+           
+         
+        </div>
+      </Modal>
+
+
+
+{/* 
+      <Modal open={true} id="modal">
         <div className="modal">
           <div className="modal__close">
             <CloseIcon id="close__icon" onClick={() => setOpen(false)} />
           </div>
           <div className="modal__main">
             <h2>GET AN ADMISSION</h2>
-            {/* <h3>Science Academy - (8th Std.)</h3> */}
+            <h3>Science Academy - (8th Std.)</h3>
             <div className="modal__btn">
               <a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">
                 <button>8th STANDARD</button>
@@ -114,7 +135,7 @@ export default function MainBanner() {
             </div>
           </div>
         </div>
-      </Modal>
+      </Modal> */}
     </div>
   );
 }

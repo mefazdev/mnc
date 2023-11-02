@@ -17,7 +17,8 @@ import Modal from "@mui/material/Modal";
 import { useState } from "react";
 import apUsthad from "../assets/images/senate/ap-usthad.jpg";
 import mah from "../assets/images/senate/hakkim-usthad.jpg";
-export default function index() {
+import Events from "../components/Events";
+export default function Home() {
   return (
     <div>
       <Head>
@@ -45,8 +46,8 @@ export default function index() {
 
         <div className="home__about   lg:gap-10  grid lg:grid-cols-3">
           <div className="home__about__left col-span-3 lg:col-span-1">
-            <div className="home__about__img">
-              <Image src={mnc} />
+            <div className="home__about__img rounded">
+              <Image src={mnc}  className="rounded-sm"/>
             </div>
             {/* <img src='https://images1.content-hci.com/commimg/video/CH/myhc_279666.jpg' /> */}
           </div>
@@ -66,7 +67,7 @@ export default function index() {
               residential facilities on the campus for students doing their
               courses in various disciplines and subjects.
             </p>
-            <div className="home__about__more flex">
+            <div className="home__about__more mt-2 lg:mt-0 flex m-auto w-fit p-1 text-white rounded-sm px-4">
               <Link href="/About">
                 <h5>READ MORE</h5>
               </Link>
@@ -81,12 +82,12 @@ export default function index() {
 
         {/* <<<<<<<<<<< HOME DIRECTOR >>>>>>>>>>>>>> */}
         <div className="home__director ">
-          <div className="home__director__content ">
-            <h2>CHAIRMAN&apos;S MESSAGE</h2>
+          <div className="home__director__content  m-auto">
+            <h2 className="font-bold text-2xl">Chairman&apos;s Message</h2>
             <h3 className=" invisible lg:visible ">Sheikh Abubakr Ahmad</h3>
             <div className="grid    lg:gap-10 lg:grid-cols-3">
-              <div className="home__director__left order-last    lg:col-span-2">
-                <p>
+              <div className=" order-last    lg:col-span-2">
+                <p className="mt-5 ">
                   Since its humble beginning in 2001 as a college of Islamic
                   studies under its mother body Markaz Garden, today Jamia
                   Madeenathunnoor has gradually grown to become the “Centre of
@@ -99,21 +100,16 @@ export default function index() {
                   which is a renowned university in South Asia, particularly in
                   India.
                 </p>
-                <div className="home__director__more flex">
-                  <h6>READ MORE</h6>
+                {/* <div className="home__more flex w-fit m-auto text-sm text-white p-1 px-4 rounded-sm">
+                  <h6>Read More </h6>
 
-                  {/* <ArrowRightAltIcon  id='director__more__icon'/> */}
-                </div>
+                  </div> */}
               </div>
               <div className="chair__img__div order-first lg:order-last">
-                {/* */}
-                {/* order-first lg:order-last */}
+              
                 <div className="chair__img  ">
-                  {/* <Image src='' /> */}
-                  {/* <img  className="rounded-full" src='https://scontent.fcok10-4.fna.fbcdn.net/v/t39.30808-6/317306164_131852579708059_6379877850093454167_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=fSQVqkdc2kIAX8TBbcB&_nc_ht=scontent.fcok10-4.fna&oh=00_AfDlgZxAySKl5u32mfDuitMojAe9Ccjk4i6BQuYFrJhYRg&oe=640269F1'/> */}
-                  <Image src={apUsthad} />
-                  {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aI2UgebZOan0BpmpNYj23xwTgd9vFPtQOw&usqp=CAU" /> */}
-                </div>
+                    <Image src={apUsthad} />
+                    </div>
                 <h3
                   className="visible lg:hidden mt-2"
                   style={{ textAlign: "center" }}
@@ -129,12 +125,13 @@ export default function index() {
 
         <Admission />
         <div className="home__director__two ">
-          <div className="home__director__content ">
-            <h2>RECTOR&apos;S MESSAGE</h2>
+          <div className="home__director__content border-b-2 ">
+          <h2 className="font-bold text-2xl">
+       RECTOR&apos;S MESSAGE</h2>
             <h3 className=" invisible lg:visible ">Dr. Muhammed Abdul Hakkim Azhari</h3>
             <div className="grid    lg:gap-10 lg:grid-cols-3">
               <div className="home__director__left    lg:col-span-2">
-                <p>
+                <p className="mt-3">
                   Welcome to Jamia Madeenathunnoor, a nongovernmental and
                   philanthropic institute founded in 2001 to mould a highly
                   talented professionals and scholars. Today, it is evident from
@@ -147,11 +144,10 @@ export default function index() {
                   community. Our goal is to be a “Centre of Excellence” so that
                   we remain relevant to our society.
                 </p>
-                <div className="home__director__more flex">
+                {/* <div className="home__director__more flex">
                   <h6>READ MORE</h6>
 
-                  {/* <ArrowRightAltIcon id='director__more__icon' /> */}
-                </div>
+                    </div> */}
               </div>
               <div className="chair__img__div order-first lg:order-last">
                 <div className="chair__img  ">
@@ -170,7 +166,9 @@ export default function index() {
         </div>
 
         {/* <<<<< HOME NEWS >>>>>>>>> */}
-        <News />
+        {/* <News /> */}
+
+        <Events/>
       </div>
       <Footer />
     </div>

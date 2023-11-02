@@ -1,0 +1,27 @@
+.content{
+    font-family: 'Nunito', sans-serif;
+}
+
+.ev__header{
+    /* background-color: rgb(5, 73, 25); */
+    height: 300px;
+    /* background: url("../assets/images/header-background.jpg"); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.911)), url("../assets/images/bg.JPG"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.911)), url("../assets/images/events/bg.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ev__header h2{
+    color: #fff;
+    padding-top: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    /* box-shadow: green 4px; */
+    
+    /* border-bottom: 2px solid rgb(4, 58, 20); */
+    /* max-wid
+    .about__content{
+        th: 170px; */
+}

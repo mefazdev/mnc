@@ -10,7 +10,8 @@
     /* height: 300px; */
     /* border: solid 1px rgba(255, 255, 0, 0.589); */
     padding: 5px;
-    color: rgba(255, 255, 255, 0.849);
+    /* color: rgba(255, 255, 255, 0.849); */
+    color: #ffffffef;
 }
 @media only screen and (min-width: 800px) {
     .footer__content{
@@ -19,10 +20,8 @@
     }
 }
 .footer__address{
-    /* border: solid blue; */
-    /* height: 200px;
-    width: 100%; */
-   color: rgba(255, 255, 255, 0.849);
+    
+   color: #ffffffef;
 }
 
 .footer__address h5{

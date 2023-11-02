@@ -53,42 +53,46 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className='footer__menu mt-10 lg:mt-0 '>
+          <div className='footer__menu lg:m-auto mt-10    lg:mt-0 '>
             <Link href='/Home'>
             <h6>Home</h6>
             </Link>
              <Link href='/About'>
              <h6>About</h6>
              </Link>
-               <Link href='/Programmes'>
-               <h6>Academics</h6>
-               </Link>
-             <Link href='/Blog'>
+               
+             {/* <Link href='/Blog'>
              <h6>News</h6>
-             </Link>
+             </Link> */}
              
 <Link href='/News'><h6>Events</h6></Link>
               <Link href='/Contact'><h6>Contact us</h6></Link>
               
           </div>
-          <div className='footer__menu'>
-            <Link href='/Alumni'><h6>Alumni</h6></Link>
-            <Link href='/About'><h6>Vision & Mission</h6></Link>
-            <Link href='/Faculty'>
+          <div className='footer__menu lg:m-auto   lg:mt-0 '>
+          <Link href='/Programmes'>
+               <h6>Academics</h6>
+               </Link><Link href='/Faculty'>
             <h6>Faculty profile</h6>
             </Link>
-            <Link href='/'><h6>Message of rector</h6></Link>
-            <Link href='/'><h6>Message of Chancellor</h6></Link>
+            
+            <h6>Admission</h6>
+            <Link href='/About'><h6>Vision & Mission</h6></Link>
+            
+            {/* <Link href='/'><h6>Message of rector</h6></Link> */}
+            {/* <Link href='/'><h6>Message of Chancellor</h6></Link> */}
             
  
           </div>
-          <div className='footer__menu'>
+          <div className='footer__menu lg:m-auto  lg:mt-0 '>  <Link href='/Alumni'><h6>Leadership</h6></Link>
               <h6>Media</h6>
-              <h6>Admission</h6>
-              <Link href='Programmes'>
-              <h6>Our programmes</h6>
-              </Link>
               
+              {/* <Link href='Programmes'>
+              <h6>Programmes</h6>
+              </Link> */}
+              
+         
+              <Link href='/Alumni'><h6>Alumni</h6></Link>
               <h6>Life festival</h6>
               <h6></h6>
               <h6></h6>
@@ -110,7 +114,7 @@ export default function Footer() {
     </div> */}
     <div className='footer__bottom__right'>
         <p>
-All rights reserved. Developed by <a href="whatsapp://send?phone=+918606256402" data-action="share/whatsapp/share" style={{textDecoration:'underline',cursor:'pointer'}}  >
+  ©2023. Powered by <a href="whatsapp://send?phone=+918606256402" data-action="share/whatsapp/share" style={{textDecoration:'underline',cursor:'pointer'}}  >
               {/* <p style={{textDecoration:'underline',cursor:'pointer'}} className="ml-2"> */}
                 
                

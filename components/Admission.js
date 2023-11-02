@@ -15,7 +15,7 @@ ideals of Islam across the world</h3>
   
   
   
-  <Modal 
+  {/* <Modal 
             open={open}
               >
               <div className='modal'>
@@ -24,7 +24,7 @@ ideals of Islam across the world</h3>
                 </div>
                 <div className="modal__main">
             <h2>GET AN ADMISSION</h2>
-            {/* <h3>Science Academy - (8th Std.)</h3> */}
+             
             <div className="modal__btn">
               <a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">
                 <button>8th STANDARD</button>
@@ -35,7 +35,7 @@ ideals of Islam across the world</h3>
             </div>
           </div>
               </div>
-            </Modal>
+            </Modal> */}
 
   </div>
   )

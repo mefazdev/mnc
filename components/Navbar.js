@@ -9,7 +9,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { useEffect, useState } from "react";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function Navbar() {
   const [collapse, setCollapse] = useState(false);
@@ -18,8 +18,8 @@ export default function Navbar() {
   const [programmes, setProgrammes] = useState(false);
   const router = useRouter();
   const [changeNav, setChangeNav] = useState(false);
-  const [leaderSHip,setLeaderShip ] = useState(false)
-   const changeNavBar = () => {
+  const [leaderSHip, setLeaderShip] = useState(false);
+  const changeNavBar = () => {
     if (window.scrollY >= 5) {
       setChangeNav(true);
     }
@@ -47,143 +47,91 @@ export default function Navbar() {
     setMedia(!media);
   };
 
-  const controlLeaderShip = ()=>{
-    setLeaderShip(true)
+  const controlLeaderShip = () => {
+    setLeaderShip(true);
     // setAbout(false)
-  }
+  };
   return (
-    <div className={changeNav ? "navbar__on__scroll" : "navbar"}>
-      <div className="navbar__left ">
-        <div className="navbar__left__div flex">
+    <div
+      //  className={changeNav ? "navbar__on__scroll" : "navbar"}
+      className="navbar__on__scroll w-full"
+    >
+      <div className="grid  lg:grid-cols-3  w-11/12 m-auto">
+      <div className=" flex w-full justify-between items-center ">
+        
           <div className="flex">
-            <div className="nav__logo">
+            <div className="nav__logo rounded">
               <Link href="/">
-                <Image src={logo} />
+                <Image src={logo} className="rounded" />
               </Link>
             </div>
             <div className="nav__name">
               <Link href="/">
                 <Image src={caligraphy} />
               </Link>
-              {/* <h1>JAMIA MADEENTHUNNOOR</h1> */}
             </div>
           </div>
-
-          <MenuIcon onClick={() => setCollapse(!collapse)} id="menu__icon" />
-        </div>
+          
+         
+        <span className="lg:hidden"><MenuIcon id='menu__icon' onClick={() => setCollapse(!collapse)}    />
+       </span>
       </div>
-
-      <div className="navbar__right  flex">
-        <div className="navbar__right__div flex">
+  
+      <div className="navbar__right col-span-2 hidden  lg:flex justify-end  relative   ">
+        {/* <span className="lg:hidden"><MenuIcon id='menu__icon' onClick={() => setCollapse(!collapse)}    />
+       </span> */}
+      
+        <div className=" flex w-fit">
           <Link href="/">
             <h3 className={router.pathname == "/" ? "active__nav" : ""}>
               HOME
             </h3>
           </Link>
 
-          {/* <span className="flex group cursor-pointer">
-            <h3>ABOUT</h3>
-            <ArrowDropDownIcon id="dropdown__icon" />
-
-            <div className="dorpdown__div" style={{zIndex:"100"}}>
-              <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-6">
-                <span className="development__head cursor-pointer group">
-                  <Link href="/About">
-                    <div
-                      className={
-                        router.pathname == "/About"
-                          ? "active__dropdown py-2"
-                          : "service__group__span py-2"
-                      }
-                    >
-                      <li className=" px-4 block whitespace-no-wrap text-sm ">
-                        <p
-                          className={
-                            router.pathname == "/About"
-                              ? "active__dropdown"
-                              : ""
-                          }
-                        >
-                          {" "}
-                          JAMIA
-                        </p>
-                      </li>
-                    </div>
-                  </Link>
-          
-                    <div
-                      className={
-                        
-                         
-                          "service__group__span py-2"
-                      }
-                    >
-                      <div className="flex">
-                      <li className=" px-4 block whitespace-no-wrap text-sm ">
-                        LEADERSHIP
-                      </li>
-                      <ArrowRightIcon style={{color:"#fff"}}/>
-                      </div>
-                    
-                    </div>
-               
-                  
-                </span>
-                
-              </ul>
+          <span className=" group cursor-pointer ml-4 ">
+            <div className="flex">
+              <h3>ABOUT</h3>
+              <ArrowDropDownIcon id="dropdown__icon" />
             </div>
-           
-          </span> */}
-
-<span className=" group cursor-pointer ">
-  <div className="flex">
-  <h3>ABOUT</h3>
-            <ArrowDropDownIcon id="dropdown__icon" />
-
-
-  </div>
 
             <span style={{ textAlign: "left", zIndex: "1" }}>
               <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-2">
                 <span className="development__head cursor-pointer group">
                   <div className="flex   service__group__spa rounded-t  py-2">
-                  <Link href="/About">
-                    <div style={{minWidth:'100%' }}
-                      className={
-                        router.pathname == "/About"
-                          ? "active__dropdown py-2"
-                          : "service__group__span py-2"
-                      }
-                    >
-                      <li className=" px-4 block whitespace-no-wrap text-sm "
-                      
+                    <Link href="/About">
+                      <div
+                        style={{ minWidth: "100%" }}
+                        className={
+                          router.pathname == "/About"
+                            ? "active__dropdown py-2"
+                            : "service__group__span py-2"
+                        }
                       >
-                        <p
-                          className={
-                            router.pathname == "/About"
-                              ? "active__dropdown"
-                              : ""
-                          }
-                        >
-                          {" "}
-                          JAMIA
-                        </p>
-                      </li>
-                    </div>
-                  </Link>
+                        <li className=" px-4 block whitespace-no-wrap text-sm ">
+                          <p
+                            className={
+                              router.pathname == "/About"
+                                ? "active__dropdown"
+                                : ""
+                            }
+                          >
+                            {" "}
+                            JAMIA
+                          </p>
+                        </li>
+                      </div>
+                    </Link>
 
                     {/* <ArrowRightIcon id="service__group__arrow" /> */}
                   </div>
-
-               
                 </span>
 
                 <span className="design__head">
                   <div className="flex rounded-b  service__group__span  bg-gray-200 hover:bg-gray-400 py-2">
                     <li className=" px-4 block whitespace-no-wrap text-sm ">
-                     LEADERSHIP
+                      LEADERSHIP
                     </li>
-                    <ArrowRightIcon style={{color:'#fff'}} />
+                    <ArrowRightIcon style={{ color: "#fff" }} />
                   </div>
                   <ul className="design__list">
                     <Link href="/Senate">
@@ -199,25 +147,21 @@ export default function Navbar() {
                     </Link>
                     <Link href="/Exicutive">
                       <li className=" bg-gray-800 hover:bg-green-800 pb-3 py-2 px-2 block whitespace-no-wrap text-sm">
-                       EXECUTIVE COUNCIL
+                        EXECUTIVE COUNCIL
                       </li>
                     </Link>
                     <Link href="/Finance">
                       <li className=" bg-gray-800 hover:bg-green-800 pb-3 py-2 px-2 block whitespace-no-wrap text-sm">
-                       FINANCE COMMITTEE
+                        FINANCE COMMITTEE
                       </li>
                     </Link>
                   </ul>
                 </span>
-
-              
-            
-  
               </ul>
             </span>
           </span>
-         
-          <span className="flex group cursor-pointer ">
+
+          <span className="flex group cursor-pointer  ml-4">
             <Link href="/Programmes">
               <h3>PROGRAMMES</h3>
             </Link>
@@ -258,7 +202,7 @@ export default function Navbar() {
             </div>
           </span>
 
-          <span className="flex group cursor-pointer ">
+          <span className="flex group cursor-pointer ml-4 ">
             <h3>MEDIA</h3>
             <ArrowDropDownIcon id="dropdown__icon" />
 
@@ -306,20 +250,23 @@ export default function Navbar() {
             </div>
           </span>
 
-          <Link href="/Alumni">
+          <span className="ml-3"><Link href="/Alumni" className='ml-4'>
             <h3>ALUMNI</h3>
-          </Link>
+          </Link></span>
 
-          <Link href="/Contact">
+<span className="ml-4"> <Link href="/Contact"  >
             <h3>CONTACT </h3>
-          </Link>
+          </Link></span>
+         
         </div>
       </div>
+      </div>
+      
 
       {/* <<<<<<<<< COLLAPSE>>>>>>>>>>>>>> */}
 
       {collapse ? (
-        <div className="nav__collapse">
+        <div className="nav__collapse lg:hidden pl-5 pt-3 pb-3">
           <Link href="/">
             <div className="collapse_row">
               <p>HOME</p>
@@ -339,25 +286,29 @@ export default function Navbar() {
                     <p>JAMIA</p>
                   </div>
                 </Link>
-               
-                  <div className="collapse_collapse__row flex" onClick={controlLeaderShip}>
-                    <p>LEADERSHIP</p>
-                    <ArrowRightIcon/>
-                  </div>
-                 
-                 
-                
+
+                <div
+                  className="collapse_collapse__row flex"
+                  onClick={controlLeaderShip}
+                >
+                  <p>LEADERSHIP</p>
+                  <ArrowRightIcon />
+                </div>
               </div>
             ) : (
               ""
             )}
-             {leaderSHip ? <div  
-                  className=' absolute right-0 mr-10 mt-10 bg-gray-800 p-2'
-                  >
-                    <CloseIcon style={{position:'absolute',right:'0',marginRight:'5px'}}
-                    onClick={()=>setLeaderShip(false)}
-                    />
-                 <Link href="/Senate">
+            {leaderSHip ? (
+              <div className=" absolute right-0 mr-10 mt-10 bg-gray-800 p-2">
+                <CloseIcon
+                  style={{
+                    position: "absolute",
+                    right: "0",
+                    marginRight: "5px",
+                  }}
+                  onClick={() => setLeaderShip(false)}
+                />
+                <Link href="/Senate">
                   <div className="mt-6">
                     <p>SENATE</p>
                   </div>
@@ -371,12 +322,16 @@ export default function Navbar() {
                   <div className="mt-2">
                     <p>EXECUTIVE COUNCIL</p>
                   </div>
-                </Link><Link href="/Finance">
+                </Link>
+                <Link href="/Finance">
                   <div className="mt-2">
                     <p>FINANCE COMMITTEE</p>
                   </div>
                 </Link>
-                 </div> : ''}
+              </div>
+            ) : (
+              ""
+            )}
           </div>
 
           <div className="collapse_row flex">

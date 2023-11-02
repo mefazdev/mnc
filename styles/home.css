@@ -1,7 +1,7 @@
 
 .home{
-    background: transparent linear-gradient(369deg, rgba(229, 229, 226, 0.527) 0%, rgba(5, 73, 25, 0.233) 100%) 0% 0% no-repeat padding-box;
-     
+    /* background: transparent linear-gradient(369deg, rgba(229, 229, 226, 0.527) 0%, rgba(5, 73, 25, 0.233) 100%) 0% 0% no-repeat padding-box; */
+    font-family: 'Nunito', sans-serif;
 }
 .home__banner{
     background-color: rgba(0, 0, 0, 0.945);
@@ -85,41 +85,28 @@ padding-right: 20px;
 .main__banner__text__second__row button:hover{
     color: #fff;
 }
-.banner__carousel{
-    /* max-height: 10vh;     */
-    /* border: red solid; */
-}
+ 
 .main__banner__text__second__row{
-    /* background-color: rgba(0, 0, 0, 0.561); */
-/* padding: 10px; */
-padding-left: 20px;
-
-/* margin-top: 20px; */
-/* border: solid red; */
+    
+padding-left: 20px; 
 }
 .main__banner__text__second__row h3{
-    /* color: #fff; */
+    
     font-size: 19px;
     font-weight: 600;
     letter-spacing: 1px;
-    /* color: rgb(11, 107, 11); */
+    
     color: rgb(12, 161, 12);
-    /* font-style: italic; */
+    
 }
 .main__banner__text__third__row{
-    /* border: solid red; */
+     
     padding: 10px;
     padding-top: 5px;
     margin-top: 20px;
-    border: solid 1px #fff;
-    /* border: solid 1px rgb(13, 91, 13); */
-    /* background-color: rgb(36, 39, 39); */
+    border: solid 1px #fff; 
 }
-.home__director__more{
-    background-color: rgb(11, 107, 11);
-    max-width: 100px;
-    padding: 5px;
-}
+ 
 @media only screen and (max-width: 800px) {
     .main__banner__text__second__row button{
                font-size: 15px;
@@ -138,18 +125,15 @@ padding-left: 20px;
        padding-left: 0;
        position: absolute;
      width: 100%;
-       /* bottom: 0; */
+ 
     }
      
     .banner__img{
         background-image: url('../assets/images/students/img-4-mobile.jpg');
        background-position: center;
-/* background-size: contain;       */
-        /* height: 60vh; */
+ 
         position: relative;
-        /* padding: 15px; */
-        /* height: 80vh; */
-        /* display: block; */
+       
     }
     .main__banner__text__first__row h2{
      
@@ -173,18 +157,14 @@ padding-left: 20px;
        }
     .banner__img__two{
         display: flex;
-        /* align-items: bottom; */
-        /* height: 80vh; */
+        
         background-image: url('../assets/images/students/img-3-mobile.jpg');
-        background-size: cover;
-        /* background-position: bottom; */
-        /* border: saddlebrown solid; */
+        background-size: cover; 
     }
     .banner__img__three{
         display: flex;
         align-items: center;
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.911)), url("../assets/images/1.JPG"); */
-        /* height: 80vh; */
+       
         background-size: cover;
         background-position: top;
        
@@ -192,9 +172,7 @@ padding-left: 20px;
     }
     .main__banner__text{
         margin-left: 0px;
-        /* border: solid red; */
-        /* height: 300px; */
-        /* width: 100%; */
+        
        background-color: rgba(0, 0, 0, 0.863);
        padding-bottom: 20px;
        margin-top: 0px;
@@ -206,15 +184,7 @@ padding-left: 20px;
 
 
 
-  .home__about__left{
-      /* border: red solid; */
-  }
   
-  /* .home__about__left img{
-      width: 100%;
-   
-      max-height: 300px;
-  } */
   
   @media only screen and (min-width: 800px) {
     .home__about{
@@ -223,58 +193,40 @@ padding-left: 20px;
     
     }
   }
-  .home__about{
-    /* border: red solid; */
-    /* height: 250px; */
+  .home__about{ 
     margin-top: 100px;
-    box-shadow: rgba(0, 0, 0, 0.308) 0px 4px 12px;
+    /* box-shadow: rgba(0, 0, 0, 0.308) 0px 4px 12px; */
     padding:20px ;
     padding-top: 25px;
     background-color: rgba(255, 255, 255, 0.726);
 
 }
 .home__about__right{
-    /* border: green solid; */
+   
     position: relative;
-    /* padding-left: 20px; */
-    
+     
 
 }
 .home__about__right h3{
-/* font-size: 10px; */
-/* font-weight: 800; */
+ 
 color: rgb(8, 8, 56);
-font: normal normal bold 30px/25px Poppins;
-
-font-family: "Poppins", sans-serif;
+font-weight: bold ;
+font-size: 30px;
+ 
 margin-top: 10px;
  
 }
 
 .home__about__right p{
-/* font-size: 16px;    */
+ 
 color: rgba(0, 0, 0, 0.835);
-margin-top: 20px;
-/* font: normal normal normal 16px/25px Poppins; */
-font-family: "Poppins", sans-serif;
+font-weight: 42px;
+ 
 }
 .home__about__more{
-    /* border: solid red; */
-    width: 100%;
-    max-width: 120px;
-    height: 30px;
-    background-color: rgba(5, 73, 25, 0.904);
-    /* background-color: rgba(17, 8, 8, 0.794); */
-    color: #fff;
-    align-items: center;
-    justify-content: space-around;
-    /* margin-top: 10px; */
-    border-radius: 3px;
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
-    margin-top: 10px;
-    /* position: absolute; */
-/* bottom: 0; */
+ 
+    background-color: rgba(5, 73, 25, 0.904); 
+   
 }
 .home__about__more:hover{
     background-color: rgb(3, 39, 14);  
@@ -287,27 +239,22 @@ font-size: 13px;
 
 @media only screen and (max-width: 800px) {
     .home__about{
-        /* border: red solid; */
-        /* height: 250px; */
+        
         margin-top: 0px;
         padding: 15px;
-        /* padding-top: 10; */
-        
+           
     }
-    .home__about__right h3{
-        /* font-size: 10px; */
-        /* font-weight: 800; */
+    .home__about__right h3{ 
         margin-top: 10px;
         color: rgb(8, 8, 56);
-        font: normal normal bold 22px/30px Poppins;
-        font-family: "Poppins", sans-serif;
-        /* font-family: "Poppins", sans-serif; */
+         font-size: 22px;
+     
         }
     .home__about__left{
         margin: auto;
     }
     .home__about__img{
-        /* border: solid red; */
+ 
         width: 100%;
        
         
@@ -329,19 +276,13 @@ font-size: 13px;
 
 
 .home__director{
-/* border: solid red; */
-/* margin-top: 100px; */
-/* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
-/* background-color: rgb(3, 39, 14);   */
-/* height: 400px; */
-/* background-color: rgb(5, 73, 25); */
+ 
  padding-top: 80px; 
 padding-bottom: 80px;
-/* padding: 50px; */
+ 
 }
 .home__director__two {
-    /* background-color: rgb(3, 39, 14);   */
- padding-top: 80px; 
+    padding-top: 80px; 
 
 padding-bottom: 80px;
 
@@ -349,15 +290,16 @@ padding-bottom: 80px;
 }
 .home__director__content{
 
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;/* box-shadow: rgba(132, 209,   132, 0.603) 0px 2px 4px 0px inset; */
-    /* border: 1px solid rgba(229, 255, 0, 0.287); */
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.26);
-    padding: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; */
+   /* box-shadow: rgba(132, 209,   132, 0.603) 0px 2px 4px 0px inset; */
+       padding: 10px;
+    /* background-color: rgba(255, 255, 255, 0.26); */
+ background-color: #fff;
+    padding: 20px;  
 }
 .home__director__content img{
     width: 350px;
-    /* border: solid red; */
+ 
 }
 
 @media only screen and (min-width: 800px) {
@@ -366,86 +308,48 @@ padding-bottom: 80px;
        margin: auto;
     }
 }
-.home__director__left {
-    /* padding-right: 20px; */
-}
-.home__director__content h2{
-font-size: 23px;
-letter-spacing: 1px;
-/* color: #fff; */
-/* color: rgba(255, 255, 255, 0.863); */
-color: rgb(8, 8, 56);
-}
-.home__director__content h3{
-font-size: 16px;
-/* color: rgba(229, 255, 0, 0.287); */
-color: rgb(8, 8, 56);
-font-family: "Poppins", sans-serif;
-}
+ 
+ 
+ 
 
-.home__director__content p{
-    /* font-size: 16px; */
-  
-    color: rgb(26, 23, 23);
-    margin-top: 20px;
-    font: normal normal normal 16px/25px Poppins;
-font-family: "Poppins", sans-serif;
-    }
+ 
 
-    .home__director__more{
-    color: #fff; 
-    font-size: 13px; 
-    margin-top: 30px; 
-    /* letter-spacing: 1px; */
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
-    /* border: solid red; */
-    background-color: rgb(18, 66, 42);
-    padding: 5px;
-    border-radius: 4px;
-  /* max-width: 140px; */
-    }
-    .home__director__more:hover{
-        color:rgba(229, 255, 0, 0.287);
+    .home__more{
     
+    background-color: rgb(18, 66, 42);
+   
     }
+     
 #director__more__icon{
     margin-top: -2px;
     margin-left: 4px;
 }
 .chair__img__div{
- /* border: solid red;    */
+ 
  margin-top: -50px;
 }
 .chair__img{
     margin: auto    ;
-    /* border: solid red; */
-    /* margin-top: 20px; */
-    /* max-width: 300px; */
-    /* border: solid red; */
-    box-shadow: rgba(15, 15, 15, 0.5) 0px 25px 50px -12px;
+     
+    /* box-shadow: rgba(15, 15, 15, 0.5) 0px 25px 50px -12px; */
 width: 250px;   
 height: 250px;
 border-radius: 50%;
-overflow: hidden;
-/* background-color: rgb(18, 66, 42); */
+overflow: hidden; 
 
 }
 .chair__img img{
     height: 300px;
     width: 300px;
-    /* border-radius: 3px; */
-    box-shadow: 2px 2px 3px 4px;
-   /* border: solid rgba(229, 255, 0, 0.287); */
-   /* border: solid #fff; */
-   /* margin: auto; */
+       box-shadow: 2px 2px 3px 4px;
+  
     
 }
 
 
 @media only screen and (max-width: 800px) {
     .chair__img__div{
-        /* border: solid red;     */
+        
         width: 100%;
         margin-top: 0px;
        }
@@ -458,7 +362,7 @@ overflow: hidden;
         padding-bottom: 40px;
         padding-right: 15px;
         padding-left: 15px;
-        /* padding: 50px; */
+     
         }
         .home__director__two{
        
@@ -469,16 +373,13 @@ overflow: hidden;
             padding-bottom: 40px;
             padding-right: 15px;
             padding-left: 15px;
-            /* padding: 50px; */
+             
             }
         .chair__img{
-            /* margin-top: 10px; */
-            margin: auto;
-            /* border: solid red;   */
+               margin: auto;
+            
         }
-        /* .home__director__content h3{
-         display: none;
-            } */
+     
             .home__director__content h2{
              text-align: center;
          }
@@ -499,15 +400,10 @@ overflow: hidden;
 
     /* <<<<< HOME ADMISSION >>>>>>>>>>> */
 .home__admission{
- /* position: fixed; */
-
-    /* border: solid greenyellow; */
+ 
     min-height: 350px;
 
-    /* max-height: 350px; */
-    /* background-color: rgb(128, 128, 128); */
-    /* background: url('../assets/images/admission.JPG'); */
-background-position: bottom;
+    background-position: bottom;
 background-size: cover;
 
 background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.5)), url("../assets/images/admission.jpg");
@@ -517,8 +413,7 @@ background-attachment: fixed;
 
 }
 .home__admission__content{
-/* border: solid red; */
-/* height: 140px; */
+ 
 width: 100%;
 max-width: 800px;
 margin: auto;
@@ -568,8 +463,7 @@ flex-direction: column;
         margin-top: 20px;
       background-color: rgb(3, 39, 14); 
         padding: 10px;
-        border-radius: 3px;
-        font-family: sans-serif Poppins;
+        border-radius: 3px; 
     }
 }
 /* <<<<<<<<<<<<< NEWS >>>>>>>>>>>> */
@@ -580,35 +474,28 @@ flex-direction: column;
     }
      
 }
-.home__news{
-/* border: solid red; */
+.home__news{ 
 
 margin-top: 70px;
 padding-bottom: 100px;
 }
 
 .home__news__head h2{
-    font-size: 20px;
-    /* font-size: 30px; */
+    font-size: 20px; 
     font-weight: 500;
     color: rgb(8, 8, 56);
 }
 .home__about__right h2{
     font-size: 30px;
     font-weight: 500;
-    color: rgb(8, 8, 56);
-    /* font-family: "Poppins", sans-serif; */
+    color: rgb(8, 8, 56); 
     }
-.home__news__content{
-    /* border: saddlebrown solid; */
+.home__news__content{ 
     margin-top: 20px;
     width: 100%;
 }
 .news__box{
-    cursor: pointer;
-    /* border: solid greenyellow; */
-    /* width: 100%; */
-    /* height: 300px; */
+    cursor: pointer; 
     margin: auto;
     box-shadow: 1px 0px 4px 1px rgb(3, 39, 14);
 }
@@ -618,8 +505,7 @@ padding-bottom: 100px;
 }
 .home__news__more{
     width: 100%;
-    max-width: 200px;
-/* border: green solid; */
+    max-width: 200px; 
 display: flex;
 align-items: center;
 }
@@ -650,17 +536,13 @@ align-items: center;
 .news__box__text{
     margin-top: 3px;
    
-    min-height: 130px;
-    /* background-color: rgb(3, 39, 14); */
-    /* background-color: rgb(5, 73, 25); */
+    min-height: 130px; 
     padding-top: 10px;
     padding-left: 10px;
    
   
 }
-.news__box__text p{
-/* color: rgba(255, 255, 255, 0.692); */
-/* letter-spacing:.3px; */
+.news__box__text p{ 
 font-size: 14px;
 font: normal normal normal 14px/15px Poppins;
 font-family: "Poppins", sans-serif;
@@ -695,24 +577,10 @@ font-family: "Poppins", sans-serif;
        
             text-align: center;
         }
-        .home__news__more{
-            /* display: none; */
-        }
-        .hm__blogs__content{
-            /* border: #043a07 solid; */
-            /* margin-top: 0px; */
-        }
+         
 }
 
-.main__banner__text{
-    /* border: solid red; */
-
-}
-
-.main__banner__text__first__row{
-    /* border: saddlebrown solid; */
-    /* width: 1000px; */
-}
+ 
 
 .main__banner__text__first__row h2{
 
@@ -721,10 +589,8 @@ font-family: "Poppins", sans-serif;
   white-space:nowrap; 
   margin-top: -20px;
 }
-.main__banner__text__first__row:first-of-type {    /* For increasing performance 
-    ID/Class should've been used. 
-    For a small demo 
-    it's okaish for now */
+.main__banner__text__first__row:first-of-type { 
+       
 animation: showup 4s infinite;
 }
 
@@ -768,13 +634,12 @@ animation: slidein 6s infinite;
 
 
 
-.hm__blogs{
-    /* border: saddlebrown solid; */
+.hm__blogs{ 
 padding-bottom: 50px;
 margin-top: 50px;
 }
 .hm__blogs__content{
-/* border: solid red; */
+ 
 margin: auto;
 }
 @media only screen and (min-width: 800px) {
@@ -784,31 +649,27 @@ margin: auto;
   }
 
   .hm__blogs__head{
-    background-color: rgb(18, 66, 42); 
-    /* background-color:rgb(184, 185, 106); */
+    background-color: rgb(18, 66, 42);  
     max-width: 150px;
 padding: 3px;
 color: #fff;
-    font-family: 'Poppins', sans-serif;
+    
   }
   .hm__blogs__head h3{
-    /* color: rgb(88, 85, 85); */
+    
   margin-left: 5px;
  
   }
-.hm__blogs__row{
-    /* border: solid red; */
+.hm__blogs__row{ 
     margin-top: 30px;
 }
 .hm__blogs__box{
-    padding: 15px;
-    /* border: solid green; */
-    /* height: 200px; */
+    padding: 15px; 
     background-color: rgba(255, 255, 255, 0.685);
     box-shadow: 2px 3px 12px 1px rgba(184, 185, 106, 0.198) ;
 }
 .hm__blogs__box h3{
-    font-family: 'Heebo', sans-serif;
+    /* font-family: 'Heebo', sans-serif; */
     color: rgb(83, 79, 79);
 }
 .hm__blogs__box  p{
@@ -859,21 +720,19 @@ margin-top: 30px;
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
-.blogs__more__btn button:hover{
-}
+ 
 
 
 .modal{
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.226)), url("../assets/images/students/img-1.jpeg");
-/* background-position: bottom; */
-
-    /* border: rgba(7, 73, 7, 0.411) solid; */
+    
+background-image: url('../assets/images/events/eve-1.jpeg');
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.226)), url("../assets/images/students/img-1.jpeg"); */
+ 
     outline: none;
     max-width: 600px;
     margin: auto;
-    margin-top: 200px;
-    height: 400px;
+    margin-top: 150px;
+    height: 500px;
     /* background-image: url(''); */
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -902,8 +761,8 @@ margin-top: 30px;
 .modal__main {
     /* height: 100px; */
     background-color: rgba(0, 0, 0, 0.548);
-    padding-top: 20px;
-    padding-bottom: 10px;
+    
+     
 }
 .modal__main h2{
     font-family: "Poppins", sans-serif;
@@ -945,8 +804,9 @@ max-width: 170px;
 
 @media only screen and (max-width: 800px) {
     .modal{
+        background-image: url('../assets/images/events/eve-1.jpeg');
 
-        background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.226)), url("../assets/images/students/img-2.jpeg");
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.226)), url("../assets/images/students/img-2.jpeg"); */
     
     
         /* border: rgba(7, 73, 7, 0.411) solid; */
@@ -954,7 +814,7 @@ max-width: 170px;
         max-width: 600px;
         margin: auto;
         margin-top: 100px;
-        height: 300px;
+        height: 430px;
         /* background-image: url(''); */
         background-size: cover;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
