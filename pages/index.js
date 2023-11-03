@@ -47,7 +47,7 @@ export default function Home() {
         <div className="home__about   lg:gap-10  grid lg:grid-cols-3">
           <div className="home__about__left col-span-3 lg:col-span-1">
             <div className="home__about__img rounded">
-              <Image src={mnc}  className="rounded-sm"/>
+              <Image src={mnc}  className="rounded-sm" alt=''/>
             </div>
             {/* <img src='https://images1.content-hci.com/commimg/video/CH/myhc_279666.jpg' /> */}
           </div>
@@ -108,7 +108,7 @@ export default function Home() {
               <div className="chair__img__div order-first lg:order-last">
               
                 <div className="chair__img  ">
-                    <Image src={apUsthad} />
+                    <Image src={apUsthad} alt=''/>
                     </div>
                 <h3
                   className="visible lg:hidden mt-2"
@@ -151,7 +151,7 @@ export default function Home() {
               </div>
               <div className="chair__img__div order-first lg:order-last">
                 <div className="chair__img  ">
-                  <Image src={mah} />
+                  <Image src={mah} alt=''/>
                   {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aI2UgebZOan0BpmpNYj23xwTgd9vFPtQOw&usqp=CAU" /> */}
                 </div>
                 <h3

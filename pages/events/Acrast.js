@@ -58,7 +58,7 @@ export default function Events() {
             </div>
             {/* <div className=" lg:grid     rounded border-cyan-700 bg-white p-2 mt-3"> */}{" "}
             <div className=" w-80  rounded-md   m-auto        ">
-              <Image src={one} />
+              <Image src={one} alt=''/>
             </div>
             {/* </div> */}
           </div>
@@ -85,8 +85,8 @@ export default function Events() {
 
               <h3 className="  text-xl font-bold mt-4">Goal</h3>
               <p className="mt-1">
-                ACRAST&apos;s main objective, with the theme "Innovations in Science
-                and Technology for Sustainable Development," is to act as a
+                ACRAST&apos;s main objective, with the theme &quot;Innovations in Science
+                and Technology for Sustainable Development,&quot; is to act as a
                 potent catalyst for advancement by showcasing. transformative
                 innovations advancing sustainable development, fostering
                 cross-disciplinary synergy. engaging thought leaders, empowering
@@ -102,7 +102,7 @@ export default function Events() {
             </div>
             {/* <div className=" lg:grid     rounded border-cyan-700 bg-white p-2 mt-3"> */}{" "}
             <div className=" w-80  rounded-md   m-auto    border-b-4 h-fit    border-gray-800    ">
-              <Image src={two} />
+              <Image src={two} alt=''/>
             </div>
             {/* </div> */}
           </div>
@@ -121,7 +121,7 @@ export default function Events() {
                       className=" border-b-4 h-fit   rounded border-gray-800"
                        
                     >
-                      <Image src={d}/>
+                      <Image src={d} alt=''/>
                       {!more && i == 5 ? (
                         <button
                           onClick={() => setMore(true)}

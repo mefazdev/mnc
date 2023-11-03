@@ -25,21 +25,21 @@ export default function Senate() {
           <div className="we__row grid gap-6 grid-cols-2   lg:grid-cols-4">
             <div className="we__item">
               <div className="we__img">
-                <Image src={apUsthad} />
+                <Image src={apUsthad} alt=''/>
               </div>
               <h6>Sheikh Abubakr Ahmad</h6>
               <h5>Chairman</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={hakkimUsthad} />
+                <Image src={hakkimUsthad} alt=''/>
               </div>
               <h6>Dr Muhammad Abdul Hakkim Azhari</h6>
               <h5>Rector</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={asafNurani} />
+                <Image src={asafNurani} alt=''/>
               </div>
               <h6>Asaf Nurani</h6>
               <h5>Pro-Rector</h5>
@@ -47,28 +47,28 @@ export default function Senate() {
 
             <div className="we__item">
               <div className="we__img">
-                <Image src={boosaliSaqafi} />
+                <Image src={boosaliSaqafi} alt=''/>
               </div>
               <h6>Abu Swalih Saqafi</h6>
               <h5>Chief Finance Officer</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={jalalNurani} />
+                <Image src={jalalNurani} alt=''/>
               </div>
               <h6>Jalal Nurani</h6>
               <h5>Chief Admin Officer</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={zuhairNurani} />
+                <Image src={zuhairNurani} alt=''/>
               </div>
               <h6>Zuhairudheen Nurani</h6>
               <h5>Chairman, Prism Foundation</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={jafarNurani} />
+                <Image src={jafarNurani} alt=''/>
               </div>
               <h6>Jafar Nurani</h6>
               <h5>Convenor, Prism Foundation</h5>

@@ -42,7 +42,7 @@ export default function HsProgrammes() {
           <div className="hs__container">
             <div className="hs grid gap-5 lg:grid-cols-3">
               <div className="hs__img">
-                <Image src={hs1} />
+                <Image src={hs1} alt=''/>
               </div>
               <div className="lg:col-span-2">
                 <h2>HS PROGRAMMES</h2>

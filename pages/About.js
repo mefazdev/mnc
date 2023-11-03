@@ -2,13 +2,12 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 import admission from "../assets/images/admission.jpg";
-import mission from "../assets/images/black-bg.png";
+ 
 import dots from "../assets/images/dots-white.png";
 import Footer from "../components/Footer";
-import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
-import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
-import { BusinessCenter, LocalLibrary } from "@material-ui/icons";
-import ThumbUpIcon from "@material-ui/icons/ThumbUp";
+import PeopleAltIcon from "@material-ui/icons/PeopleAlt"; 
+import {   LocalLibrary } from "@material-ui/icons";
+ 
 import DomainIcon from "@mui/icons-material/Domain";
 import Head from "next/head";
 import SchoolIcon from "@mui/icons-material/School";

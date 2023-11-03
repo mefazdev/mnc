@@ -62,12 +62,12 @@ export default function Navbar() {
           <div className="flex">
             <div className="nav__logo rounded">
               <Link href="/">
-                <Image src={logo} className="rounded" />
+                <Image src={logo} className="rounded" alt=''/>
               </Link>
             </div>
             <div className="nav__name">
               <Link href="/">
-                <Image src={caligraphy} />
+                <Image src={caligraphy} alt=''/>
               </Link>
             </div>
           </div>

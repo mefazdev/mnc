@@ -57,13 +57,13 @@ export default function Programmes() {
               </p>
             </div>
             <div className="programme__img">
-              <Image src={hs2} className="rounded" />
+              <Image src={hs2} className="rounded" alt=''/>
             </div>
           </div>
           <div className="hs__container">
             <div className="hs grid grid-cols-3">
               <div className="hs__img">
-                <Image src={hs1} />
+                <Image src={hs1} alt=''/>
               </div>
               <div className="col-span-2">
                 <h2>HS PROGRAMMES</h2>

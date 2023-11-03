@@ -1,15 +1,12 @@
 import React from 'react';
-import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
-import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
-import { LocalLibrary } from '@material-ui/icons';
-import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+import PeopleAltIcon from '@material-ui/icons/PeopleAlt'; 
+import { LocalLibrary } from '@material-ui/icons'; 
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import SchoolIcon from '@material-ui/icons/School';
 import BorderColorIcon from '@material-ui/icons/BorderColor';
-import Carousel from "react-multi-carousel";
+ 
 import "react-multi-carousel/lib/styles.css";
-import cambridge from '../assets/images/cambridge.png'
-import Image from 'next/image';
+ 
 import VisibilitySensor from "react-visibility-sensor-v2";
 import CountUp from 'react-countup';
 import {useState} from 'react'

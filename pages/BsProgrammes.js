@@ -39,7 +39,7 @@ export default function BsProgrammes() {
             <div className="hs gap-5 grid lg:grid-cols-3">
               {/* <h2 className="visible lg:invisible mb-5">BACHLOR PROGRAMMES</h2> */}
               <div className="hs__img">
-                <Image src={hs1} />
+                <Image src={hs1} alt=''/>
               </div>
               <div className="lg:col-span-2">
                 <h2>BACHLOR PROGRAMMES</h2>

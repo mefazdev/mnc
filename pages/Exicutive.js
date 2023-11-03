@@ -36,56 +36,56 @@ export default function Exicutive() {
              
             <div className="we__item">
               <div className="we__img">
-                <Image src={asafNurani} />
+                <Image src={asafNurani} alt=''/>
               </div>
               <h6>Asaf Nurani</h6>
               <h5>Pro-Rector</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={thahaNurani} />
+                <Image src={thahaNurani} alt=''/>
               </div>
               <h6>Sayyid Thwaha Nurani</h6>
               <h5>Dean of Academic Affairs</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={irshadNurani} />
+                <Image src={irshadNurani} alt=''/>
               </div>
               <h6>Irshad Nurani</h6>
               <h5>Dean of Faculty Affairs</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={yunusAhsani} />
+                <Image src={yunusAhsani} alt=''/>
               </div>
               <h6>Yunus Ahsani</h6>
               <h5>Chief Librarian</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={shibiliNurani} />
+                <Image src={shibiliNurani} alt=''/>
               </div>
               <h6>Shibli Thwahir Nurani</h6>
               <h5>Dean of Student Affairs</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={mujthabaNurani} />
+                <Image src={mujthabaNurani} alt=''/>
               </div>
               <h6>Mujthaba Nurani</h6>
               <h5>Principal - Baithul Izza, Narikkuni</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={ashfaqNurani} />
+                <Image src={ashfaqNurani} alt=''/>
               </div>
               <h6>Ashfaque Nurani</h6>
               <h5>Academic Director i/c</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={vajidNurani} />
+                <Image src={vajidNurani} alt=''/>
               </div>
               <h6>Vajid Nurani</h6>
               <h5>Registrar i/c</h5>

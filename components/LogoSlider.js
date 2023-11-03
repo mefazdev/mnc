@@ -59,28 +59,28 @@ export default function LogoSlider() {
       >
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo1}/>
+        <Image src={logo1} alt=''/>
       
     </div>
 
       </div>
 <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo2}/>
+        <Image src={logo2} alt=''/>
       
     </div>
 
       </div>
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo3}/>
+        <Image src={logo3} alt=''/>
       
     </div>
 
       </div>
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo4}/>
+        <Image src={logo4} alt=''/>
        
     </div>
 
@@ -107,28 +107,28 @@ export default function LogoSlider() {
       >
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo5}/>
+        <Image src={logo5} alt=''/>
       
     </div>
 
       </div>
 <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo6}/>
+        <Image src={logo6} alt='' />
       
     </div>
 
       </div>
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo7}/>
+        <Image src={logo7} alt=''/>
       
     </div>
 
       </div>
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo8}/>
+        <Image src={logo8} alt=''/>
        
     </div>
 
@@ -154,28 +154,28 @@ export default function LogoSlider() {
       >
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo9}/>
+        <Image src={logo9} alt=''/>
       
     </div>
 
       </div>
 <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo10}/>
+        <Image src={logo10} alt=''/>
       
     </div>
 
       </div>
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo11}/>
+        <Image src={logo11} alt=''/>
       
     </div>
 
       </div>
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo12}/>
+        <Image src={logo12} alt=''/>
        
     </div>
 
@@ -201,28 +201,28 @@ export default function LogoSlider() {
       >
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo13}/>
+        <Image src={logo13} alt=''/>
       
     </div>
 
       </div>
 <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo14}/>
+        <Image src={logo14} alt=''/>
       
     </div>
 
       </div>
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo15}/>
+        <Image src={logo15} alt=''/>
       
     </div>
 
       </div>
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo16}/>
+        <Image src={logo16} alt=''/>
        
     </div>
 
@@ -232,7 +232,7 @@ export default function LogoSlider() {
      
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo20}/>
+        <Image src={logo20} alt=''/>
        
     </div>
 
@@ -258,28 +258,28 @@ export default function LogoSlider() {
       >
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo17}/>
+        <Image src={logo17} alt=''/>
       
     </div>
 
       </div>
 <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo18}/>
+        <Image src={logo18} alt=''/>
       
     </div>
 
       </div>
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo19}/>
+        <Image src={logo19} alt=''/>
       
     </div>
 
       </div>
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo20}/>
+        <Image src={logo20} alt=''/>
        
     </div>
 
@@ -290,7 +290,7 @@ export default function LogoSlider() {
    
       <div className='uni__logo__box'>
     <div className='uni__log__img'>
-        <Image src={logo21}/>
+        <Image src={logo21} alt=''/>
        
     </div>
 

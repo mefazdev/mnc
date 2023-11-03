@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 
 import Navbar from "../components/Navbar";
 
@@ -16,8 +16,7 @@ import kavanurUsthad    from "../assets/images/academic-council/kavanur-usthad.j
 import moidusthad    from "../assets/images/academic-council/moidu-saqafi.jpeg";
 import ashfaqNurani    from "../assets/images/academic-council/ashfaq-nurani.jpeg";
 import roshanNurani    from "../assets/images/academic-council/roshan-nurani.jpeg";
-import  shaukathAli    from "../assets/images/academic-council/shaukath-ali.jpeg";
-import  shibiliNurani    from "../assets/images/academic-council/shibili-nurani.jpeg";
+import  shaukathAli    from "../assets/images/academic-council/shaukath-ali.jpeg"; 
 import shihabNurani    from "../assets/images/academic-council/shihab-nurani.jpeg";
 import thahaNurani     from "../assets/images/academic-council/thaha-nurani.jpeg";
 import vajidNurani    from "../assets/images/academic-council/vajid-nurani.jpeg";
@@ -38,21 +37,21 @@ export default function Academic() {
              
             <div className="we__item">
               <div className="we__img">
-                <Image src={hakkimUsthad} />
+                <Image src={hakkimUsthad} alt=''/>
               </div>
               <h6>Dr Muhammad Abdul Hakkim Azhari</h6>
               <h5>Rector</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={aliAhsani} />
+                <Image src={aliAhsani} alt=''/>
               </div>
               <h6>Ali Ahsani</h6>
               <h5>HoD, Fiqh</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={moidusthad} />
+                <Image src={moidusthad} alt=''/>
               </div>
               <h6>Muhyudheen Saqafi Thaleekkara</h6>
               <h5>HoD, Tafsir</h5>
@@ -66,49 +65,49 @@ export default function Academic() {
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={asafNurani} />
+                <Image src={asafNurani} alt=''/>
               </div>
               <h6>Asaf Nurani</h6>
               <h5>Pro-Rector</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={thahaNurani} />
+                <Image src={thahaNurani} alt=''/>
               </div>
               <h6>Sayyid Thwaha Nurani</h6>
               <h5>Dean of Academic Affairs</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={ashfaqNurani} />
+                <Image src={ashfaqNurani} alt=''/>
               </div>
               <h6>Ashfaque Nurani</h6>
               <h5>Academic Director i/c</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={vajidNurani} />
+                <Image src={vajidNurani} alt=''/>
               </div>
               <h6>Vajid Nurani</h6>
               <h5>Registrar i/c</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={jafarNurani} />
+                <Image src={jafarNurani} alt=''/>
               </div>
               <h6>Jafar Nurani</h6>
               <h5>Principal, Markhinz Bangalore</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={shihabNurani} />
+                <Image src={shihabNurani} alt='' />
               </div>
               <h6>Shihabudheen Nurani</h6>
               <h5>Principal, Markazul Hidaya, Kodagu</h5>
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={roshanNurani} />
+                <Image src={roshanNurani} alt='' />
               </div>
               <h6>Dr. Roshan Nurani
 </h6>
@@ -116,7 +115,7 @@ export default function Academic() {
             </div>
             <div className="we__item">
               <div className="we__img">
-                <Image src={shaukathAli} />
+                <Image src={shaukathAli} alt=''/>
               </div>
               <h6>Shoukath Ali Kamil</h6>
               <h5>Academic Expert & Counselor, IIT Bombay</h5>

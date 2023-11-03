@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
  
 
 import Modal from "@mui/material/Modal";
-import Image from "next/image";
+ 
 import CloseIcon from "@mui/icons-material/Close";
 import Carousel from "react-material-ui-carousel";
-import Link from "next/link";
+ 
 export default function MainBanner() {
   const [open, setOpen] = useState(false);
 
