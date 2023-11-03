@@ -28,7 +28,7 @@ export default function Events() {
     },
   };
   return (
-    <div className="h__prgm  pb-24   mt-10 lg:mt-20  md:px-0 md:w-10/12 m-auto px-4 md:px-0 ">
+    <div className="h__prgm  pb-24   mt-10 lg:mt-20  md:px-0 md:w-10/12 m-auto px-4  ">
       <div className="hm__blogs__head">
         <h3>What&apos;s new</h3>
       </div>

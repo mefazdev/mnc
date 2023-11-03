@@ -104,7 +104,7 @@ export default function MainBanner() {
             <CloseIcon   id="close__icon" onClick={() => setOpen(false)} />
           </div>
          <div className="modal__main pt-2 pb-2 ">
-              <button className="m-auto flex text-sm rounded-sm text-white border border-white p-1 px-4">Know More</button> 
+         <Link href={`/events/Acrast`}><button className="m-auto flex text-sm rounded-sm text-white border border-white p-1 px-4">Know More</button></Link> 
           </div> 
            
            
