@@ -3,7 +3,7 @@ import React from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 import Carousel from "react-multi-carousel";
-import eve1 from "../assets/images/events/eve-1.jpeg";
+import eve1 from "../assets/images/events/eve-1.jpg";
 
 import "react-multi-carousel/lib/styles.css";
 

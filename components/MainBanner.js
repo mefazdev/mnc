@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import banner1 from "../assets/images/one.jpg";
-import banner2 from "../assets/images/two.jpg";
-import banner3 from "../assets/images/three.jpg";
+ 
 
 import Modal from "@mui/material/Modal";
 import Image from "next/image";
