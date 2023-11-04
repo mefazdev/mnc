@@ -65,7 +65,7 @@ export default function BsProgrammes() {
                       <Accordion
                         key={index}
                         id="opening__accordion"
-                        className="pt-2 pl-3 pr-3 bg-green"
+                        className="pt-2 pl-3 pr-3  "
                       >
                         <AccordionSummary
                           expandIcon={<ExpandMoreIcon className="text-white" />}
@@ -81,7 +81,7 @@ export default function BsProgrammes() {
                             </h2>
                           </Typography>
                         </AccordionSummary>
-                        <AccordionDetails className="bg-green border-t  text-white">
+                        <AccordionDetails className="  border-t  text-white">
                           <p>Intake : {data.intake}</p>
                           <p className="mt-2">Course outcomes :</p>
                           <div className="ml-5  accordion__div">

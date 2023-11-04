@@ -71,7 +71,7 @@ export default function HsProgrammes() {
                       <Accordion
                         key={index}
                         id="opening__accordion"
-                        className="pt-2 pl-3 pr-3 bg-green text-white "
+                        className="pt-2 pl-3 pr-3   text-white "
                       >
                         <AccordionSummary
                           expandIcon={<ExpandMoreIcon className="text-white" />}
@@ -87,7 +87,7 @@ export default function HsProgrammes() {
                             </h2>
                           </Typography>
                         </AccordionSummary>
-                        <AccordionDetails className="bg-green border-t text-white ">
+                        <AccordionDetails className="  border-t text-white ">
                           {/* <Typography className=' text-white '> */}
                           <p>Intake : {data.intake}</p>
                           <p className="mt-2">Course outcomes :</p>

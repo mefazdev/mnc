@@ -74,13 +74,16 @@
   
 }
 #opening__accordion {
-    /* background-color: rgb(3, 39, 14); */
+  color: #fff;
+    background-color: rgb(3, 39, 14);
   margin-top: 20px;
   padding-bottom: 5px;
 }
 
 .accordion__content {
+  color: #fff;
   font-weight: 500;
+  background-color: rgb(3, 39, 14);
   /* font-size: 15px; */
    
   /* color: rgba(255, 255, 255, 0.767); */
