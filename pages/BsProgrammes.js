@@ -81,7 +81,7 @@ export default function BsProgrammes() {
                             </h2>
                           </Typography>
                         </AccordionSummary>
-                        <AccordionDetails className="accordion__content text-white">
+                        <AccordionDetails className="bg-green border-t  text-white">
                           <p>Intake : {data.intake}</p>
                           <p className="mt-2">Course outcomes :</p>
                           <div className="ml-5  accordion__div">

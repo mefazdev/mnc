@@ -87,7 +87,7 @@ export default function HsProgrammes() {
                             </h2>
                           </Typography>
                         </AccordionSummary>
-                        <AccordionDetails className="accordion__content text-white ">
+                        <AccordionDetails className="bg-green border-t text-white ">
                           {/* <Typography className=' text-white '> */}
                           <p>Intake : {data.intake}</p>
                           <p className="mt-2">Course outcomes :</p>
