@@ -1,13 +1,11 @@
 .about{
     font-family: 'Nunito', sans-serif;
-    background: transparent linear-gradient(369deg, rgba(229, 229, 226, 0.527) 0%, rgba(5, 73, 25, 0.233) 100%) 0% 0% no-repeat padding-box;
+    /* background: transparent linear-gradient(369deg, rgba(229, 229, 226, 0.527) 0%, rgba(5, 73, 25, 0.233) 100%) 0% 0% no-repeat padding-box; */
 }
 .about__header{
-    /* background-color: rgb(5, 73, 25); */
+ 
     height: 300px;
-    /* background: url("../assets/images/header-background.jpg"); */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.911)), url("../assets/images/bg.JPG"); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.911)), url("../assets/images/header-background.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.911)), url("../assets/images/header-background.jpg");
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,12 +16,7 @@
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    /* box-shadow: green 4px; */
     
-    /* border-bottom: 2px solid rgb(4, 58, 20); */
-    /* max-wid
-    .about__content{
-        th: 170px; */
 }
  
 
@@ -36,24 +29,8 @@
 .about__text{
 margin-top: 60px;
 }
-.about__text__left{
-    /* max-width: 500px; */
-}
-.about__text__right{
-    /* border: solid red; */
-    /* padding-left:20px; */
-}
-.about__text__right h2{
- /* font-size: 26px; */
- /* font-weight: 700; */
- text-align: left;
- color: rgb(5, 73, 25);
- font: normal normal bold 24px/25px Poppins;
-/* font-family: "Poppins", sans-serif; */
- /* font: normal normal bold 25px/35px Heebo;
- font-family: "Heebo", sans-serif; */
-
-}
+ 
+ 
 .about__text__right h3{
     color: rgb(3, 39, 14);
    
@@ -61,39 +38,24 @@ margin-top: 60px;
     font-family: "Heebo", sans-serif;
     font-weight: 500;
 }
-.about__text__right p{
-    text-align: left;
-  /* font: normal normal normal 15 px/27px Heebo;
-  font-family: "Heebo", sans-serif;
-  font-weight: 500;
-  margin-top: 5px;
-  color: #363232; */
-  color: rgba(0, 0, 0, 0.835);
-margin-top: 10px;
-font: normal normal normal 16px/25px Poppins;
-font-family: "Poppins", sans-serif;
-}
-
+ 
 .mission__row{
     margin-top: 70px;
 
     border-bottom: 1px solid rgba(128, 128, 128, 0.527);
-    /* border: solid red; */
+   
     padding-bottom: 40px;
 }
 
 .vision{
-    /* background-color: rgb(5, 44, 17); */
-    /* height: 300px; */
+   
     padding-top: 20px;
     min-height: 220px;
-    background-color: rgb(3, 39, 14); 
+    /* background-color: rgb(3, 39, 14);  */
 }
 .vision__img{
     max-width: 150px;
-    /* border: solid red; */
-    /* position: absolute; */
-   /* float: right; */
+    
    margin-top: 30px;
    margin-top: -50px;
    margin-left: -30px;
@@ -101,19 +63,16 @@ font-family: "Poppins", sans-serif;
 }
 .mision__img{
     max-width: 150px;
-    /* border: solid red; */
-    /* position: absolute; */
-   /* float: right; */
+     
    margin-top: 30px;
    margin-top: -170px;
    margin-right: -130px;
-   /* float: right; */
+   
 position: absolute;
 
 }
 .mission{
-    background-color: rgb(3, 39, 14); 
-    padding-top: 20px;
+       padding-top: 20px;
     min-height: 220px;  
 }
 
@@ -123,39 +82,20 @@ position: absolute;
     
 }
 .mission__row p{
-    /* text-align: center; */
+   
     color: #fff;
     max-width: 500px;
     margin: auto;
     margin-top: 20px;
-    font: normal normal normal 15px/25px Poppins;
-    font-family: "Poppins", sans-serif;
     
 }
 
-/* <<<<<<<>>>>>>>>>>>> */
-.leadership__row{
-/* margin-bottom: 300px; */
-margin-top: 30px;
-}
-.leadership__row h2{
-text-align: center;
-font-size: 25px;
-font-weight: 500;
-}
-.leadership__box{
-    border: saddlebrown solid;
-    height: 300px;
-}
-.leadership__first__row{
-    margin-top: 50px;
-}
-
+ 
+ 
 /* <<<<<<<<<< ABOUT STATUS >>>>>>>>> */
 
 .about__status{
-    /* border: solid green; */
-    /* height: 400px; */
+    
     background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.671)), url("../assets/images/about-bg.jpg");
     background-size: cover;
     background-position: center;
@@ -164,22 +104,19 @@ font-weight: 500;
     padding-bottom: 80px;
     margin-bottom: 70px;
 }
-.about__status__row{
-    /* margin-top: 30px; */
-}
+ 
 .about__status__second__row{
     margin-top: 50px;
 }
 .about__status__circle{
     height: 35px;
     width: 35px;
-    /* background: rgba(68, 66, 66, 0.568); */
-
+   
 border: 1px solid rgba(255, 255, 255, 0.397);
 display: flex;
 justify-content: center; 
  align-items: center;
- /* margin: auto; */
+ 
 }
 .about__status__item{
     align-items: center;
@@ -217,8 +154,7 @@ justify-content: center;
             padding: 15px;
              }
         .vision{
-            /* background-color: rgb(5, 44, 17); */
-            /* height: 300px; */
+            
             padding: 20px;
               
             background-color: rgb(3, 39, 14); 
@@ -247,8 +183,7 @@ justify-content: center;
             letter-spacing: .5px; 
         }
         .about__status{
-            /* border: solid green; */
-            /* height: 400px; */
+           
          
             padding: 15px;
             padding-top: 60px;
@@ -261,4 +196,4 @@ justify-content: center;
         
 }
 
-/* BsProgrammes */
+ 

@@ -31,19 +31,19 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="about">
+      <div className="about bg-white">
         <div className="about__header">
           <h2>ABOUT </h2>
         </div>
 
         <div className="about__content">
           <div className="about__text grid gap-5 lg:gap-10 grid-cols-1 md:grid-cols-3">
-            <div className="about__text__left">
-              <Image src={admission} alt="Madeenthunnoor" />
+            <div  >
+              <Image src={admission} alt="Madeenthunnoor" className="rounded" />
             </div>
 
-            <div className="about__text__right col-span-2">
-              <h2>Jamia Madeenathunnoor</h2>
+            <div className="col-span-2">
+              <h2  className="text-green font-bold text-2xl">Jamia Madeenathunnoor</h2>
               <p>
                 Markaz Garden Group of Institutions was established on the onset
                 of these millennia by blending the religious wisdom and secular
@@ -63,7 +63,7 @@ export default function About() {
 
           {/* <<<<<<< MISSSION >>>>>>>>>> */}
           <div className="mission__row gap-10 grid lg:grid-cols-2">
-            <div className="vision">
+            <div className="vision bg-black rounded">
               <h2>OUR VISION</h2>
               <p>
                 To metamorphose into a unique Centre of Excellence, where, a
@@ -75,7 +75,7 @@ export default function About() {
                 <Image src={dots} alt="Madeenthunnoor" />
               </div>
             </div>
-            <div className="mission">
+            <div className="mission bg-black rounded">
               <h2>OUR MISSION</h2>
               <p>
                 Arrive at the threshold of new world driven by traditional
@@ -141,35 +141,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* <<<<<<<< LEADER SHIP >>>>>>>>>>>>>> */}
-          {/* <div className='leadership__row'>
-     <h2>MEET OUR LEADERSHIP</h2>
-
-     <div className='leadership__first__row lg:gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
-<div className='leadership__box'>
-  <div className='leadership__img'>
-      <Image src={apUsthad} />
-      <img src={apUsthad}/>
-  </div>
-</div>
-<div className='leadership__box'>
-
-<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP5wlVT0XVhgVzzjZ0I40AKUSm8UEW76GA6g&usqp=CAU' />
-</div>
-<div className='leadership__box'>
-<div className='leadership__img'>
-    <Image src={mah}/>
-    </div>
-</div>
-<div className='leadership__box'>
-
-</div>
-     </div>
-     <div className='leadership__first__row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
-
-     </div>
- </div> */}
-        </div>
+           </div>
       </div>
       <Footer />
     </>

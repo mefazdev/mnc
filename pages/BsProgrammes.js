@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import hs2 from "../assets/images/hs.jpg";
+ 
 import hs1 from "../assets/images/hs1.jpg";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -33,17 +33,15 @@ export default function BsProgrammes() {
         <div className="programmes__head">
           <h1>BS PROGRAMMES</h1>
         </div>
-        <div className="programmes__content">
+        <div className="programmes__content p-5 lg:p-0  pb-20 lg:pb-40">
          
           <div className="hs__container">
             <div className="hs gap-5 grid lg:grid-cols-3">
               {/* <h2 className="visible lg:invisible mb-5">BACHLOR PROGRAMMES</h2> */}
-              <div className="hs__img">
-                <Image src={hs1} alt=''/>
-              </div>
+              
               <div className="lg:col-span-2">
-                <h2>BACHLOR PROGRAMMES</h2>
-                <p>
+                <h2 className="font-bold text-lg ">BACHLOR PROGRAMMES</h2>
+                <p className="mt-2">
                   Jamia Madeenathunnoor offers seven courses in bachelor
                   programs viz Science, Commerce, History, Sociology,
                   Psychology, English literature and Arabic literature. Students
@@ -55,6 +53,9 @@ export default function BsProgrammes() {
                 {/* <a href="http://admission.jamiamadeenathunnoor.org/">
                 <button id='admision__btn'>REGISTER NOW</button></a> */}
               </div>
+              <div className="hs__img">
+                <Image src={hs1} alt='' className="rounded-sm"/>
+              </div>
             </div>
 
             <div className="hs__accordion">
@@ -64,7 +65,7 @@ export default function BsProgrammes() {
                       <Accordion
                         key={index}
                         id="opening__accordion"
-                        className="pt-2 pl-3 pr-3 "
+                        className="pt-2 pl-3 pr-3 bg-green"
                       >
                         <AccordionSummary
                           expandIcon={<ExpandMoreIcon className="text-white" />}
@@ -80,13 +81,13 @@ export default function BsProgrammes() {
                             </h2>
                           </Typography>
                         </AccordionSummary>
-                        <AccordionDetails className="accordion__content">
+                        <AccordionDetails className="accordion__content text-white">
                           <p>Intake : {data.intake}</p>
                           <p className="mt-2">Course outcomes :</p>
                           <div className="ml-5  accordion__div">
                             {data.outcome
                               ? data.outcome.map((outcome, index) => {
-                                  return <h6 key={index}>▪ {outcome}</h6>;
+                                  return <h6 className="mt-1" key={index}>▪ {outcome}</h6>;
                                 })
                               : ""}
                           </div>

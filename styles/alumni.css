@@ -1,5 +1,7 @@
 .alumni{
-    background: transparent linear-gradient(369deg, rgba(229, 229, 226, 0.466) 0%, rgba(5, 73, 25, 0.089) 100%) 0% 0% no-repeat padding-box;
+    font-family: 'Nunito', sans-serif;
+  
+    /* background: transparent linear-gradient(369deg, rgba(229, 229, 226, 0.466) 0%, rgba(5, 73, 25, 0.089) 100%) 0% 0% no-repeat padding-box; */
 }
 .alumni__header{
  /* background-color: rgb(5, 73, 25); */
@@ -38,37 +40,21 @@ margin-top: 50px;
 min-height: 70vh;
 
 }
-.alumni__content h1{
-
-color: #fff;
-/* font-size: 18px; */
-letter-spacing: 1px;
- background-color: rgb(5, 44, 17);
- padding: 5px;
- max-width: 250px;
- border-radius: 3px;
- /* font-weight: 400; */
- font: normal normal normal 17px/25px Poppins;
- font-family: "Poppins", sans-serif;
-}
+ 
 .alumni__content p{
     font-size: 17px;
     /* font-family: sans-serif  ; */
     margin-top: 20px;
     letter-spacing: .1px;
     color: rgb(0, 0, 0);
-    font: normal normal normal 16px/25px Poppins;
-    font-family: "Poppins", sans-serif;
- 
+    
 }
 .alumni__content a{
    
 
   
     color: rgb(92, 90, 90);
-    font: normal normal normal 16px/45px Poppins;
-    font-family: "Poppins", sans-serif;
- 
+   
 }
 .alumni__content a:hover{
     text-decoration: underline;
@@ -79,7 +65,7 @@ letter-spacing: 1px;
     border-radius: 3px;
     display: flex;
     justify-content: center;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     /* background-color: rgba(4, 36, 13, 0.418); */
 }
 .alumni__logo img{

@@ -39,7 +39,7 @@ export default function Status() {
    
 
   return (
-  <div className='status'>
+  <div className='status bg-green'>
      {/* <h3>ACDEAMIC DESTINATIONS</h3> */}
      <div className='status__content grid gap-10 grid-cols-1 lg:grid-cols-3  '>
      <div className='status__content__left col-span-3 lg:col-span-1 '>

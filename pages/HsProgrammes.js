@@ -37,16 +37,14 @@ export default function HsProgrammes() {
         <div className="programmes__head">
           <h1>HS PROGRAMMES</h1>
         </div>
-        <div className="programmes__content">
+        <div className="programmes__content p-5 lg:p-0  pb-24 lg:pb-40">
           
           <div className="hs__container">
-            <div className="hs grid gap-5 lg:grid-cols-3">
-              <div className="hs__img">
-                <Image src={hs1} alt=''/>
-              </div>
+            <div className="hs  grid gap-5 lg:gap-10 lg:grid-cols-3">
+              
               <div className="lg:col-span-2">
-                <h2>HS PROGRAMMES</h2>
-                <p>
+              <h2 className="font-bold text-lg ">HS PROGRAMMES</h2>
+                <p className="mt-1">
                   The students will parallelly complete Higher secondary course
                   under the SCERT, Government of Kerala and with the foundation
                   course in Islamic studies. For higher secondary program, Jamia
@@ -57,8 +55,12 @@ export default function HsProgrammes() {
                   preference will be vested in the Jamia Madeenathunnoor
                   authority
                 </p>
-                <a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">
+                {/* <a href="https://surveyheart.com/form/640c4ddabcd731088c4262df">
                 <button id='admision__btn'>REGISTER NOW</button></a>
+              */}
+              </div>
+              <div className="hs__img ">
+                <Image src={hs1} alt='' className="rounded" />
               </div>
             </div>
 
@@ -69,7 +71,7 @@ export default function HsProgrammes() {
                       <Accordion
                         key={index}
                         id="opening__accordion"
-                        className="pt-2 pl-3 pr-3 "
+                        className="pt-2 pl-3 pr-3 bg-green text-white "
                       >
                         <AccordionSummary
                           expandIcon={<ExpandMoreIcon className="text-white" />}
@@ -79,20 +81,20 @@ export default function HsProgrammes() {
                           <Typography>
                             <h2
                               className="text-white"
-                              style={{ letterSpacing: ".5px" }}
+                              // style={{ letterSpacing: ".5px" }}
                             >
                               {data.course}
                             </h2>
                           </Typography>
                         </AccordionSummary>
-                        <AccordionDetails className="accordion__content">
+                        <AccordionDetails className="accordion__content text-white ">
                           {/* <Typography className=' text-white '> */}
                           <p>Intake : {data.intake}</p>
                           <p className="mt-2">Course outcomes :</p>
                           <div className="ml-5  grid lg:grid-cols-2 accordion__div">
                             {data.outcome
                               ? data.outcome.map((outcome, index) => {
-                                  return <h6 key={index}>▪ {outcome}</h6>;
+                                  return <h6 className="mt-2" key={index}>▪ {outcome}</h6>;
                                 })
                               : ""}
                           </div>

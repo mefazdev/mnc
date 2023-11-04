@@ -24,29 +24,29 @@ export default function Contact() {
 
        </div>
 
-       <div className='contact__content '>
+       <div className='contact__content pb-40'>
 <div className='contact__row  grid lg:grid-cols-3'>
 <div className='contact__row__left'>
 <div className='flex contact__row__div'>
     <LocationOnIcon id='contact__icon'/>
     <div className='ml-3'>
-    <h4>JAMIA MADEENATHUNNOOR</h4>
-    <h6>Poonoor, Unnikulam(PO)</h6>
-    <h6>Kozhikode, Kerala</h6>
-    <h6>India - PIN: 673 574</h6>
+    <h4 className='text-white'>JAMIA MADEENATHUNNOOR</h4>
+    <h6 className='text-white'>Poonoor, Unnikulam(PO)</h6>
+    <h6 className='text-white'>Kozhikode, Kerala</h6>
+    <h6 className='text-white'>India - PIN: 673 574</h6>
     </div>
 </div>
 <div className='flex contact__row__div'>
     <PhoneIcon id='contact__icon'/>
     <div className='ml-3'>
-        <h6>0495 2963484</h6>
+        <h6 className='text-white'>0495 2963484</h6>
         {/* <h6>0495 2963484</h6> */}
     </div>
 </div>
 <div className='flex contact__row__div'>
     <AlternateEmailIcon id='contact__icon'/>
     <div className='ml-3'>
-        <h6>info@jamiamadeenathunnoor.org</h6>
+        <h6 className='text-white'>info@jamiamadeenathunnoor.org</h6>
         {/* <h6>info@markazgarden.com</h6> */}
     </div>
 </div>
@@ -55,7 +55,7 @@ export default function Contact() {
 
 </div>
 <div className='contact__row__right '>
-<h5>Get in touch</h5>
+<h5 className='text-white text-xl'>Get in touch</h5>
 <div>
     <form>
         <input placeholder='Name'/>

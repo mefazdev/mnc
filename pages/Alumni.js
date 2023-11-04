@@ -27,7 +27,7 @@ export default function Alumni() {
           {/* <h1 className='visible lg:invisible'>PRISM FOUNDATION</h1> */}
           <div className="grid gap-10 lg:grid-cols-3">
             <div className="lg:col-span-2">
-              <h1>PRISM FOUNDATION</h1>
+            <h1 className="font-bold text-lg">PRISM FOUNDATION</h1>
               <p>
                 The PRISM Foundation (Potential Resources Innovation and Social
                 Management ) is an initiative of the alumni of Jamia
@@ -41,7 +41,7 @@ export default function Alumni() {
             </div>
 
             <div className="alumni__logo order-first lg:order-last">
-              <img src="https://prismonline.org/assets/img/hero-img.png" />
+              <img src="https://www.prismonline.org/images/prism.png" />
             </div>
           </div>
         </div>
