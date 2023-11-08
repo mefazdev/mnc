@@ -66,6 +66,7 @@ export default function Footer() {
              </Link> */}
              
 <Link href='/News'><h6>Events</h6></Link>
+<a href='https://manager.jamiamadeenathunnoor.org/'><h6>Staff Panel</h6></a>
               <Link href='/Contact'><h6>Contact us</h6></Link>
               
           </div>

@@ -250,7 +250,11 @@ export default function Navbar() {
             </div>
           </span>
 
-          <span className="ml-3"><Link href="/Alumni" className='ml-4'>
+          
+
+          <span className="ml-3"><a href="https://manager.jamiamadeenathunnoor.org/"><h3>STAFF PANEL</h3></a>
+            
+           </span><span className="ml-3"><Link href="/Alumni" className='ml-4'>
             <h3>ALUMNI</h3>
           </Link></span>
 
@@ -383,11 +387,17 @@ export default function Navbar() {
               ""
             )}
           </div>
+           <a href="https://manager.jamiamadeenathunnoor.org/"><div className="collapse_row">
+              <p>STAFF PANEL</p>
+            </div></a>
+            
+         
           <Link href="/Alumni">
             <div className="collapse_row">
               <p>ALUMNI</p>
             </div>
           </Link>
+          
           <Link href="Contact">
             <div className="collapse_row">
               <p>CONTACT</p>
