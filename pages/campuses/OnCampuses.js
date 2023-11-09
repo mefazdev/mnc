@@ -38,7 +38,7 @@ export default function OnCampuses() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-9">
             {campusData?.map((d, i) => {
               return (
-                <div
+                <div key={i}
                   className=" borde border-emerald-400 rounded p-4 lg:p-6"
                   style={{
                     boxShadow:
