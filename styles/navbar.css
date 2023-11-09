@@ -12,44 +12,22 @@
   min-height: 65px;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.911);
-  /* width: 100%; */
+  
   z-index: 100;
   position: fixed;
   display: flex;
 }
-.navbar__left {
-  width: 100%;
-}
+
 .navbar__right {
-  /* width: 100%; */
+ 
   align-items: center;
    
-  background-color: rgba(0, 0, 0, 0.548);
-  color: #fff;
+     color: #fff;
 }
-.navbar__right h3 {
-  font-weight: 400;
-  letter-spacing: 0.5px;
-}
-.navbar__right h3:hover {
-  color: rgb(21, 200, 21);
-  cursor: pointer;
-}
-.active__nav {
-  color: rgb(21, 200, 21);
-  text-decoration: underline;
-}
-.active__dropdown {
-  background-color: rgb(9, 95, 35);
-}
-.navbar__right__div {
-  width: 100%;
-  /* margin-right: 5%; */
-  justify-content: space-around;
-}
-.navbar__left__div {
-  justify-content: space-between;
-}
+ 
+ 
+ 
+ 
 .nav__logo {
   max-width: 80px;
 
@@ -64,13 +42,7 @@
   max-width: 180px;
   padding: 10px;
 }
-.nav__name h1 {
-  padding: 5px;
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-}
-
+ 
 .dorpdown__div {
   position: absolute;
   margin-top: 10px;
@@ -78,10 +50,11 @@
 .dropdown-menu li {
   color: #fff;
 }
-.service__group__span {
-  background-color: rgb(46, 45, 45);
+ 
 
-  min-width: 150px;
+.active__sub__nav{
+  background-color: rgb(9, 95, 35);
+
 }
 
 .service__group__span:hover {
@@ -99,44 +72,22 @@
 #menu__icon {
   color: #fff;
   font-size: 40px;
-  /* margin-top: 10px; */
-  /* margin-right: 10px; */
+ 
 }
 
 /* <<<<<<<<< NAV COLLAPSE>>>>>>> */
 .nav__collapse {
   position: absolute;
   width: 100%;
-  padding-bottom: 10px;
+ 
 
-  background-color: rgba(0, 0, 0, 0.904);
+  background-color: rgba(0, 0, 0, 0.957);
   margin-top: 85px;
 }
-.collapse_row {
-  padding: 10px;
-  color: #fff;
-  align-items: center;
-}
-.collapse_row p {
-  font-size: 17px;
-  letter-spacing: 1px;
-}
-#collapse__arrow {
-  font-size: 30px;
-  margin-left: 5px;
-}
-.collapse__collapse {
-  position: absolute;
-  float: right;
-  margin-left: 100px;
-  width: 90%;
-}
-.collapse_collapse__row {
-  padding: 10px;
-  width: 100%;
-  background-color: rgb(7, 56, 7);
-}
-
+ 
+ 
+ 
+ 
 .service__group__span {
   align-items: center;
   justify-content: space-between;
@@ -156,6 +107,7 @@
 }
 .development__list > li {
   width: 180px;
+ 
 }
 .development__head:hover .development__list {
   display: flex;
@@ -168,7 +120,7 @@
   float: right;
 
   margin-top: -40px;
-  margin-left: 150px;
+  margin-left: 132px;
   flex-direction: column;
 }
 .design__list > li {

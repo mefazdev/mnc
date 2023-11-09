@@ -1,21 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import Modal from "@mui/material/Modal";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 export default function Admission() {
-
-    const [open , setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   return (
-    <div><div className='home__admission'>
-    <div className='home__admission__content'>
-   <h3> It is an initiative ,whereby,the students are well trained to radiate the noble
-ideals of Islam across the world</h3>
-<button onClick={()=>setOpen(true)}>GET AN ADMISSION</button>
-    </div>
-  </div>
-  
-  
-  
-  {/* <Modal 
+    <div>
+      <div className="home__admission">
+        <div className="home__admission__content">
+          <h3>
+            {" "}
+            It is an initiative ,whereby,the students are well trained to
+            radiate the noble ideals of Islam across the world
+          </h3>
+          <button onClick={() => setOpen(true)}>GET AN ADMISSION</button>
+        </div>
+      </div>
+
+      {/* <Modal 
             open={open}
               >
               <div className='modal'>
@@ -36,7 +37,6 @@ ideals of Islam across the world</h3>
           </div>
               </div>
             </Modal> */}
-
-  </div>
-  )
+    </div>
+  );
 }

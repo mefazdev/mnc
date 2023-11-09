@@ -63,7 +63,7 @@ export default function Events() {
                   className="h-64 relative"
                 >
                   <div className="absolute bottom-0">
-                    <div className=" bg-green border text-white w-fit p-1 px-4 text-lg font-bold tracking-wide">
+                    <div className=" bg-customgreen border text-white w-fit p-1 px-4 text-lg font-bold tracking-wide">
                       <p className="">24</p>
                       <p className="text-sm font-thin">Dec</p>
                     </div>

@@ -28,7 +28,7 @@ export default function MainBanner() {
         infiniteLoop={true}
         stopAutoPlayOnHover={false}
       >
-         <div className="banner__img bg-black">
+         <div className="banner__img bg-black ">
           <div className="main__banner__text ">
             <div className="main__banner__text__first__row">
               <h2 className="text-center  w-full">

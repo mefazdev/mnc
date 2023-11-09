@@ -44,15 +44,16 @@ export default function Home() {
           <MainBanner />
         </div>
 
-        <div className="home__about   lg:gap-10  grid lg:grid-cols-3">
-          <div className="home__about__left col-span-3 lg:col-span-1">
+<div className=" mt-10 lg:mt-24">
+<div className="home__about   lg:gap-10  grid lg:grid-cols-3">
+          <div className="home__about__left  col-span-3 lg:col-span-1">
             <div className="home__about__img rounded">
               <Image src={mnc}  className="rounded-sm" alt=''/>
             </div>
             {/* <img src='https://images1.content-hci.com/commimg/video/CH/myhc_279666.jpg' /> */}
           </div>
-          <div className="home__about__right col-span-2">
-            <h3>JAMIA MADEENATHUNNOOR</h3>
+          <div className="home__about__right col-span-2 mt-2 lg:mt-0">
+            <h3 className="text-green-800">JAMIA MADEENATHUNNOOR</h3>
             {/* <h3>PIONEERING A PROMISING FUTURE</h3> */}
             <p>
               Markaz Garden Group of Institutions was established on the onset
@@ -76,6 +77,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+</div>
+        
 
         {/* <<<<<<<<<< STATUS >>>>>>>>> */}
         <Status />

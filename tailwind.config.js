@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
    
-        green:'rgb(3, 39, 14)',
+        customgreen:'rgb(3, 39, 14)',
+        navbg:'rgb(46, 45, 45)'
          
       }
     },
