@@ -42,7 +42,7 @@ export default function MainBanner() {
               <h6 className="text-center">GET AN ADMISSION</h6>
               <div className="flex">
                 <button className="m-auto hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
-                  <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
+                  <a  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
                     8th STANDARD
                   </a>{" "}
                 </button>
@@ -65,7 +65,7 @@ export default function MainBanner() {
               <h6 className="text-center">GET AN ADMISSION</h6>
               <div className="flex">
                 <button className="m-auto hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
-                  <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
+                  <a  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
                     8th STANDARD
                   </a>{" "}
                 </button>
@@ -90,7 +90,7 @@ export default function MainBanner() {
               <h6 className="text-center">GET AN ADMISSION</h6>
               <div className="flex">
                 <button className="m-auto hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
-                  <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
+                  <a  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
                     8th STANDARD
                   </a>{" "}
                 </button>
@@ -127,7 +127,7 @@ export default function MainBanner() {
             <h2>GET AN ADMISSION</h2>
             {/* <h3>Science Academy - (8th Std.)</h3> */}
             <div className="modal__btn">
-            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
+            <a  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
                    <button className="hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">8th STANDARD</button>
               </a>
               {/* <a href="https://admission.jamiamadeenathunnoor.org">
