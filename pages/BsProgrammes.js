@@ -50,8 +50,8 @@ export default function BsProgrammes() {
                   the preference and admission will be vested in the Jamia
                   Madeenathunnoor authority.
                 </p>
-                {/* <a href="http://admission.jamiamadeenathunnoor.org/">
-                <button id='admision__btn'>REGISTER NOW</button></a> */}
+                <a href="http://admission.jamiamadeenathunnoor.org/">
+                <button id='admision__btn'>REGISTER NOW</button></a>
               </div>
               <div className="hs__img">
                 <Image src={hs1} alt='' className="rounded-sm"/>

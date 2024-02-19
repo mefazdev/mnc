@@ -28,9 +28,9 @@ export default function Admission() {
             <a   href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
                    <button className="hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">8th STANDARD</button>
               </a>
-              {/* <a href="https://admission.jamiamadeenathunnoor.org">
-                <button>HSS PROGRAMMES</button>
-              </a> */}
+              <a href="https://admission.jamiamadeenathunnoor.org">
+              <button className="hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">S PROGRAMMES</button>
+              </a>
             </div>
           </div>
         </div>

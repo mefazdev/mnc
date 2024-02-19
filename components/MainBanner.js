@@ -40,19 +40,19 @@ export default function MainBanner() {
                 PIONEERING A PROMISING FUTURE
               </h3>
               <h6 className="text-center">GET AN ADMISSION</h6>
-              <div className="flex">
-                <button className="m-auto hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
+              <div className="grid grid-cols-2 gap-4">
+                <button className="m-auto rounded w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
                   <a  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
                     8th STANDARD
                   </a>{" "}
                 </button>
-              </div>
+              {/* </div> */}
 
-              {/* <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button> */}
+              <button className="ml- w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
+            </div>
             </div>
           </div>
         </div>
-
         <div className="banner__img__three">
           <div className="main__banner__text">
             <div className="main__banner__text__first__row">
@@ -63,15 +63,16 @@ export default function MainBanner() {
                 PIONEERING A PROMISING FUTURE
               </h3>
               <h6 className="text-center">GET AN ADMISSION</h6>
-              <div className="flex">
-                <button className="m-auto hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
+              <div className="grid grid-cols-2 gap-4">
+                <button className="m-auto rounded w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
                   <a  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
                     8th STANDARD
                   </a>{" "}
                 </button>
-              </div>
+              {/* </div> */}
 
-              {/* <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button> */}
+              <button className="ml- w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
+            </div>
             </div>
           </div>
         </div>
@@ -88,18 +89,20 @@ export default function MainBanner() {
                 PIONEERING A PROMISING FUTURE
               </h3>
               <h6 className="text-center">GET AN ADMISSION</h6>
-              <div className="flex">
-                <button className="m-auto hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
+              <div className="grid grid-cols-2 gap-4">
+                <button className="m-auto   w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
                   <a  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
                     8th STANDARD
                   </a>{" "}
                 </button>
-              </div>
+              {/* </div> */}
 
-              {/* <button className="ml-4"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button> */}
+              <button className="ml- w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
+            </div>
             </div>
           </div>
         </div>
+        
       </Carousel>
 
        {/* <Modal open={true} id="modal">
@@ -130,9 +133,9 @@ export default function MainBanner() {
             <a  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform">
                    <button className="hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">8th STANDARD</button>
               </a>
-              {/* <a href="https://admission.jamiamadeenathunnoor.org">
-                <button>HSS PROGRAMMES</button>
-              </a> */}
+              <a href="https://admission.jamiamadeenathunnoor.org">
+              <button className="hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">HSS PROGRAMMES</button>
+              </a>
             </div>
           </div>
         </div>
