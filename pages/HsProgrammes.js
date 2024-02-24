@@ -55,8 +55,8 @@ export default function HsProgrammes() {
                   preference will be vested in the Jamia Madeenathunnoor
                   authority
                 </p>
-                <a   href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_link">
-                <button id='admision__btn'>REGISTER NOW</button></a>
+                {/* <a   href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_linkc">
+                <button id='admision__btn'>REGISTER NOW</button></a> */}
              
               </div>
               <div className="hs__img ">
