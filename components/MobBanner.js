@@ -20,7 +20,7 @@ export default function MobBanner() {
     setOpen(true);
   };
   useEffect(() => {
-    // controlOpen();
+    controlOpen();
   }, []);
   return (
     <div>
