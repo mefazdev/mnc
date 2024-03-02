@@ -526,10 +526,10 @@ export default function Navbar() {
               <div className="z-50 absolute mt-9 bg-navbg w-11/12">
                  <Link href="/HsProgrammes">
                   <div className="p-3 border-b border-gray-400">
-                    <p>HSS PROGRAMMES</p>
+                    <p>HS PROGRAMMES</p>
                   </div>
                 </Link>
-                <Link href="/HsProgrammes">
+                <Link href="/HssProgrammes">
                   <div className="p-3 border-b border-gray-400">
                     <p>HSS PROGRAMMES</p>
                   </div>
