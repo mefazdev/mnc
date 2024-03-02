@@ -39,7 +39,7 @@ export default function BsProgrammes() {
             <div className="hs gap-5 grid lg:grid-cols-3">
               {/* <h2 className="visible lg:invisible mb-5">BACHLOR PROGRAMMES</h2> */}
               
-              <div className="lg:col-span-2">
+              <div className="lg:col-span-2 ">
                 <h2 className="font-bold text-lg ">BACHLOR PROGRAMMES</h2>
                 <p className="mt-2">
                   Jamia Madeenathunnoor offers seven courses in bachelor
@@ -51,7 +51,12 @@ export default function BsProgrammes() {
                   Madeenathunnoor authority.
                 </p>
                 {/* <a href="http://admission.jamiamadeenathunnoor.org/">
-                <button id='admision__btn'>REGISTER NOW</button></a> */}
+                <button
+                style={{background:'rgb(3, 39, 14)'}}
+                className="text-white p-1 px-3 mt-3
+                hover:translate-x-1 hover:transition ease-linear duration-150
+                "
+                >Register Now</button></a> */}
               </div>
               <div className="hs__img">
                 <Image src={hs1} alt='' className="rounded-sm"/>

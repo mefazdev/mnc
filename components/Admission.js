@@ -21,15 +21,15 @@ export default function Admission() {
           <div className="modal__close">
             <CloseIcon id="close__icon" onClick={() => setOpen(false)} />
           </div>
-          <div className="modal__main pt-4">
-            <h2>GET AN ADMISSION</h2>
+          <div className="modal__main pt-4 pb-4">
+            <h2>ADMISSION</h2>
             {/* <h3>Science Academy - (8th Std.)</h3> */}
-            <div className="modal__btn">
-            <a   href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_link">
-                   <button className="hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">8th STANDARD</button>
+            <div className="modal__btn lg:flex">
+            <a className="flex mt-2 w-full"  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_link">
+                   <button className="m-auto border hover:scale-105 hover:transition ease-linear duration-150 hover:border border-gray-300">8th STANDARD</button>
               </a>
-              <a href="https://admission.jamiamadeenathunnoor.org">
-              <button className="hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">S PROGRAMMES</button>
+              <a className="flex mt-2 w-full" href="https://admission.jamiamadeenathunnoor.org">
+              <button className="m-auto border border-gray-200  hover:scale-105 hover:transition ease-linear duration-150 hover:border ">HSS PROGRAMMES</button>
               </a>
             </div>
           </div>

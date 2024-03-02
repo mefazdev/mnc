@@ -3,10 +3,10 @@
     /* background: transparent linear-gradient(369deg, rgba(229, 229, 226, 0.527) 0%, rgba(5, 73, 25, 0.233) 100%) 0% 0% no-repeat padding-box; */
     font-family: 'Nunito', sans-serif;
 }
-.home__banner{
+/* .home__banner{
     background-color: rgba(0, 0, 0, 0.945);
     
-}
+} */
 
 .banner__img{
     display: flex;
@@ -748,7 +748,8 @@ margin-top: 30px;
 
 .modal__main {
     /* height: 100px; */
-    background-color: rgba(0, 0, 0, 0.548);
+    /* background-color: rgba(0, 0, 0, 0.548); */
+    background-color: rgba(0, 0, 0, 0.683);
     
      
 }
@@ -766,7 +767,7 @@ margin-top: 30px;
     text-align: center;
 }
 .modal__btn{
-display: flex;
+
 justify-content: space-around;
 
 /* margin-top: 10px; */
@@ -777,8 +778,8 @@ margin: auto;
 .modal__btn button{
     /* margin: auto; */
     border-radius: 3px;
-    margin: 20px;
-    margin-top: 5px;
+    /* margin: 20px; */
+    /* margin-top: 5px; */
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     background-color: #043a07;
@@ -792,7 +793,7 @@ max-width: 170px;
 
 @media only screen and (max-width: 800px) {
     .modal{
-        background-image: url('../assets/images/events/eve-1.jpg');
+        background-image: url('../assets/images/students/img-1.jpeg');
 
         /* background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.226)), url("../assets/images/students/img-2.jpeg"); */
     

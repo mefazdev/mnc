@@ -10,21 +10,23 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { bsDatas, hsDatas } from "../assets/data/data.js";
+import {  hssDatas } from "../assets/data/data.js";
 import Head from "next/head";
 
-export default function HsProgrammes() {
-  const hsData = hsDatas;
-  const bsData = bsDatas;
+export default function HssProgrammes() {
+  const hssData = hssDatas;
+ 
   return (
     <>
       <Head>
         <title>Hs programmes</title>
         <meta
           name="description"
-          content="The students will parallelly complete Higher school course
+          content="The students will parallelly complete Higher secondary course
                   under the SCERT, Government of Kerala and with the foundation
-                  course in Islamic studies. Students will be admitted based on their marks
+                  course in Islamic studies. For higher secondary program, Jamia
+                  Madeenathunnoor offers three streams viz Science, Commerce and
+                  Humanities. Students will be admitted based on their marks
                   obtained in entrance examination for selection process and
                   their preference of courses. The final decision on the course
                   preference will be vested in the Jamia Madeenathunnoor
@@ -35,17 +37,19 @@ export default function HsProgrammes() {
       <Navbar />
       <div className="programmes">
         <div className="programmes__head">
-          <h1>HS PROGRAMMES</h1>
+          <h1>HSS PROGRAMMES</h1>
         </div>
-        <div className="programmes__content min-h-screen p-5 lg:p-0  pb-24 lg:pb-40">
+        <div className="programmes__content p-5 lg:p-0  pb-24 lg:pb-40">
           <div className="hs__container">
             <div className="hs  grid gap-5 lg:gap-10 lg:grid-cols-3">
               <div className="lg:col-span-2">
-                <h2 className="font-bold text-lg ">HS PROGRAMMES</h2>
+                <h2 className="font-bold text-lg ">HSS PROGRAMMES</h2>
                 <p className="mt-1">
-                The students will parallelly complete Higher school course
+                  The students will parallelly complete Higher secondary course
                   under the SCERT, Government of Kerala and with the foundation
-                  course in Islamic studies. Students will be admitted based on their marks
+                  course in Islamic studies. For higher secondary program, Jamia
+                  Madeenathunnoor offers three streams viz Science, Commerce and
+                  Humanities. Students will be admitted based on their marks
                   obtained in entrance examination for selection process and
                   their preference of courses. The final decision on the course
                   preference will be vested in the Jamia Madeenathunnoor
@@ -66,8 +70,7 @@ export default function HsProgrammes() {
             </div>  
 
             <div className="hs__accordion">
-              {hsData
-                ? hsData.map((data, index) => {
+              {hssData?.map((data, index) => {
                     return (
                       <Accordion
                         key={index}
@@ -107,7 +110,7 @@ export default function HsProgrammes() {
                       </Accordion>
                     );
                   })
-                : ""}
+                }
             </div>
           </div>
         </div>

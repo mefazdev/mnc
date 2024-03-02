@@ -250,7 +250,7 @@ export default function Navbar() {
               <div className="dorpdown__div">
                 <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-6">
                   <span className="development__head cursor-pointer group">
-                    <Link href="/HsProgrammes">
+                  <Link href="/HsProgrammes">
                       <div
                         style={{ minWidth: "150px" }}
                         className={
@@ -261,6 +261,20 @@ export default function Navbar() {
                       >
                         <li className=" px-4 block whitespace-no-wrap text-sm ">
                           HS PROGRAMMES
+                        </li>
+                      </div>
+                    </Link>
+                    <Link href="/HssProgrammes">
+                      <div
+                        style={{ minWidth: "160px" }}
+                        className={
+                          router.pathname == "/HssProgrammes"
+                            ? "bg-green-800 py-2"
+                            : "bg-navbg hover:bg-green-800 py-2"
+                        }
+                      >
+                        <li className=" px-4 block whitespace-no-wrap text-sm ">
+                          HSS PROGRAMMES
                         </li>
                       </div>
                     </Link>
@@ -510,9 +524,14 @@ export default function Navbar() {
 
             {programmes ? (
               <div className="z-50 absolute mt-9 bg-navbg w-11/12">
+                 <Link href="/HsProgrammes">
+                  <div className="p-3 border-b border-gray-400">
+                    <p>HSS PROGRAMMES</p>
+                  </div>
+                </Link>
                 <Link href="/HsProgrammes">
                   <div className="p-3 border-b border-gray-400">
-                    <p>HS PROGRAMMES</p>
+                    <p>HSS PROGRAMMES</p>
                   </div>
                 </Link>
                 <Link href="/BsProgrammes">
