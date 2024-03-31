@@ -47,12 +47,12 @@ export default function MainBanner() {
               <div className="grid grid-cols-2 gap-4">
                 <button className="m-auto rounded w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
                   <a  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_link">
-                    8th STANDARD
+                    JMN JUNIOR SCHOOL
                   </a>{" "}
                 </button>
               {/* </div> */}
 
-              <button className="ml- w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
+              <button className="ml- w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white"><a href="https://admission.jamiamadeenathunnoor.org">JMN SENIOR SCHOOL</a> </button>
             </div>
             </div>
           </div>
@@ -70,12 +70,12 @@ export default function MainBanner() {
               <div className="grid grid-cols-2 gap-4">
                 <button className="m-auto rounded w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
                   <a  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_link">
-                    8th STANDARD
+                   JMN JUNIOR SCHOOL
                   </a>{" "}
                 </button>
               {/* </div> */}
 
-              <button className="ml- w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
+              <button className="ml- w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white"><a href="https://admission.jamiamadeenathunnoor.org">JMN SENIOR SCHOOL</a> </button>
             </div>
             </div>
           </div>
@@ -96,12 +96,12 @@ export default function MainBanner() {
               <div className="grid grid-cols-2 gap-4">
                 <button className="m-auto   w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white">
                   <a  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_link">
-                    8th STANDARD
+                  JMN JUNIOR SCHOOL
                   </a>{" "}
                 </button>
               {/* </div> */}
 
-              <button className="ml- w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white"><a href="https://admission.jamiamadeenathunnoor.org">HSS PROGRAMMES</a> </button>
+              <button className="ml- w-full hover:scale-105 hover:transition ease-linear duration-150 hover:border border-white"><a href="https://admission.jamiamadeenathunnoor.org">JMN SENIOR SCHOOL</a> </button>
             </div>
             </div>
           </div>
@@ -135,10 +135,10 @@ export default function MainBanner() {
             {/* <h3>Science Academy - (8th Std.)</h3> */}
             <div className="modal__btn lg:flex">
             <a className="flex mt-2 w-full"  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_link">
-                   <button className="m-auto border hover:scale-105 hover:transition ease-linear duration-150 hover:border border-gray-300">8th STANDARD</button>
+                   <button className="m-auto border hover:scale-105 hover:transition ease-linear duration-150 hover:border border-gray-300">JMN JUNIOR SCHOOL</button>
               </a>
               <a className="flex mt-2 w-full" href="https://admission.jamiamadeenathunnoor.org">
-              <button className="m-auto border border-gray-200  hover:scale-105 hover:transition ease-linear duration-150 hover:border ">HSS PROGRAMMES</button>
+              <button className="m-auto border border-gray-200  hover:scale-105 hover:transition ease-linear duration-150 hover:border ">JMN SENIOR SCHOOL</button>
               </a>
             </div>
           </div>
