@@ -26,10 +26,10 @@ export default function Admission() {
             {/* <h3>Science Academy - (8th Std.)</h3> */}
             <div className="modal__btn lg:flex">
             <a className="flex mt-2 w-full"  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_link">
-                   <button className="m-auto border hover:scale-105 hover:transition ease-linear duration-150 hover:border border-gray-300">8th STANDARD</button>
+                   <button className="m-auto border hover:scale-105 hover:transition ease-linear duration-150 hover:border border-gray-300">JMN JUNIOR SCHOOL</button>
               </a>
               <a className="flex mt-2 w-full" href="https://admission.jamiamadeenathunnoor.org">
-              <button className="m-auto border border-gray-200  hover:scale-105 hover:transition ease-linear duration-150 hover:border ">HSS PROGRAMMES</button>
+              <button className="m-auto border border-gray-200  hover:scale-105 hover:transition ease-linear duration-150 hover:border ">JMN SENIOR SCHOOL</button>
               </a>
             </div>
           </div>
