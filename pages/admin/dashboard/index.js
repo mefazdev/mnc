@@ -6,7 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
  import cookies from "js-cookie";
 import AdminNav from "../../../components/AdminNav";
  
-export default function page() {
+export default function Dash() {
    
     const router = useRouter()
  
@@ -19,8 +19,8 @@ const test = ()=>{
     // cookies.set('admin','lllw')
  
 }
-useEffect( async()=>{
-    const adminUser = await cookies.get('admin') 
+useEffect(  ()=>{
+    const adminUser =   cookies.get('admin') 
     
     if(adminUser === 'false'){
         router.push('/admin/Login')

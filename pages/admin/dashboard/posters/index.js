@@ -16,8 +16,8 @@ export default function Index() {
   const [uploading,setUploading] = useState(false)
 const [deleting,setDeleting] = useState('false')
 const router = useRouter()
-useEffect( async()=>{
-  const adminUser = await cookies.get('admin') 
+useEffect( ()=>{
+  const adminUser =   cookies.get('admin') 
   
   if(adminUser === 'false'){
       router.push('/admin/Login')

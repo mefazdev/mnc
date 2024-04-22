@@ -48,7 +48,7 @@ import Navbar from "../../components/Navbar";
 //   };
 // }
 
-export default   function page( ) {
+export default   function News( ) {
   const [post,setPost] = useState({})
   const router = useRouter()
   const slug = router.query.slug

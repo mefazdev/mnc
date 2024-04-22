@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import cookies from "js-cookie";
 
  
-export default function page() {
+export default function Login() {
 
   const [data, setData] = useState([]);
   const [username, setUsername] = useState("");

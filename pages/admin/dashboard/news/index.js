@@ -105,8 +105,8 @@ export default function Component() {
   };
 
   const router = useRouter()
-useEffect( async()=>{
-  const adminUser = await cookies.get('admin') 
+useEffect(  ()=>{
+  const adminUser  = cookies.get('admin') 
   
   if(adminUser === 'false'){
       router.push('/admin/Login')

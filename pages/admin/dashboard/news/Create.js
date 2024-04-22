@@ -24,13 +24,18 @@ export default function Component() {
   
   const [editorValue, setEditorValue] = React.useState("");
   const router = useRouter()
-  useEffect( async()=>{
-    const adminUser = await cookies.get('admin') 
-    
-    if(adminUser === 'false'){
+  useEffect(()=>{
+    const getAdmin = ()=>{
+      const adminUser =   cookies.get('admin') 
+      if(adminUser === 'false'){
         router.push('/admin/Login')
          
     }
+    getAdmin()
+    }
+   
+    
+   
     
   })
   const handleTitle = (e) => {
