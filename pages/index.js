@@ -37,9 +37,7 @@ export default function Home() {
   return (
     <div>
        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+   
       <Head>
         <title>Jamia Madeenathunnoor</title>
         <meta name="description" content="Markaz Garden Group of Institutions was established on the onset
