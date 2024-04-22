@@ -87,10 +87,17 @@ export default function MobBanner() {
             {/* <h3>Science Academy - (8th Std.)</h3> */}
             <div className="modal__btn lg:flex w-full">
             <a className="flex mt-2 w-full"  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_link">
+<<<<<<< HEAD
                    <button className="m-auto w-fit border hover:scale-105 hover:transition ease-linear duration-150 hover:border border-gray-300">    JMN JUNIOR SCHOOL</button>
               </a>
               <a className="flex mt-2 w-full" href="https://admission.jamiamadeenathunnoor.org">
               <button className="m-auto w-fit border border-gray-200  hover:scale-105 hover:transition ease-linear duration-150 hover:border ">    JMN SENIOR SCHOOL</button>
+=======
+                   <button className="m-auto border hover:scale-105 hover:transition ease-linear duration-150 hover:border border-gray-300">JMN JUNIOR SCHOOL</button>
+              </a>
+              <a className="flex mt-2 w-full" href="https://admission.jamiamadeenathunnoor.org">
+              <button className="m-auto border border-gray-200  hover:scale-105 hover:transition ease-linear duration-150 hover:border ">JMN SENIOR SCHOOL</button>
+>>>>>>> 5f98d0b96ce66be9efcf24fc538cc152ff834a14
               </a>
             </div>
           </div>
