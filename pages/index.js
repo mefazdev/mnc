@@ -36,8 +36,9 @@ export default function Home() {
   },[])
   return (
     <div>
-       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   
+       {/* <script src="https://unpkg.com/aos@next/dist/aos.js"></script> */}
+      
+
       <Head>
         <title>Jamia Madeenathunnoor</title>
         <meta name="description" content="Markaz Garden Group of Institutions was established on the onset
@@ -54,7 +55,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
-  
+      {/* <Script src="https://unpkg.com/aos@next/dist/aos.js" strategy="beforeInteractive" /> */}
       <Navbar />
 
       <div className="home">
