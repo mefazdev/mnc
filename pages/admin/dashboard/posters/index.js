@@ -16,6 +16,7 @@ export default function Index() {
   const [uploading,setUploading] = useState(false)
 const [deleting,setDeleting] = useState('false')
 const router = useRouter()
+
 useEffect( ()=>{
   const adminUser =   cookies.get('admin') 
   
