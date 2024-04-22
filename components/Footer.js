@@ -108,8 +108,8 @@ export default function Footer() {
           </Link>
        
          
-          <Link href="/Alumni">
-            <h6>Alumni</h6>
+          <Link href="/admin/Login">
+            <h6>Admin</h6>
           </Link>
         
         </div>
@@ -129,7 +129,7 @@ export default function Footer() {
     </div> */}
           <div className="footer__bottom__right">
             <p>
-              ©2023. Powered by{" "}
+              ©2024. Powered by{" "}
               <a
                 href="whatsapp://send?phone=+918606256402"
                 data-action="share/whatsapp/share"

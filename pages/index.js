@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import MainBanner from "../components/MainBanner";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
@@ -10,17 +10,36 @@ import Status from "../components/Status";
 import Link from "next/link";
 import Head from "next/head";
 import mnc from "../assets/images/admission.jpg";
-// import mah from "../assets/images/senate/director.jpg";
-// import apUsthad from "../assets/images/senate/apusthad.jpeg";
+ 
 import Admission from "../components/Admission";
-import Modal from "@mui/material/Modal";
+ 
 import { useState } from "react";
 import apUsthad from "../assets/images/senate/ap-usthad.jpg";
 import mah from "../assets/images/senate/hakkim-usthad.jpg";
-import Events from "../components/Events";
+ 
+import MobPosters from "../components/MobPosters";
+ 
 export default function Home() {
+  const [poster, setPoster] = useState([])
+  const getPoster = async  ()=>{
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/poster`, {});
+      const {data} = await res.json();
+      setPoster(data)
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  useEffect(()=>{
+    getPoster()
+  },[])
   return (
     <div>
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
       <Head>
         <title>Jamia Madeenathunnoor</title>
         <meta name="description" content="Markaz Garden Group of Institutions was established on the onset
@@ -35,16 +54,22 @@ export default function Home() {
               residential facilities on the campus for students doing their
               courses in various disciplines and subjects." />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
   
       <Navbar />
 
       <div className="home">
         <div className="home__banner">
-          <MainBanner />
+          <MainBanner poster={poster} />
         </div>
 
-<div className=" mt-10 lg:mt-24">
+    <div className="md:hidden">
+      <MobPosters poster={poster}/>
+    </div>
+<div className=" mt-4 lg:mt-24"
+//  data-aos="fade-up"
+ >
 <div className="home__about   lg:gap-10  grid lg:grid-cols-3">
           <div className="home__about__left  col-span-3 lg:col-span-1">
             <div className="home__about__img rounded">
@@ -52,7 +77,7 @@ export default function Home() {
             </div>
             {/* <img src='https://images1.content-hci.com/commimg/video/CH/myhc_279666.jpg' /> */}
           </div>
-          <div className="home__about__right col-span-2 mt-2 lg:mt-0">
+          <div className="home__about__right col-span-2 mt-2 lg:mt-0" >
             <h3 className="text-green-800">JAMIA MADEENATHUNNOOR</h3>
             {/* <h3>PIONEERING A PROMISING FUTURE</h3> */}
             <p>
@@ -84,8 +109,10 @@ export default function Home() {
         <Status />
 
         {/* <<<<<<<<<<< HOME DIRECTOR >>>>>>>>>>>>>> */}
-        <div className="home__director ">
-          <div className="home__director__content  m-auto">
+        <div className="home__director" 
+       data-aos="fade-right"
+        >
+          <div className="home__director__content  m-auto"  >
             <h2 className="font-bold text-2xl">Chairman&apos;s Message</h2>
             <h3 className=" invisible lg:visible ">Sheikh Abubakr Ahmad</h3>
             <div className="grid    lg:gap-10 lg:grid-cols-3">
@@ -127,10 +154,10 @@ export default function Home() {
         {/* <<<<<< HOME ADMISSION >>>>>>>>>> */}
 
         <Admission />
-        <div className="home__director__two ">
+        <div className="home__director__two " data-aos="fade-right">
           <div className="home__director__content border-b-2 ">
           <h2 className="font-bold text-2xl">
-       RECTOR&apos;S MESSAGE</h2>
+       Rector&apos;s Message</h2>
             <h3 className=" invisible lg:visible ">Dr. Muhammed Abdul Hakkim Azhari</h3>
             <div className="grid    lg:gap-10 lg:grid-cols-3">
               <div className="home__director__left    lg:col-span-2">
@@ -169,11 +196,11 @@ export default function Home() {
         </div>
 
         {/* <<<<< HOME NEWS >>>>>>>>> */}
-        {/* <News /> */}
+        <News />
 
-        <Events/>
+        {/* <Events/> */}
       </div>
-      <Footer />
+        <Footer />
     </div>
   );
 }

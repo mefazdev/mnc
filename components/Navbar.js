@@ -429,7 +429,20 @@ export default function Navbar() {
               </Link>
               <div className="bg-green-600 h-1   hidden   group-hover:block"></div>
             </span>
-
+            <span className="ml-3 group cursor-pointer">
+              <Link href="/Newses" className="ml-4">
+                <h3
+                  className={
+                    router.pathname == "/Newses"
+                      ? "text-green-600 cursor-pointer font-semibold"
+                      : "  cursor-pointer"
+                  }
+                >
+              NEWS
+                </h3>
+              </Link>
+              <div className="bg-green-600 h-1   hidden   group-hover:block"></div>
+            </span>
             <span className="ml-4 cursor-pointer  group">
               {" "}
               <Link href="/Contact">
@@ -609,7 +622,11 @@ export default function Navbar() {
               <p>ALUMNI</p>
             </div>
           </Link>
-
+          <Link href="/Newses">
+            <div className="border-b border-gray-800 p-2 pl-6">
+              <p>NEWS</p>
+            </div>
+          </Link>
           <Link href="Contact">
             <div className=" border-b border-gray-800 p-2 pl-6 ">
               <p>CONTACT</p>

@@ -6,6 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Carousel from "react-material-ui-carousel";
 import img from '../assets/images/students/img-2.jpeg'
 import img2 from '../assets/images/students/img-1.jpeg'
+ 
 import img3 from '../assets/images/students/img-3.jpeg'
 import Image from "next/image";
 
@@ -20,7 +21,7 @@ export default function MobBanner() {
     setOpen(true);
   };
   useEffect(() => {
-    controlOpen();
+    // controlOpen();
   }, []);
   return (
     <div>
@@ -28,7 +29,7 @@ export default function MobBanner() {
       <Carousel
         // autoPlay={false}
         indicators={false}
-        navButtonsAlwaysVisible
+        // navButtonsAlwaysVisible
         infiniteLoop={true}
         stopAutoPlayOnHover={false}
         duration={1000}
@@ -84,12 +85,12 @@ export default function MobBanner() {
           <div className="modal__main pt-4 pb-4">
             <h2>ADMISSION</h2>
             {/* <h3>Science Academy - (8th Std.)</h3> */}
-            <div className="modal__btn lg:flex">
+            <div className="modal__btn lg:flex w-full">
             <a className="flex mt-2 w-full"  href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_link">
-                   <button className="m-auto border hover:scale-105 hover:transition ease-linear duration-150 hover:border border-gray-300">8th STANDARD</button>
+                   <button className="m-auto w-fit border hover:scale-105 hover:transition ease-linear duration-150 hover:border border-gray-300">    JMN JUNIOR SCHOOL</button>
               </a>
               <a className="flex mt-2 w-full" href="https://admission.jamiamadeenathunnoor.org">
-              <button className="m-auto border border-gray-200  hover:scale-105 hover:transition ease-linear duration-150 hover:border ">HSS PROGRAMMES</button>
+              <button className="m-auto w-fit border border-gray-200  hover:scale-105 hover:transition ease-linear duration-150 hover:border ">    JMN SENIOR SCHOOL</button>
               </a>
             </div>
           </div>

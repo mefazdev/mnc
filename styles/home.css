@@ -12,9 +12,10 @@
     display: flex;
     align-items: center;
     
-    height: 100vh;
+    /* height: 100vh; */
     
     background-image: url('../assets/images/students/img-4.jpg');
+     
     background-position: center;
     background-size: cover;
        background-attachment: fixed;
@@ -42,7 +43,7 @@
     background-attachment: fixed;
 }
 .main__banner__text{
-    margin-left: 150px;
+    /* margin-left: 150px; */
     
    background-color: rgba(0, 0, 0, 0.863);
    padding: 20px;
@@ -579,7 +580,7 @@ font-family: "Poppins", sans-serif;
 }
  
 .main__banner__text:first-of-type{
-    animation: showup 4s infinite;
+    /* animation: showup 4s infinite; */
 }
 
 .main__banner__text__first__row:last-of-type {
@@ -786,7 +787,7 @@ margin: auto;
 color: #fff;
 padding: 7px;
 width: 100%;
-max-width: 170px;
+max-width:90%;
 }
 
 
@@ -818,3 +819,24 @@ max-width: 170px;
 
 
  
+
+
+
+
+
+
+
+
+
+
+
+  @import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';
+  @import '../node_modules/@syncfusion/ej2-icons/styles/bootstrap5.css';
+  @import '../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';
+  @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
+  @import '../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';
+  @import '../node_modules/@syncfusion/ej2-lists/styles/bootstrap5.css';
+  @import '../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
+  @import '../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
+  
+@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/bootstrap5.css';   

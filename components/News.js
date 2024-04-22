@@ -1,153 +1,66 @@
-// import React from 'react';
-// import axios from "axios";
-// import Link from "next/link";
-// import moment from "moment";
-// import { useEffect, useState } from "react";
-// import cookies from "js-cookie";
-// import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-// export default function News() {
-//     const [blog, setBlog] = useState([]);
-//     const fetchData = () => {
-//         axios
-//           .get(
-//             `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/blogs?_sort=published_at:desc`
-//           )
-//           .then((response) => {
-//             setBlog(response.data);
-//           });
-//       };
-//       useEffect(() => {
-//         fetchData();
-  
-//       }, []);
-        
-//   return(
-//        <div className='home__news'>
-//            <div className='home__news__head'>
-//            <h2>NEWS</h2>
-//            </div>
-// {/* <button onClick={()=>console.log(blog)}>click</button> */}
-//            <div className='home__news__content__row lg:flex'>
-//                <div className='home__news__content gap-10    grid lg:grid-cols-3'>
-
-//   {blog.map((data,index)=>{
-//        const date = moment(data.date).format("MMM DD YYYY");
-//       return(
-//  <Link key={index} href="/Blog">
-//      <div className='news__box'
-//       onClick={() => cookies.set("blogId", data.slug)}
-//      >
-//  <div className='news__box__img'>
-//  <img
-//                         src={`${data.thumbnail.url}`}
-//                         alt="Mobile application development companies in Kerala"
-//                       />
-//      <div className='news__box__text'>
-//         <p>{date}</p>
-//         <h4>{data.title}</h4>
-       
-//      </div>
-//  </div>
-// </div>
-// </Link>
-//       )
-//   })}
-
-
-
-
-
-//                </div>
-
-//                <div className='home__news__more invisible lg:visible'>
-//                    <Link href='/Blogs'>
-//                    <div className='home__news__more__round'>
-//                        <ArrowForwardIcon id='news__more__icon'/>
-//                    </div>
-//                    </Link>
-                 
-//                </div>
-//            </div>
-//            <Link href='/Blogs'>
-//            <p className='lg:invisible home__news__more__p'>LOAD MORE</p>
-//            </Link>
-          
-         
-//   </div>
-  
-  
-//   );
-// }
-
-import axios from "axios";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import moment from "moment";
-import { useEffect, useState } from "react";
-import cookies from "js-cookie";
+import formatDate from "../functions/formatDate";
 
-import React from "react";
+export default function News() {
+  const [data, setData] = useState([]);
+  const getData = async () => {
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/news`, {});
+      const { data } = await res.json();
+      setData(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
-export default function Blogs() {
+  useEffect(() => {
+    getData();
+  }, []);
 
-  const [blog, setBlog] = useState([]);
-    const fetchData = () => {
-        axios
-          .get(
-            `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/blogs?_sort=published_at:desc`
-          )
-          .then((response) => {
-            setBlog(response.data);
-          });
-      };
-      useEffect(() => {
-        // fetchData();
-  
-      }, []);
   return (
-    
-    <div className="hm__blogs">
-      <div className="hm__blogs__content">
-        <div className="hm__blogs__head">
-          <h3>What&apos;s new</h3>
-        </div>
-        <div className="hm__blogs__row grid gap-5 lg:grid-cols-2">
+    <div className=" px-4 md:px-0 md:w-10/12 m-auto  pt-10 md:pt-1 pb-28">
+      <h6 className=" text-xl md:text-3xl font-bold  ">What&apos;s New </h6>
+      
 
-        {blog.map((data,index)=>{
-       const date = moment(data.date).format("MMM DD YYYY");
-       const content = data.content.slice(0,250)
-       if(index < 6 ){
+      <div className="grid lg:grid-cols-3 gap-5 mt-5">
+        {data?.map((d, i) => {
+          const publishedAt = formatDate(new Date(d?.publishedAt));
 
-       
-return(
-  <Link key={index} href="/Blog">
-       
-<div      onClick={() => cookies.set("blogId", data.slug)} className="hm__blogs__box grid gap-5 lg:grid-cols-3">
-            <div className="hm__blogs__box__left">
-             <img src= {data.thumbnail.url} />          <div className="hm__blogs__box__more">
-                {/* <Link href="/News"> */}
-                  <h4>Read more</h4>
-                {/* </Link> */}
+          if (i < 3 && d?.isPublished) {
+            return (
+              <div
+                key={i}
+                className="p-4  w-full shadow-lg rounded-md  hover:-translate-y-3 transition ease-linear duration-150"
+              >
+                <div
+                  className="w-full h-60 rounded-md relative"
+                  style={{
+                    backgroundImage: `url(${d?.image})`,
+                    backgroundSize: "cover",
+                  }}
+                >
+                  <div className="bg-customgreen w-fit py-1 px-2 h-fit absolute right-1 bottom-1 rounded">
+                    <p className="text-sm  font-sa text-white">{publishedAt}</p>
+                  </div>
+                </div>
+                <div className="mt-4">
+                  <h4 className="text-lg text-gray-600 font-semibol leading-5 h-11 overflow-hidden  ">
+                    {d?.title}
+                  </h4>
+
+                  <div className="border-t mt-3  py-2 cursor-pointer bg-white text-customgreen transition-colors hover:bg-customgreen  hover:text-white duration-300 ease-linear ">
+                    <Link href={`/news/${d?.slug}`}>
+                      <p className="font-sans  text-center">Read</p>
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="lg:col-span-2">
-              <h3>
-                {data.title}
-              </h3>
-              <p>
-               {content}
-              </p>
-            </div>
-          </div>
-          </Link>
-)}
+            );
+          } else {
+            return;
+          }
         })}
-          
-          
-        </div>
-       
-       {/* <div className="blogs__more__btn">
-         <button>View more</button>
-       </div> */}
       </div>
     </div>
   );
