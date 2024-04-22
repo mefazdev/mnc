@@ -118,7 +118,7 @@ export default function MainBanner({poster}) {
             </div>
           </div>
         </Carousel>
-        <Poster poster={poster}/>
+        {poster?.length ? <Poster poster={poster}/> :''}
 
         <Modal open={open} id="modal">
           <div className="modal border-4 ">

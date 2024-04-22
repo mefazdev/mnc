@@ -18,6 +18,7 @@ import apUsthad from "../assets/images/senate/ap-usthad.jpg";
 import mah from "../assets/images/senate/hakkim-usthad.jpg";
  
 import MobPosters from "../components/MobPosters";
+import Script from "next/script";
  
 export default function Home() {
   const [poster, setPoster] = useState([])
@@ -34,11 +35,19 @@ export default function Home() {
   useEffect(()=>{
     getPoster()
   },[])
+  useEffect(() => {
+    import('aos').then((aos) => {
+      aos.init({ /* your configuration options */ });
+    });
+  }, []);
+  
   return (
     <div>
-       {/* <script src="https://unpkg.com/aos@next/dist/aos.js"></script> */}
-      
+     <Script src="https://unpkg.com/aos@next/dist/aos.js" strategy="beforeInteractive" />
 
+  {/* <script>
+    AOS.init();
+  </script> */}
       <Head>
         <title>Jamia Madeenathunnoor</title>
         <meta name="description" content="Markaz Garden Group of Institutions was established on the onset
@@ -55,7 +64,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
-      {/* <Script src="https://unpkg.com/aos@next/dist/aos.js" strategy="beforeInteractive" /> */}
+  
       <Navbar />
 
       <div className="home">
@@ -63,9 +72,9 @@ export default function Home() {
           <MainBanner poster={poster} />
         </div>
 
-    <div className="md:hidden">
+    {poster?.length ? <div className="md:hidden">
       <MobPosters poster={poster}/>
-    </div>
+    </div> :''}
 <div className=" mt-4 lg:mt-24"
 //  data-aos="fade-up"
  >
