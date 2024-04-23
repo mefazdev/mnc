@@ -44,15 +44,16 @@ export default function News() {
                     <p className="text-sm  font-sa text-white">{publishedAt}</p>
                   </div>
                 </div>
-                <div className="mt-4">
-                  <h4 className="text-lg text-gray-600 font-semibol leading-5 h-11 overflow-hidden  ">
+                <div className="mt-4  ">
+                  <h4 className="text-sm text-gray-600 font-semibol leading-5 h-fit min-h-11 overflow-hidden  ">
                     {d?.title}
                   </h4>
 
                   <div className="border-t mt-3  py-2 cursor-pointer bg-white text-customgreen transition-colors hover:bg-customgreen  hover:text-white duration-300 ease-linear ">
-                    <Link href={`/news/${d?.slug}`}>
-                      <p className="font-sans  text-center">Read</p>
+                    <Link href={`/news/${ d?.slug }`}>
+                      <p className="font-sans  text-center">Reads</p>
                     </Link>
+                  
                   </div>
                 </div>
               </div>

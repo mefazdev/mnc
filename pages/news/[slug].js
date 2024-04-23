@@ -6,6 +6,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Navbar from "../../components/Navbar";
+ 
+import { Swiper, SwiperSlide } from "swiper/react";
+ 
+import "swiper/css";
+ 
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 
@@ -48,7 +54,7 @@ import Navbar from "../../components/Navbar";
 //   };
 // }
 
-export default   function News( ) {
+export default   function News() {
   const [post,setPost] = useState({})
   const router = useRouter()
   const slug = router.query.slug
@@ -71,20 +77,31 @@ export default   function News( ) {
   },[slug])
 
 
-  const test = ()=>{
-    console.log(data)
+  const [poster, setPoster] = useState([])
+  const getPoster = async  ()=>{
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/poster`, {});
+      const {data} = await res.json();
+      setPoster(data)
+    } catch (error) {
+      console.log(error);
+    }
   }
+
+  useEffect(()=>{
+    getPoster()
+  },[])
   return (
     <div>
         <Navbar/>
-        <div className="px-4 lg:px-0 lg:w-11/12 m-auto pt-12   pb-28 border-b">
-        <button onClick={test}>CLCIK</button>
+        <div className="px-4 lg:px-0 lg:w-10/12 m-auto pt-12   pb-28 border-b">
+       
         
-      <div className="  mt-10 lg:mt-24 lg:w-10/12 m-auto">
-        <div className="">
+      <div className=" grid lg:grid-cols-3 gap-9  mt-10 lg:mt-24 m-auto">
+        <div className="lg:col-span-2">
         <h1 className="font-bold text-lg lg:text-2xl text-center"> {post?.title}</h1>
         <h6 className="text-center mt-3 text-gray-600">
-          {publishedAt} | Admin
+          {publishedAt}  
         </h6>
 
         <div className="mt-10">
@@ -100,7 +117,33 @@ export default   function News( ) {
           className="mt-10"
         />
         </div>
+        <div className="hidden lg:flex lg:mt-80 w-10/12 m-auto">
+        {poster.length ?    <Swiper
+        className="mySwiper"
+     
+        centeredSlidesBounds
+        slidesPerView={1}
+   
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         
+        // navigation={true}
+        modules={[Autoplay ]}
+      >
+        {poster?.map((d, i) => {
+          return (
+            <SwiperSlide key={i}>
+              <div>
+                <img src={d.image} alt="" />
+              </div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper> : ''}
+      </div>
       </div>      
     </div>
     </div>

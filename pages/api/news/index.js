@@ -8,7 +8,8 @@ dbConnect();
     switch (method) {
         case 'GET':
             try {
-                const news = await News.find()
+                const news = await News.find().sort({'publishedAt': -1})
+                
                 res.status(200).json({success:true,data:news})
             } catch (error) {
                 res.status(400).json({success:false, error:error.message})
