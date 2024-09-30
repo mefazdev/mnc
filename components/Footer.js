@@ -34,11 +34,11 @@ export default function Footer() {
             <p>info@jamiamadeenathunoor.org</p>
           </div>
           <div className="flex footer__social">
-            <a href="https://www.facebook.com/MarkazGardenofficial ">
+            <a href="https://www.facebook.com/profile.php?id=100085673749100">
               <FacebookIcon id="footer__social__icon" />
             </a>
 
-            <a href="https://www.facebook.com/MarkazGardenofficial/">
+            <a href="https://www.instagram.com/jamia_madeenathunnoor/">
               <InstagramIcon id="footer__social__icon" />
             </a>
             <a>

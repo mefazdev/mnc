@@ -42,14 +42,7 @@
     background-image:url("../assets/images/three.jpg");
     background-attachment: fixed;
 }
-.main__banner__text{
-    /* margin-left: 150px; */
-    
-   background-color: rgba(0, 0, 0, 0.863);
-   padding: 20px;
-   
-   margin-top: 80px;
-}
+ 
 
 .main__banner__text__first__row{
  
@@ -57,13 +50,9 @@ padding-top: 20px;
 padding-left: 20px;
 padding-right: 20px;
 }
-.main__banner__text__first__row h2{
-    color: #fff;
-    font-size: 26px;
-    font-weight: 700;
-}
+ 
 .main__banner__text__second__row button{
-    color: rgba(255, 255, 255, 0.788);
+    /* color: rgba(255, 255, 255, 0.788);
     font-size: 17px;
     
     background-color: rgb(9, 30, 58);
@@ -71,7 +60,7 @@ padding-right: 20px;
     padding: 6px;
   
     margin-top: 5px;
-    border-radius: 3px;
+    border-radius: 3px; */
     
 }
 
@@ -90,7 +79,7 @@ padding-right: 20px;
     font-weight: 600;
     letter-spacing: 1px;
     
-    color: rgb(12, 161, 12);
+    /* color: rgb(12, 161, 12); */
     
 }
 .main__banner__text__third__row{

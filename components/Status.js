@@ -39,15 +39,15 @@ export default function Status() {
    
 
   return (
-  <div className='status bg-customgreen'>
+  <div className='status bg-customgreen'  data-aos="fade-up">
      {/* <h3>ACDEAMIC DESTINATIONS</h3> */}
      <div className='status__content grid gap-10 grid-cols-1 lg:grid-cols-3  '>
      <div className='status__content__left col-span-3 lg:col-span-1 '>
 
 
-     <h3>JOURNEY OF 23 YEARS</h3> 
+     <h3  data-aos="fade-up">JOURNEY OF 23 YEARS</h3> 
 <div className='status__left__row grid gap-5 lg:grid-cols-2'>
- <div className='status__count__box'>
+ <div className='status__count__box'  data-aos="fade-up">
   <div className='rounded-full status__count__box__circle'>
   <PeopleAltIcon id='status__icons'/>
   </div>
@@ -69,7 +69,7 @@ export default function Status() {
   {/* <h6>Batches</h6> */}
   <h6>Students</h6>
  </div>
- <div className='status__count__box'>
+ <div className='status__count__box'  data-aos="fade-up">
  <div className='rounded-full status__count__box__circle'>
   {/* <VerifiedUserIcon  id='status__icons'/> */}
   <EmojiEventsIcon   id='status__icons'/>
@@ -93,7 +93,7 @@ export default function Status() {
  </div>
 </div>
 <div className='status__left__row grid gap-5 lg:grid-cols-2'>
- <div className='status__count__box'>
+ <div className='status__count__box'  data-aos="fade-up">
   <div className='rounded-full status__count__box__circle'>
   <LocalLibrary id='status__icons'/>
   </div>
@@ -115,7 +115,7 @@ export default function Status() {
   <h6>Mudarris</h6>
    
  </div>
- <div className='status__count__box'>
+ <div className='status__count__box'  data-aos="fade-up">
  <div className='rounded-full status__count__box__circle'>
   <BusinessCenterIcon id='status__icons'/>
   </div>
@@ -138,7 +138,7 @@ export default function Status() {
  </div>
 </div>
 <div className='status__left__row grid gap-5 lg:grid-cols-2'>
- <div className='status__count__box'>
+ <div className='status__count__box'  data-aos="fade-up">
   <div className='rounded-full status__count__box__circle'>
   <FavoriteIcon id='status__icons'/>
   </div>
@@ -160,7 +160,7 @@ export default function Status() {
   <h6>Social workers</h6>
    
  </div>
- <div className='status__count__box'>
+ <div className='status__count__box'  data-aos="fade-up">
  <div className='rounded-full status__count__box__circle'>
   <SchoolIcon id='status__icons'/>
   </div>
@@ -183,7 +183,7 @@ export default function Status() {
  </div>
 </div>
 <div className='status__left__row grid gap-5 lg:grid-cols-2'>
- <div className='status__count__box'>
+ <div className='status__count__box'   data-aos="fade-up">
   <div className='rounded-full status__count__box__circle'>
   <BorderColorIcon id='status__icons'/>
   </div>
@@ -205,7 +205,7 @@ export default function Status() {
   <h6>Educators</h6>
    
  </div>
- <div className='status__count__box'>
+ <div className='status__count__box'  data-aos="fade-up">
  <div className='rounded-full status__count__box__circle'>
   <SchoolIcon id='status__icons'/>
   </div>

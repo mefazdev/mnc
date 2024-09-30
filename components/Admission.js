@@ -7,12 +7,12 @@ export default function Admission() {
     <div>
       <div className="home__admission">
         <div className="home__admission__content">
-          <h3>
+          <h3  data-aos="fade-right">
             {" "}
             It is an initiative ,whereby,the students are well trained to
             radiate the noble ideals of Islam across the world
           </h3>
-          <button onClick={() => setOpen(true)}>GET AN ADMISSION</button>
+          <button data-aos="fade-right" onClick={() => setOpen(true)}>GET AN ADMISSION</button>
         </div>
       </div>
 
