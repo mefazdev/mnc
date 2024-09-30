@@ -58,7 +58,7 @@ export default function MainBanner({ poster }) {
           {imgs.map((d) => (
             <div
               key={d}
-              className="relative h-[90vh]  lg:h-[100vh] flex justify-center items-center overflow-y-hidden"
+              className="relative h-[80vh]  lg:h-[100vh] flex justify-center items-center overflow-y-hidden"
             >
               <Image src={d} layout="fill" className="object-cover" alt="" />
               {/* <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-70 group-hover:transition-opacity duration-400 ease-linear"></div> */}
@@ -67,9 +67,9 @@ export default function MainBanner({ poster }) {
         </Slider>
 
         <div className="absolute top-0 w-full ">
-          <div className="absolute px-6 h-[100vh]  lg:h-[100vh] w-full flex justify-center items-center">
+          <div className="absolute px-6 h-[95vh]  lg:h-[100vh] w-full flex justify-center items-center">
             <div
-              className="p-4 lg:p-6 rounded-lg backdrop-blur-lg shadow bg-white/20 shadow-gray-200"
+              className="p-3 lg:p-6 rounded-lg backdrop-blur-lg shadow bg-white/20 shadow-gray-200"
               data-aos="fade-up"
             >
               <div className="text-white text-2xl lg:text-3xl font-bold">
