@@ -30,7 +30,7 @@ export default function Posters({poster}) {
               removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
             >
              {poster.map((d)=>(
-             <div>
+             <div key={d.image}>
              <img src={d.image} alt="" />
            </div>
              ))}
