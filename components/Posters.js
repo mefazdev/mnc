@@ -16,6 +16,7 @@ export default function Posters({poster}) {
           items: 2,
         },
       };
+      // const ij = 
     return (
     <div>     <Carousel
               swipeable={true}
