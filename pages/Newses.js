@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import formatDate from '../functions/formatDate'
 import Navbar from "../components/Navbar";
+import Image from "next/image";
  
 export default function Component() {
   const [data, setData] = useState([]);
@@ -43,12 +44,24 @@ export default function Component() {
                 key={i}
                 className="grid  lg:grid-cols-3 gap-4 lg:gap-9 border-b pb-8 mt-10"
               >
-                <div className="h-full">
+                {/* <div className="h-full">
                   <img
                     src={d?.image}
                     alt=""
                   />
-                </div>
+                </div> */}
+                 <div className="relative h-[400px] overflow-hidden rounded-lg">
+                                  {d?.image && (
+                                    <Image
+                                      src={d?.image}
+                                      className="object-cover rounded-lg transform transition-transform duration-1000  hover:scale-110 overflow-hidden"
+                                      alt=""
+                                      layout="fill"
+                                    />
+                                  )}
+                
+                                 
+                                </div>
 
                 <div className="lg:col-span-2">
                   <h2 className="font-sans font-semibold lg:font-bold  lg:text-xl  ">

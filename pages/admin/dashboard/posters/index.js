@@ -105,7 +105,7 @@ export default function Index() {
     }
   };
   const handleDelete = async (docId, publicId) => {
-    console.log(publicId);
+    setDeleting(docId);
     try {
       const response = await fetch("/api/deleteImage", {
         method: "POST",
@@ -173,17 +173,17 @@ export default function Index() {
         </div>
 
         <div className=" mt-10 gap-5 grid md:grid-cols-2 lg:grid-cols-4">
-          {data?.map((d, i) => {
+          {data?.map((d) => {
             return (
-              <div key={i}>
+              <div key={d.imgId}>
                 <img src={d?.image} />
 
-                <button
+               {d.image &&  <button
                   className="p-1 bg-red-500 text-white m-auto w-full mt-2 rounded"
                   onClick={() => handleDelete(d._id, d.imgId)}
                 >
                   {deleting === d._id ? "DELETING" : "DELETE"}
-                </button>
+                </button>}
               </div>
             );
           })}

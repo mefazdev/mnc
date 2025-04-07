@@ -25,8 +25,7 @@ export default async function handler(req, res) {
 //  console.log('files>>>>++++', files.image[0])
 //     const imageFile = await files.image;
 const imageFile = Array.isArray(files.image) ? files.image[0] : files.image;
-    console.log('files>>>>', imageFile.filepath)
-    if (!imageFile || !imageFile.filepath ) {
+     if (!imageFile || !imageFile.filepath ) {
       return res.status(400).json({ error: 'No image file provided' });
     }
 

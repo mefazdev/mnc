@@ -10,48 +10,55 @@ import Status from "../components/Status";
 import Link from "next/link";
 import Head from "next/head";
 import mnc from "../assets/images/admission.jpg";
- 
+
 import Admission from "../components/Admission";
- 
+
 import { useState } from "react";
 import apUsthad from "../assets/images/senate/ap-usthad.jpg";
 import mah from "../assets/images/senate/hakkim-usthad.jpg";
- 
+
 import MobPosters from "../components/MobPosters";
 import Script from "next/script";
 import Posters from "../components/Posters";
- 
+
 export default function Home() {
-  const [poster, setPoster] = useState([])
-  const getPoster = async  ()=>{
+  const [poster, setPoster] = useState([]);
+  const getPoster = async () => {
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/poster`, {});
-      const {data} = await res.json();
-      setPoster(data)
+      const { data } = await res.json();
+      setPoster(data);
     } catch (error) {
       console.log(error);
     }
-  }
+  };
 
-  useEffect(()=>{
-    getPoster()
-  },[])
   useEffect(() => {
-    import('aos').then((aos) => {
-      aos.init({ /* your configuration options */ });
+    getPoster();
+  }, []);
+  useEffect(() => {
+    import("aos").then((aos) => {
+      aos.init({
+        /* your configuration options */
+      });
     });
   }, []);
-  
+
   return (
     <div className="scroll-smooth">
-     <Script src="https://unpkg.com/aos@next/dist/aos.js" strategy="beforeInteractive" />
+      <Script
+        src="https://unpkg.com/aos@next/dist/aos.js"
+        strategy="beforeInteractive"
+      />
 
-  {/* <script>
+      {/* <script>
     AOS.init();
   </script> */}
       <Head>
         <title>Jamia Madeenathunnoor</title>
-        <meta name="description" content="Markaz Garden Group of Institutions was established on the onset
+        <meta
+          name="description"
+          content="Markaz Garden Group of Institutions was established on the onset
               of these millennia by blending the religious wisdom and secular
               studies with a sake to enable Islamic renaissance possible. Jamia
               Madeenathunnoor is the chief institution under Markaz Garden Group
@@ -61,71 +68,79 @@ export default function Home() {
               over a dozen of departments, more than three hundred students are
               pursuing their studies here. The institution is also providing
               residential facilities on the campus for students doing their
-              courses in various disciplines and subjects." />
+              courses in various disciplines and subjects."
+        />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
-  
+
       <Navbar />
 
       <div className="home">
         <div className="home__banner">
-          <MainBanner   />
+          <MainBanner />
         </div>
         {/* <Posters poster={poster} /> */}
 
-    {poster?.length ? <div className="md:hidden">
-      <MobPosters poster={poster}/>
-    </div> :''}
-<div className=" pt-4 lg:pt-24"  id="about"
-//  data-aos="fade-up"
- >
-<div className="home__about   lg:gap-10  grid lg:grid-cols-3"  data-aos="fade-up">
-          <div className="home__about__left  col-span-3 lg:col-span-1">
-            <div className="home__about__img ">
-              <Image src={mnc}  className="rounded-lg shadow" alt=''/>
-            </div>
-            {/* <img src='https://images1.content-hci.com/commimg/video/CH/myhc_279666.jpg' /> */}
+        {poster?.length ? (
+          <div className="md:hidden">
+            <MobPosters poster={poster} />
           </div>
-          <div className="home__about__right col-span-2 mt-2 lg:mt-0" >
-            <h3 className="text-green-800">JAMIA MADEENATHUNNOOR</h3>
-            {/* <h3>PIONEERING A PROMISING FUTURE</h3> */}
-            <p >
-              Markaz Garden Group of Institutions was established on the onset
-              of these millennia by blending the religious wisdom and secular
-              studies with a sake to enable Islamic renaissance possible. Jamia
-              Madeenathunnoor is the chief institution under Markaz Garden Group
-              of Institutions. Currently Jamia Madeenathunnoor has become an
-              ensemble of multilayered educational system covering higher
-              secondary studies, bachelors and post-graduation levels.Spread
-              over a dozen of departments, more than three hundred students are
-              pursuing their studies here. The institution is also providing
-              residential facilities on the campus for students doing their
-              courses in various disciplines and subjects.
-            </p>
-            <div 
-            className="cursor-pointer m-auto w-fit bg-green-800 text-white  p-1.5    rounded-full px-4 lg:px-5 mt-3 hover:scale-105 transition ease-linear duration-200"
-            // className="home__about__more mt-2 lg:mt-0 flex m-auto w-fit p-1 text-white rounded-sm px-4"
-            >
-              <Link href="/About"  >
-                <h5>Read More</h5>
-              </Link>
+        ) : (
+          ""
+        )}
+        <div
+          className=" pt-4 lg:pt-24"
+          id="about"
+          //  data-aos="fade-up"
+        >
+          <div
+            className="home__about   lg:gap-10  grid lg:grid-cols-3"
+            data-aos="fade-up"
+          >
+            <div className="home__about__left  col-span-3 lg:col-span-1">
+              <div className="home__about__img ">
+                <Image src={mnc} className="rounded-lg shadow" alt="" />
+              </div>
+              {/* <img src='https://images1.content-hci.com/commimg/video/CH/myhc_279666.jpg' /> */}
+            </div>
+            <div className="home__about__right col-span-2 mt-2 lg:mt-0">
+              <h3 className="text-green-800">JAMIA MADEENATHUNNOOR</h3>
+              {/* <h3>PIONEERING A PROMISING FUTURE</h3> */}
+              <p>
+                Markaz Garden Group of Institutions was established on the onset
+                of these millennia by blending the religious wisdom and secular
+                studies with a sake to enable Islamic renaissance possible.
+                Jamia Madeenathunnoor is the chief institution under Markaz
+                Garden Group of Institutions. Currently Jamia Madeenathunnoor
+                has become an ensemble of multilayered educational system
+                covering higher secondary studies, bachelors and post-graduation
+                levels.Spread over a dozen of departments, more than three
+                hundred students are pursuing their studies here. The
+                institution is also providing residential facilities on the
+                campus for students doing their courses in various disciplines
+                and subjects.
+              </p>
+              <div
+                className="cursor-pointer m-auto w-fit bg-green-800 text-white  p-1.5    rounded-full px-4 lg:px-5 mt-3 hover:scale-105 transition ease-linear duration-200"
+                // className="home__about__more mt-2 lg:mt-0 flex m-auto w-fit p-1 text-white rounded-sm px-4"
+              >
+                <Link href="/About">
+                  <h5>Read More</h5>
+                </Link>
 
-              {/* <ArrowRightAltIcon /> */}
+                {/* <ArrowRightAltIcon /> */}
+              </div>
             </div>
           </div>
         </div>
-</div>
-        
 
         {/* <<<<<<<<<< STATUS >>>>>>>>> */}
         <Status />
 
         {/* <<<<<<<<<<< HOME DIRECTOR >>>>>>>>>>>>>> */}
-        <div className="home__director" 
-        data-aos="fade-up"
-        >
-          <div className="home__director__content  m-auto"  >
+        <div className="home__director" data-aos="fade-up">
+          <div className="home__director__content  m-auto">
             <h2 className="font-bold text-2xl">Chairman&apos;s Message</h2>
             <h3 className=" invisible lg:visible ">Sheikh Abubakr Ahmad</h3>
             <div className="grid    lg:gap-10 lg:grid-cols-3">
@@ -149,10 +164,9 @@ export default function Home() {
                   </div> */}
               </div>
               <div className="chair__img__div order-first lg:order-last">
-              
                 <div className="chair__img  ">
-                    <Image src={apUsthad} alt=''/>
-                    </div>
+                  <Image src={apUsthad} alt="" />
+                </div>
                 <h3
                   className="visible lg:hidden mt-2"
                   style={{ textAlign: "center" }}
@@ -169,9 +183,10 @@ export default function Home() {
         <Admission />
         <div className="home__director__two " data-aos="fade-right">
           <div className="home__director__content border-b-2 ">
-          <h2 className="font-bold text-2xl">
-       Rector&apos;s Message</h2>
-            <h3 className=" invisible lg:visible ">Dr. Muhammed Abdul Hakkim Azhari</h3>
+            <h2 className="font-bold text-2xl">Rector&apos;s Message</h2>
+            <h3 className=" invisible lg:visible ">
+              Dr. Muhammed Abdul Hakkim Azhari
+            </h3>
             <div className="grid    lg:gap-10 lg:grid-cols-3">
               <div className="home__director__left    lg:col-span-2">
                 <p className="mt-3">
@@ -194,7 +209,7 @@ export default function Home() {
               </div>
               <div className="chair__img__div order-first lg:order-last">
                 <div className="chair__img  ">
-                  <Image src={mah} alt=''/>
+                  <Image src={mah} alt="" />
                   {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aI2UgebZOan0BpmpNYj23xwTgd9vFPtQOw&usqp=CAU" /> */}
                 </div>
                 <h3
@@ -213,7 +228,7 @@ export default function Home() {
 
         {/* <Events/> */}
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 }
