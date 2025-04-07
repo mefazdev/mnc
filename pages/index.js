@@ -19,6 +19,7 @@ import mah from "../assets/images/senate/hakkim-usthad.jpg";
  
 import MobPosters from "../components/MobPosters";
 import Script from "next/script";
+import Posters from "../components/Posters";
  
 export default function Home() {
   const [poster, setPoster] = useState([])
@@ -69,8 +70,9 @@ export default function Home() {
 
       <div className="home">
         <div className="home__banner">
-          <MainBanner poster={poster} />
+          <MainBanner   />
         </div>
+        {/* <Posters poster={poster} /> */}
 
     {poster?.length ? <div className="md:hidden">
       <MobPosters poster={poster}/>

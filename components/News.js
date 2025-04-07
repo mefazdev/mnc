@@ -51,7 +51,7 @@ export default function News() {
 
                   <div className="border-t mt-3  py-2 cursor-pointer bg-white text-customgreen transition-colors hover:bg-customgreen  hover:text-white duration-300 ease-linear ">
                     <Link href={`/news/${ d?.slug }`}>
-                      <p className="font-sans  text-center">Reads</p>
+                      <p className="font-sans  text-center">Read</p>
                     </Link>
                   
                   </div>

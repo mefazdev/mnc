@@ -46,7 +46,7 @@ export default function Component() {
                 <div className="h-full">
                   <img
                     src={d?.image}
-                    alt="Best Islamic ladies course online,Lady quran teacher, Best Online islamic academy, Expert Lady Quran Teacher"
+                    alt=""
                   />
                 </div>
 

@@ -21,7 +21,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 
 import YouTubeIcon from "@material-ui/icons/YouTube";
 
-export default function MainBanner({ poster }) {
+export default function MainBanner() {
   const [open, setOpen] = useState(false);
 
   function timeout(delay) {
