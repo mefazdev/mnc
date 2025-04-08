@@ -8,15 +8,7 @@
   position: fixed;
   display: flex;
 }
-.navbar__on__scroll {
-  min-height: 65px;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.911);
-  
-  z-index: 100;
-  position: fixed;
-  display: flex;
-}
+ 
 
 .navbar__right {
  
