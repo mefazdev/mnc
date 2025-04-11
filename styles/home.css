@@ -86,22 +86,6 @@ flex-direction: column;
 }
 /* <<<<<<<<<<<<< NEWS >>>>>>>>>>>> */
  
-.home__news{ 
-
-margin-top: 70px;
-padding-bottom: 100px;
-}
-
-.home__news__head h2{
-    font-size: 20px; 
-    font-weight: 500;
-    color: rgb(8, 8, 56);
-}
-.home__about__right h2{
-    font-size: 30px;
-    font-weight: 500;
-    color: rgb(8, 8, 56); 
-    }
 .home__news__content{ 
     margin-top: 20px;
     width: 100%;
