@@ -107,7 +107,7 @@ const MobNav = () => {
       {/* Top Row  */}
       <div className="flex justify-between items-center  p-2 px-4  ">
         <div className="flex items-center gap-2">
-          <Link href={"/"}>
+          <Link passHref href={"/"}>
             <div className="p-1 bg-white rounded-md">
               <div className="relative   h-12 w-14 rounded bg-primary transition ease-linear duration-200">
                 <Image
@@ -119,7 +119,7 @@ const MobNav = () => {
               </div>
             </div>
           </Link>{" "}
-          <Link href={"/"}>
+          <Link passHref href={"/"}>
             <div className="relative h-10 w-32 rounded bg-primary transition ease-linear duration-200">
               <Image
                 src={caligraphy}
@@ -178,7 +178,7 @@ const MobNav = () => {
         >
           <div className="grid gap-1 text-lg">
             {/* Home */}
-            <Link href={"/"} onClick={() => setMenu(false)}>
+            <Link passHref href={"/"} onClick={() => setMenu(false)}>
               <div className=" p-2 rounded text-white flex items-center gap-2">
                 {router.pathname == "/" && (
                   <div className=" rounded-full h-2 w-2 bg-green-600"></div>
@@ -204,7 +204,7 @@ const MobNav = () => {
 
               {item == "about" && (
                 <div className="z-50  absolute right-0 top-0 mt-1 mr-2 w-7/12 p-3 rounded grid gap-1 bg-gray-900 bg-opacity-60 ">
-                  <Link
+                  <Link passHref
                     href={"/About"}
                     onClick={() => {
                       setMenu(false);
@@ -231,7 +231,7 @@ const MobNav = () => {
               {item == "leadership" && (
                 <div className="z-50  absolute right-0 top-0 mt-1 mr-2 w-7/12 p-3 rounded grid gap-1 bg-gray-900 bg-opacity-60 ">
                   {leadership.map((d) => (
-                    <Link
+                    <Link passHref key={d.name}
                       href={d.link}
                       onClick={() => {
                         setMenu(false);
@@ -268,7 +268,7 @@ const MobNav = () => {
               {item == "programmes" && (
                 <div className="z-50  absolute right-0 top-0 mt-1 mr-2 w-7/12 p-3 rounded grid gap-1 bg-gray-900 bg-opacity-60 ">
                   {programmes.map((d) => (
-                    <Link
+                    <Link passHref
                       key={d.name}
                       href={d.link}
                       onClick={() => {
@@ -306,7 +306,7 @@ const MobNav = () => {
               {item == "campuses" && (
                 <div className="z-50  absolute right-0 top-0 mt-1  w-fit p-3 rounded grid gap-1 bg-gray-900 bg-opacity-60 ">
                   {campuses.map((d) => (
-                    <Link
+                    <Link passHref
                       key={d.name}
                       href={d.link}
                       onClick={() => {
@@ -332,7 +332,7 @@ const MobNav = () => {
               </div>
             </a>
             {/* Alumni */}
-            <Link href={"/Alumni"} onClick={() => setMenu(false)}>
+            <Link passHref href={"/Alumni"} onClick={() => setMenu(false)}>
               <div className=" p-2 rounded text-white flex items-center gap-2">
                 {router.pathname == "/Alumni" && (
                   <div className=" rounded-full h-2 w-2 bg-green-600"></div>
@@ -341,7 +341,7 @@ const MobNav = () => {
               </div>
             </Link>
             {/* News */}
-            <Link href={"/Newses"} onClick={() => setMenu(false)}>
+            <Link passHref href={"/Newses"} onClick={() => setMenu(false)}>
               <div className=" p-2 rounded text-white flex items-center gap-2">
                 {router.pathname == "/Newses" && (
                   <div className=" rounded-full h-2 w-2 bg-green-600"></div>
@@ -350,7 +350,7 @@ const MobNav = () => {
               </div>
             </Link>
             {/* Contact */}
-            <Link href={"/Contact"} onClick={() => setMenu(false)}>
+            <Link passHref href={"/Contact"} onClick={() => setMenu(false)}>
               <div className=" p-2 rounded text-white flex items-center gap-2">
                 {router.pathname == "/Contact" && (
                   <div className=" rounded-full h-2 w-2 bg-green-600"></div>

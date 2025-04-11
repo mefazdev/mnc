@@ -44,11 +44,11 @@ export default function ScienceCampuses() {
                       "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
                   }}
                 >
-                  <div className="border-b border-green-600 pb-2">
-                    <p className="text-center font-semibold   text-green-600 uppercase">
+                  <div className="border-b border-secondary pb-2">
+                    <p className="text-center font-semibold   text-primary uppercase">
                       {d?.name}{" "}
                     </p>
-                    <p className="text-center text-green-600 capitalize">
+                    <p className="text-center text-primary capitalize">
                       {d?.location}, {d?.district}
                     </p>
                   </div>

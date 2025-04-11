@@ -65,7 +65,7 @@ export default function Navbar() {
             {
               "bg-black/60 backdrop-blur-lg px-8 bg-opacity-95  py-1":
                 navScroll,
-              "bg-black/20 backdrop-blur-md w-11/12 px-4 pl-2 mx-auto rounded":
+              "bg-black/10 backdrop-blur-md w-11/12 px-4 pl-2 mx-auto rounded":
                 !navScroll,
             }
           )}
@@ -74,7 +74,7 @@ export default function Navbar() {
             <div className="flex gap-2">
               <div className="bg-white p-0.5 rounded-md">
                 <div className=" h-11 w-14 relative rounded">
-                  <Link href="/">
+                  <Link passHref href="/">
                     <Image
                       src={logo}
                       className="rounded"
@@ -85,7 +85,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className=" h-12 w-32 relative rounded mt-1">
-                <Link href="/">
+                <Link passHref href="/">
                   <Image src={caligraphy} alt="" layout="fill" />
                 </Link>
               </div>
@@ -99,14 +99,14 @@ export default function Navbar() {
             </span>
           </div>
 
-          <div className="navbar__right text-sm col-span-2 hidden  lg:flex justify-end  relative   ">
-            <div className=" flex w-fit   h-5">
-              <Link href="/">
+          <div className="navbar__right col-span-2 hidden  lg:flex justify-end  relative   ">
+            <div className="flex gap-3 items-center">
+              <Link passHref href="/">
                 <span className="group">
                   <h3
                     className={
                       router.pathname == "/"
-                        ? "text-green-600 cursor-pointer font-semibold"
+                        ? " cursor-pointer font-semibold"
                         : "  cursor-pointer"
                     }
                   >
@@ -116,43 +116,40 @@ export default function Navbar() {
                   <div
                     className={
                       router.pathname === "/"
-                        ? ""
-                        : "bg-green-500 h-1   hidden   group-hover:block"
+                        ? "bg-secondary rounded-full h-0.5    group-hover:block"
+                        : "bg-secondary rounded-full  h-0.5   hidden   group-hover:block"
                     }
-                    // className="bg-green-600 h-1   hidden   group-hover:block"
                   ></div>
                 </span>
               </Link>
 
-              <span className=" group cursor-pointer ml-4 ">
-                <div className="flex">
-                  <h3
-                    className={
-                      router.pathname == "/About" ||
-                      router.pathname == "/Senate" ||
-                      router.pathname == "/Academic" ||
-                      router.pathname == "/Exicutive" ||
-                      router.pathname == "/Finance"
-                        ? "text-green-600 font-semibold"
-                        : ""
-                    }
-                  >
-                    ABOUT
-                  </h3>
-                  <ArrowDropDownIcon id="dropdown__icon" />
+              <div className=" group cursor-pointer relative ">
+                <div className="flex   justify-between">
+                  <h3>ABOUT</h3>
+                  <ArrowDropDownIcon />
                 </div>
-
+                <div
+                  className={
+                    router.pathname == "/About" ||
+                    router.pathname == "/Senate" ||
+                    router.pathname == "/Academic" ||
+                    router.pathname == "/Exicutive" ||
+                    router.pathname == "/Finance"
+                      ? "bg-secondary rounded-full h-0.5    group-hover:block absolute bottom-0 w-full"
+                      : ""
+                  }
+                ></div>
                 <span style={{ textAlign: "left", zIndex: "1" }}>
                   <ul className="dropdown-menu   absolute hidden   group-hover:block  text-gray-700 pt-2">
                     <span className="development__head cursor-pointer group">
                       <div className="flex rounded-t ">
-                        <Link href="/About">
+                        <Link passHref href="/About">
                           <div
                             style={{ minWidth: "100%" }}
                             className={
                               router.pathname == "/About"
-                                ? "bg-green-800 py-2"
-                                : "bg-navbg hover:bg-green-800 py-2"
+                                ? "bg-primary  py-2"
+                                : "bg-navbg hover:bg-primary  py-2"
                             }
                           >
                             <li className=" px-4 block whitespace-no-wrap text-sm ">
@@ -171,8 +168,8 @@ export default function Navbar() {
                           router.pathname == "/Academic" ||
                           router.pathname == "/Exicutive" ||
                           router.pathname == "/Finance"
-                            ? "bg-green-800 flex rounded-b  service__group__spa      py-2"
-                            : "flex rounded-b   bg-navbg hover:bg-green-800     py-2"
+                            ? "bg-bg-primary  flex rounded-b  service__group__spa      py-2"
+                            : "flex rounded-b   bg-navbg hover:bg-primary     py-2"
                         }
                       >
                         <li className=" px-4 block whitespace-no-wrap text-sm ">
@@ -181,12 +178,12 @@ export default function Navbar() {
                         <ArrowRightIcon style={{ color: "#fff" }} />
                       </div>
                       <ul className="design__list">
-                        <Link href="/Senate">
+                        <Link passHref href="/Senate">
                           <li
                             className={
                               router.pathname === "/Senate"
-                                ? " bg-green-800 pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
-                                : "bg-navbg hover:bg-green-800 pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
+                                ? " bg-primary  pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
+                                : "bg-navbg hover:bg-primary  pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
                             }
                             // className=" "
                           >
@@ -194,34 +191,34 @@ export default function Navbar() {
                           </li>
                         </Link>
 
-                        <Link href="/Academic">
+                        <Link passHref href="/Academic">
                           <li
                             className={
                               router.pathname === "/Academic"
-                                ? " bg-green-800 pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
-                                : "bg-navbg hover:bg-green-800 pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
+                                ? " bg-primary  pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
+                                : "bg-navbg hover:bg-primary  pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
                             }
                           >
                             ACADEMIC COUNCIL
                           </li>
                         </Link>
-                        <Link href="/Exicutive">
+                        <Link passHref href="/Exicutive">
                           <li
                             className={
                               router.pathname === "/Exicutive"
-                                ? " bg-green-800 pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
-                                : "bg-navbg hover:bg-green-800 pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
+                                ? " bg-primary  pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
+                                : "bg-navbg hover:bg-primary  pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
                             }
                           >
                             EXECUTIVE COUNCIL
                           </li>
                         </Link>
-                        <Link href="/Finance">
+                        <Link passHref href="/Finance">
                           <li
                             className={
                               router.pathname === "/Finance"
-                                ? " bg-green-800 pt-3 py-2 px-2 block whitespace-no-wrap text-sm rounded-b"
-                                : "bg-navbg rounded-b hover:bg-green-800 pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
+                                ? " bg-primary  pt-3 py-2 px-2 block whitespace-no-wrap text-sm rounded-b"
+                                : "bg-navbg rounded-b hover:bg-primary  pt-3 py-2 px-2 block whitespace-no-wrap text-sm"
                             }
                           >
                             FINANCE COMMITTEE
@@ -231,135 +228,142 @@ export default function Navbar() {
                     </span>
                   </ul>
                 </span>
-              </span>
+              </div>
+              {/* Programmes */}
+              <div className="relative group ">
+                <div className="flex cursor-pointer  relative ">
+                  <Link passHref href="/Programmes">
+                    <h3>PROGRAMMES</h3>
+                  </Link>
 
-              <span className="flex group cursor-pointer  ml-4">
-                <Link href="/Programmes">
-                  <h3
-                    className={
-                      router.pathname == "/HsProgrammes" ||
-                      router.pathname == "/HsProgrammes"
-                        ? "text-green-600 font-semibold"
-                        : ""
-                    }
-                  >
-                    PROGRAMMES
-                  </h3>
-                </Link>
+                  <ArrowDropDownIcon id="dropdown__icon" />
 
-                <ArrowDropDownIcon id="dropdown__icon" />
-
-                <div className="dorpdown__div">
-                  <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-6">
-                    <span className="development__head cursor-pointer group">
-                      <Link href="/HsProgrammes">
-                        <div
-                          style={{ minWidth: "150px" }}
-                          className={
-                            router.pathname == "/HsProgrammes"
-                              ? "bg-green-800 py-2"
-                              : "bg-navbg hover:bg-green-800 py-2"
-                          }
-                        >
-                          <li className=" px-4 block whitespace-no-wrap text-sm ">
-                            HS PROGRAMMES
-                          </li>
-                        </div>
-                      </Link>
-                      <Link href="/HssProgrammes">
-                        <div
-                          style={{ minWidth: "160px" }}
-                          className={
-                            router.pathname == "/HssProgrammes"
-                              ? "bg-green-800 py-2"
-                              : "bg-navbg hover:bg-green-800 py-2"
-                          }
-                        >
-                          <li className=" px-4 block whitespace-no-wrap text-sm ">
-                            HSS PROGRAMMES
-                          </li>
-                        </div>
-                      </Link>
-                      <Link href="/BsProgrammes">
-                        <div
-                          style={{ minWidth: "150px" }}
-                          className={
-                            router.pathname == "/BsProgrammes"
-                              ? "bg-green-800 py-2 rounded-b"
-                              : "bg-navbg hover:bg-green-800 py-2 rounded-b"
-                          }
-                        >
-                          <li className=" px-4 block whitespace-no-wrap text-sm ">
-                            BS PROGRAMMES
-                          </li>
-                        </div>
-                      </Link>
-                    </span>
-                  </ul>
+                  <div className="dorpdown__di absolute -ml-5">
+                    <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-6">
+                      <span className="development__head cursor-pointer group">
+                        <Link passHref href="/HsProgrammes">
+                          <div
+                            style={{ minWidth: "150px" }}
+                            className={
+                              router.pathname == "/HsProgrammes"
+                                ? "bg-primary py-2"
+                                : "bg-navbg hover:bg-primary py-2"
+                            }
+                          >
+                            <li className=" px-4 block whitespace-no-wrap text-sm ">
+                              HS PROGRAMMES
+                            </li>
+                          </div>
+                        </Link>
+                        <Link passHref href="/HssProgrammes">
+                          <div
+                            style={{ minWidth: "160px" }}
+                            className={
+                              router.pathname == "/HssProgrammes"
+                                ? "bg-primary py-2"
+                                : "bg-navbg hover:bg-primary py-2"
+                            }
+                          >
+                            <li className=" px-4 block whitespace-no-wrap text-sm ">
+                              HSS PROGRAMMES
+                            </li>
+                          </div>
+                        </Link>
+                        <Link passHref href="/BsProgrammes">
+                          <div
+                            style={{ minWidth: "150px" }}
+                            className={
+                              router.pathname == "/BsProgrammes"
+                                ? "bg-primary py-2 rounded-b"
+                                : "bg-navbg hover:bg-primary py-2 rounded-b"
+                            }
+                          >
+                            <li className=" px-4 block whitespace-no-wrap text-sm ">
+                              BS PROGRAMMES
+                            </li>
+                          </div>
+                        </Link>
+                      </span>
+                    </ul>
+                  </div>
                 </div>
-              </span>
+                <div
+                  className={
+                    router.pathname == "/HsProgrammes" ||
+                    router.pathname == "/HsProgrammes"
+                      ? "bg-secondary rounded-full h-0.5    group-hover:block absolute bottom-0 w-full"
+                      : ""
+                  }
+                ></div>
+              </div>
+              {/* Campuses */}
+              <div className="relative group ">
+                <div className="flex cursor-pointer  relative ">
+                  <Link passHref href="/Programmes">
+                    <h3> CAMPUSES</h3>
+                  </Link>
 
-              <span className="flex group cursor-pointer ml-4 ">
-                <h3
+                  <ArrowDropDownIcon id="dropdown__icon" />
+
+                  <div className="dorpdown__di absolute -ml-5">
+                    <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-6">
+                      <span className="development__head cursor-pointer group">
+                        <Link passHref href="/campuses/OnCampuses">
+                          <div
+                            style={{ minWidth: "150px" }}
+                            className={
+                              router.pathname == "/campuses/OnCampuses"
+                                ? "bg-primary py-2"
+                                : "bg-navbg hover:bg-primary py-2"
+                            }
+                          >
+                            <li className=" px-4 block whitespace-no-wrap text-sm ">
+                              ON-CAMPUSES
+                            </li>
+                          </div>
+                        </Link>
+                        <Link passHref href="/campuses/ScienceCampuses">
+                          <div
+                            style={{ minWidth: "160px" }}
+                            className={
+                              router.pathname == "/campuses/ScienceCampuses"
+                                ? "bg-primary py-2"
+                                : "bg-navbg hover:bg-primary py-2"
+                            }
+                          >
+                            <li className=" px-4 block whitespace-no-wrap text-sm ">
+                              SCIENCE ACADEMY
+                            </li>
+                          </div>
+                        </Link>
+                        <Link passHref href="/campuses/Erthunnabavi">
+                          <div
+                            style={{ minWidth: "150px" }}
+                            className={
+                              router.pathname == "/campuses/Erthunnabavi"
+                                ? "bg-primary py-2 rounded-b"
+                                : "bg-navbg hover:bg-primary py-2 rounded-b"
+                            }
+                          >
+                            <li className=" px-4 block whitespace-no-wrap text-sm ">
+                              ERTHUNNABAVI CAMPUSES
+                            </li>
+                          </div>
+                        </Link>
+                      </span>
+                    </ul>
+                  </div>
+                </div>
+                <div
                   className={
                     router.pathname == "/campuses/OnCampuses" ||
                     router.pathname == "/campuses/ScienceCampuses" ||
                     router.pathname == "/campuses/Erthunnabavi"
-                      ? "text-green-600 font-semibold"
+                      ? "bg-secondary rounded-full h-0.5    group-hover:block absolute bottom-0 w-full"
                       : ""
                   }
-                >
-                  CAMPUSES
-                </h3>
-                <ArrowDropDownIcon id="dropdown__icon" />
-
-                <div className="dorpdown__div">
-                  <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-6">
-                    <span className="development__head cursor-pointer group">
-                      <Link href="/campuses/OnCampuses">
-                        <div
-                          className={
-                            router.pathname == "/campuses/OnCampuses"
-                              ? "bg-green-800 py-2"
-                              : "bg-navbg hover:bg-green-800 py-2"
-                          }
-                        >
-                          <li className=" px-4 block whitespace-no-wrap text-sm ">
-                            ON-CAMPUSES
-                          </li>
-                        </div>
-                      </Link>
-                      <Link href="/campuses/ScienceCampuses">
-                        <div
-                          className={
-                            router.pathname == "/campuses/ScienceCampuses"
-                              ? "bg-green-800 py-2"
-                              : "bg-navbg hover:bg-green-800 py-2"
-                          }
-                        >
-                          <li className=" px-4 block whitespace-no-wrap text-sm ">
-                            SCIENCE ACADEMY
-                          </li>
-                        </div>
-                      </Link>
-                      <Link href="/campuses/Erthunnabavi">
-                        <div
-                          style={{ minWidth: "210px" }}
-                          className={
-                            router.pathname == "/campuses/Erthunnabavi"
-                              ? "bg-green-800 py-2 rounded-b"
-                              : "bg-navbg hover:bg-green-800 py-2 rounded-b"
-                          }
-                        >
-                          <li className=" px-4 block whitespace-no-wrap text-sm ">
-                            ERTHUNNABAVI CAMPUSES
-                          </li>
-                        </div>
-                      </Link>
-                    </span>
-                  </ul>
-                </div>
-              </span>
+                ></div>
+              </div>
 
               {/* <span className="flex group cursor-pointer ml-4 ">
               <h3>MEDIA</h3>
@@ -409,57 +413,79 @@ export default function Navbar() {
                 </ul>
               </div>
             </span> */}
-
-              <span className="ml-3 group">
+           
+              <span className=" group">
                 <a href="https://manager.jamiamadeenathunnoor.org/">
                   <h3 className="whitespace-nowrap">STAFF PANEL</h3>
                 </a>
 
-                <div className="bg-green-600 h-1   hidden   group-hover:block"></div>
+                <div className="bg-secondary rounded-full h-0.5    hidden   group-hover:block"></div>
               </span>
-              <span className="ml-3 group cursor-pointer">
-                <Link href="/Alumni" className="ml-4">
+              <Link passHref href="/Alumni">
+                <span className="group">
                   <h3
                     className={
                       router.pathname == "/Alumni"
-                        ? "text-green-600 cursor-pointer font-semibold"
+                        ? " cursor-pointer"
                         : "  cursor-pointer"
                     }
                   >
                     ALUMNI
                   </h3>
-                </Link>
-                <div className="bg-green-600 h-1   hidden   group-hover:block"></div>
-              </span>
-              <span className="ml-3 group cursor-pointer">
-                <Link href="/Newses" className="ml-4">
+
+                  <div
+                    className={
+                      router.pathname === "/Alumni"
+                        ? "bg-secondary rounded-full h-0.5     group-hover:block"
+                        : "bg-secondary rounded-full h-0.5   hidden   group-hover:block"
+                    }
+                  ></div>
+                </span>
+              </Link>
+
+              {/* News */}
+              <Link passHref href="/Newses">
+                <span className="group">
                   <h3
                     className={
                       router.pathname == "/Newses"
-                        ? "text-green-600 cursor-pointer font-semibold"
+                        ? " cursor-pointer"
                         : "  cursor-pointer"
                     }
                   >
-                    NEWS
+                    UPDATES
                   </h3>
-                </Link>
-                <div className="bg-green-600 h-1   hidden   group-hover:block"></div>
-              </span>
-              <span className="ml-4 cursor-pointer  group">
-                {" "}
-                <Link href="/Contact">
+
+                  <div
+                    className={
+                      router.pathname === "/Newses"
+                        ? "bg-secondary rounded-full h-0.5     group-hover:block"
+                        : "bg-secondary rounded-full h-0.5   hidden   group-hover:block"
+                    }
+                  ></div>
+                </span>
+              </Link>
+              <Link passHref href="/Contact">
+                <span className="group">
                   <h3
                     className={
                       router.pathname == "/Contact"
-                        ? "text-green-600 cursor-pointer font-semibold"
+                        ? " cursor-pointer"
                         : "  cursor-pointer"
                     }
                   >
-                    CONTACT{" "}
+                    CONTACT
                   </h3>
-                </Link>
-                <div className="bg-green-600 h-1   hidden   group-hover:block"></div>
-              </span>
+
+                  <div
+                    className={
+                      router.pathname === "/Contact"
+                        ? "bg-secondary rounded-full h-0.5     group-hover:block"
+                        : "bg-secondary rounded-full h-0.5   hidden   group-hover:block"
+                    }
+                  ></div>
+                </span>
+              </Link>
             </div>
           </div>
         </div>

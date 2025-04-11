@@ -70,14 +70,14 @@ export default function AdminNav() {
           <div className="hidden md:flex    w-full ml-28   mt-2 ">
              
 
-            <Link href={"/admin/dashboard/news"}>
+            <Link passHref href={"/admin/dashboard/news"}>
               <p className="hover:scale-105 text-md mt-1 transition ease-linear duration-100 cursor-pointer">
              News
               </p>
             </Link>
             
              
-            <Link href={"/admin/dashboard/posters"} >
+            <Link passHref href={"/admin/dashboard/posters"} >
               <p className="hover:scale-105 text-md  ml-10 mt-1 transition ease-linear duration-100 cursor-pointer">
               Posters
               </p>
@@ -116,27 +116,27 @@ export default function AdminNav() {
         }
       >
         <div>
-          <Link href={"/admin/dashboard/registrations"}>
+          <Link passHref href={"/admin/dashboard/registrations"}>
             <p className="mt-2  " onClick={() => setCollapse(false)}>
               Registrations
             </p>
           </Link>
-          <Link href={"/admin/dashboard/feedbacks"}>
+          <Link  passHref href={"/admin/dashboard/feedbacks"}>
             <p className="mt-2  " onClick={() => setCollapse(false)}>
               Feedbacks
             </p>
           </Link>
-          <Link href={"/admin/dashboard/subscriptions"}>
+          <Link passHref href={"/admin/dashboard/subscriptions"}>
             <p className="mt-2  " onClick={() => setCollapse(false)}>
               Subscriptions
             </p>
           </Link>
-          <Link href={"/admin/dashboard/messages"}>
+          <Link passHref href={"/admin/dashboard/messages"}>
             <p className="mt-2  " onClick={() => setCollapse(false)}>
               Messages
             </p>
           </Link>
-          <Link href={"/admin/dashboard/blog"}>
+          <Link passHref href={"/admin/dashboard/blog"}>
             <p className="mt-2  " onClick={() => setCollapse(false)}>
               Blogs
             </p>

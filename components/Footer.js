@@ -11,7 +11,7 @@ import FavoriteBorderOutlinedIcon from "@material-ui/icons/FavoriteBorderOutline
 import Link from "next/link";
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer bg-primary">
       <div className="footer__content lg:gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div className="footer__address">
           <div className="flex">
@@ -58,10 +58,10 @@ export default function Footer() {
         </div>
 
         <div className="footer__menu lg:m-auto mt-10    lg:mt-0 ">
-          <Link href="/Home">
+          <Link passHref href="/Home">
             <h6>Home</h6>
           </Link>
-          <Link href="/About">
+          <Link passHref  href="/About">
             <h6>About</h6>
           </Link>
 
@@ -73,20 +73,20 @@ export default function Footer() {
           <a href="https://manager.jamiamadeenathunnoor.org/">
             <h6>Staff Panel</h6>
           </a>
-          <Link href="/Contact">
+          <Link passHref href="/Contact">
             <h6>Contact us</h6>
           </Link>
         </div>
         <div className="footer__menu lg:m-auto   lg:mt-0 ">
-          <Link href="/Programmes">
+          <Link passHref href="/Programmes">
             <h6>Academics</h6>
           </Link>
-          <Link href="/Faculty">
+          <Link  passHref href="/Faculty">
             <h6>Faculty profile</h6>
           </Link>
 
           <h6>Admission</h6>
-          <Link href="/About">
+          <Link passHref href="/About">
             <h6>Vision & Mission</h6>
           </Link>
 
@@ -95,15 +95,15 @@ export default function Footer() {
         </div>
         <div className="footer__menu lg:m-auto  lg:mt-0 ">
           {" "}
-          <Link href="/campuses/OnCampuses">
+          <Link passHref href="/campuses/OnCampuses">
             <h6>On-Campuses</h6>
           </Link>
 
-          <Link href="/campuses/ScienceCampuses">
+          <Link passHref href="/campuses/ScienceCampuses">
             <h6>Science  Campuses</h6>
           </Link>
 
-          <Link href="/campuses/Erthunnabavi">
+          <Link passHref href="/campuses/Erthunnabavi">
             <h6>Erthunnabavi Campuses</h6>
           </Link>
        
@@ -115,7 +115,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer___bottom  ">
+      <div className="footer___bottom  bg-white/10">
         <div className="footer__bottom__content flex">
           {/* <div className='flex footer__bottom__left'>
       <Link href='/'><p>Home</p></Link>
@@ -129,7 +129,7 @@ export default function Footer() {
     </div> */}
           <div className="footer__bottom__right">
             <p>
-              ©2024. Powered by{" "}
+              ©2025. Powered by{" "}
               <a
                 href="whatsapp://send?phone=+918606256402"
                 data-action="share/whatsapp/share"

@@ -30,7 +30,11 @@ function MyApp({ Component, pageProps }) {
        <style>
   @import url(&apos;https://fonts.googleapis.com/css2?family=Aboreto&family=Charis+SIL:wght@700&family=Inconsolata:wght@500&family=Josefin+Sans&family=Margarine&family=Montserrat:wght@300&family=Nunito&family=Roboto&family=Rubik:ital,wght@0,400;1,300&family=Space+Mono:wght@400;700&family=Ubuntu+Condensed&display=swap&apos;);
 </style>
-
+<style>
+@import url(&apos;https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swa&apos;);
+ 
+ 
+</style>
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
 

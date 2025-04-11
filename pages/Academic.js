@@ -5,24 +5,51 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import Image from "next/image";
-import hakkimUsthad from "../assets/images/senate/hakkim-usthad.jpg";
  
-import asafNurani from "../assets/images/senate/asaf-nurani.jpg";
- 
-import jafarNurani from "../assets/images/senate/jafar-nurani.jpg";
- 
-import aliAhsani   from "../assets/images/academic-council/ali-ahsani.jpeg";
-import kavanurUsthad    from "../assets/images/academic-council/kavanur-usthad.jpeg";
-import moidusthad    from "../assets/images/academic-council/moidu-saqafi.jpeg";
-import ashfaqNurani    from "../assets/images/academic-council/ashfaq-nurani.jpeg";
-import roshanNurani    from "../assets/images/academic-council/roshan-nurani.jpeg";
-import  shaukathAli    from "../assets/images/academic-council/shaukath-ali.jpeg"; 
-import shihabNurani    from "../assets/images/academic-council/shihab-nurani.jpeg";
-import thahaNurani     from "../assets/images/academic-council/thaha-nurani.jpeg";
-import vajidNurani    from "../assets/images/academic-council/vajid-nurani.jpeg";
- 
- 
- 
+ const data =[
+  {name:"Dr Muhammad Abdul Hakkim Azhari",
+    image:'/images/senate/hakkim-usthad.jpg',
+    dsignation:"Rector",
+  },
+  {name:"Ali Ahsani",
+    image:'/images/academic-council/ali-ahsani.jpeg',
+    dsignation:"HoD, Fiqh",
+  },
+  {name:"Muhyudheen Saqafi Thaleekkara",
+    image:'/images/academic-council/moidu-saqafi.jpeg',
+    dsignation:"HoD, Aqeedah",
+  },
+  
+  {name:"Muhyudheen Saqafi Kavanur",
+    image:'/images/academic-council/kavanur-usthad.jpeg',
+    designation:"HoD, Tafsir",
+  },
+  {name:"Asaf Nurani",
+    image:'/images/senate/asaf-nurani.jpg',
+    designation:"Pro-Rector",
+  },
+  {name:"Sayyid Thwaha Nurani",
+    image:'/images/academic-council/thaha-nurani.jpeg',
+    designation:"Dean of Academic Affairs",
+  },
+  {name:"Jafar Nurani",
+    image:'/images/senate/jafar-nurani.jpg',
+    designation:"Principal, Markhinz Bangalore",
+  },
+  {
+    name:"Shihabudheen Nurani",
+    image:'/images/academic-council/shihab-nurani.jpeg',
+    designation:"Principal, Markazul Hidaya, Kodagu",
+  },
+  {name:"Roshan Nurani",
+    image:'/images/academic-council/roshan-nurani.jpeg',
+    designation:"Academic Expert & Vice Rector Jamia Markaz",
+  },
+  {name:"Shoukath Ali",
+    image:'/images/academic-council/shaukath-ali.jpeg',
+    designation:"Academic Expert & Counselor, IIT Bombay",
+  },
+ ]
 
 export default function Academic() {
   return (
@@ -35,91 +62,17 @@ export default function Academic() {
         <div className="we__content">
           <div className="we__row grid gap-6 grid-cols-2   lg:grid-cols-4">
              
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={hakkimUsthad} alt=''/>
-              </div>
-              <h6>Dr Muhammad Abdul Hakkim Azhari</h6>
-              <h5>Rector</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={aliAhsani} alt=''/>
-              </div>
-              <h6>Ali Ahsani</h6>
-              <h5>HoD, Fiqh</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={moidusthad} alt=''/>
-              </div>
-              <h6>Muhyudheen Saqafi Thaleekkara</h6>
-              <h5>HoD, Tafsir</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={kavanurUsthad} />
-              </div>
-              <h6>Muhyudheen Saqafi kavanoor</h6>
-              <h5>HoD, Aqeeda</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={asafNurani} alt=''/>
-              </div>
-              <h6>Asaf Nurani</h6>
-              <h5>Pro-Rector</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={thahaNurani} alt=''/>
-              </div>
-              <h6>Sayyid Thwaha Nurani</h6>
-              <h5>Dean of Academic Affairs</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={ashfaqNurani} alt=''/>
-              </div>
-              <h6>Ashfaque Nurani</h6>
-              <h5>Academic Director i/c</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={vajidNurani} alt=''/>
-              </div>
-              <h6>Vajid Nurani</h6>
-              <h5>Registrar i/c</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={jafarNurani} alt=''/>
-              </div>
-              <h6>Jafar Nurani</h6>
-              <h5>Principal, Markhinz Bangalore</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={shihabNurani} alt='' />
-              </div>
-              <h6>Shihabudheen Nurani</h6>
-              <h5>Principal, Markazul Hidaya, Kodagu</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={roshanNurani} alt='' />
-              </div>
-              <h6>Dr. Roshan Nurani
-</h6>
-              <h5>Academic Expert & Vice Rector Jamia Markaz</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={shaukathAli} alt=''/>
-              </div>
-              <h6>Shoukath Ali Kamil</h6>
-              <h5>Academic Expert & Counselor, IIT Bombay</h5>
-            </div>
+            
+           
+        {data.map((item=>(
+           <div className="we__item" key={item.name}>
+           <div className="we__img relative" >
+             <Image src={item.image} alt='' layout="fill"/>
+           </div>
+           <h6>{item.name}</h6>
+           <h5> {item.designation}</h5>
+         </div>
+        )))}
 
              
              

@@ -2,8 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import hs2 from "../assets/images/hs.jpg";
-import hs1 from "../assets/images/hs1.jpg";
+ 
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -56,14 +55,14 @@ export default function Programmes() {
                 intellectual honesty, justice, social compassion and fairness.
               </p>
             </div>
-            <div className="programme__img">
-              <Image src={hs2} className="rounded" alt=''/>
+            <div className="programme__img relative">
+              <Image src={'/photos/hs1.jpg' } layout="fill" className="rounded" alt=''/>
             </div>
           </div>
           <div className="hs__container">
             <div className="hs grid grid-cols-3">
-              <div className="hs__img">
-                <Image src={hs1} alt=''/>
+              <div className="hs__img relative">
+                <Image src={'/photos/hs.jpg'} alt='' layout="fill"/>
               </div>
               <div className="col-span-2">
                 <h2>HS PROGRAMMES</h2>
@@ -125,8 +124,8 @@ export default function Programmes() {
 
           <div className="bs__container">
             <div className="hs grid grid-cols-3">
-              <div className="hs__img">
-                <Image src={hs1} />
+              <div className="hs__img relative">
+                <Image src={'/photos/hs1.jpg'} layout="fill" />
               </div>
               <div className="col-span-2">
                 <h2>BACHLOR PROGRAMMES</h2>

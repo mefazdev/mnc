@@ -5,14 +5,48 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import Image from "next/image";
-import hakkimUsthad from "../assets/images/senate/hakkim-usthad.jpg";
-import apUsthad from "../assets/images/senate/ap-usthad.jpg";
-import asafNurani from "../assets/images/senate/asaf-nurani.jpg";
-import boosaliSaqafi from "../assets/images/senate/boosalih-saqafi.jpg";
-import jafarNurani from "../assets/images/senate/jafar-nurani.jpg";
-import jalalNurani from "../assets/images/senate/jalal-nurani.jpg";
-import zuhairNurani from "../assets/images/senate/zuhair-nurani.jpg";
+ 
+const data =[
+  {
+    name: "Sheikh Abubakr Ahmad",
+    image: "/images/senate/ap-usthad.jpg",
+    designation: "Chairman",
+  },
+  {
+    name: "Dr Muhammad Abdul Hakkim Azhari",
+    image: "/images/senate/hakkim-usthad.jpg",
+    designation: "Rector",
+  },
+{
+    name: "Asaf Nurani",
+    image: "/images/senate/asaf-nurani.jpg",
+    designation: "Pro-Rector",
 
+},
+{
+    name: "Abu Swalih Saqafi",
+    image: "/images/senate/boosalih-saqafi.jpg",
+    designation: "Chief Finance Officer",
+},
+{
+    name: "Jalal Nurani",
+    image: "/images/senate/jalal-nurani.jpg",
+    designation: "Chief Admin Officer",
+},
+{
+    name: "Zuhairudheen Nurani",
+    image: "/images/senate/zuhair-nurani.jpg",
+    designation: "Chairman, Prism Foundation",
+
+},
+{
+    name: "Jafar Nurani",
+    image: "/images/senate/jafar-nurani.jpg",
+    designation: "Convenor, Prism Foundation",
+},
+
+ 
+]
 export default function Senate() {
   return (
     <div>
@@ -23,56 +57,17 @@ export default function Senate() {
       <div className="we" style={{ scrollBehavior: "smooth" }}>
         <div className="we__content">
           <div className="we__row grid gap-6 grid-cols-2   lg:grid-cols-4">
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={apUsthad} alt=''/>
-              </div>
-              <h6>Sheikh Abubakr Ahmad</h6>
-              <h5>Chairman</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={hakkimUsthad} alt=''/>
-              </div>
-              <h6>Dr Muhammad Abdul Hakkim Azhari</h6>
-              <h5>Rector</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={asafNurani} alt=''/>
-              </div>
-              <h6>Asaf Nurani</h6>
-              <h5>Pro-Rector</h5>
-            </div>
-
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={boosaliSaqafi} alt=''/>
-              </div>
-              <h6>Abu Swalih Saqafi</h6>
-              <h5>Chief Finance Officer</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={jalalNurani} alt=''/>
-              </div>
-              <h6>Jalal Nurani</h6>
-              <h5>Chief Admin Officer</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={zuhairNurani} alt=''/>
-              </div>
-              <h6>Zuhairudheen Nurani</h6>
-              <h5>Chairman, Prism Foundation</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={jafarNurani} alt=''/>
-              </div>
-              <h6>Jafar Nurani</h6>
-              <h5>Convenor, Prism Foundation</h5>
-            </div>
+               
+                    {data.map((item=>(
+                       <div className="we__item" key={item.name}>
+                       <div className="we__img relative" >
+                         <Image src={item.image} alt='' layout="fill"/>
+                       </div>
+                       <h6>{item.name}</h6>
+                       <h5> {item.designation}</h5>
+                     </div>
+                    )))}
+            
           </div>
         </div>
       </div>

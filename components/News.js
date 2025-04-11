@@ -1,14 +1,17 @@
+ 
+
 import React, { useEffect, useState } from "react";
+ 
+import Image from 'next/image';
 import Link from "next/link";
 import formatDate from "../functions/formatDate";
-import Image from "next/image";
+const NewsSection = () => {
 
-export default function News() {
   const [data, setData] = useState([]);
 
   const getData = async () => {
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/news`, {});
+      const res = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/news/limit`, {});
       const { data } = await res.json();
       setData(data);
     } catch (error) {
@@ -19,59 +22,61 @@ export default function News() {
   useEffect(() => {
     getData();
   }, []);
+   
 
   return (
-    <div className=" px-4 md:px-0 md:w-10/12 m-auto  pt-10 md:pt-1 pb-28">
-      <h6 className=" text-xl md:text-2xl font-bold  space-x-0 ">What&apos;s New </h6>
+    <section className="py-16 bg-gray-50"  
+    data-aos="fade-up" data-aos-duration="1000"
+    >
+      <div className="container mx-auto px-4">
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+          <h2 className="text-3xl font-bold text-primary mb-4 md:mb-0">What&apos;s New</h2>
+         <div className='hidden md:grid'>
+         <Link   href={`/Newses`}><button className="px-6  py-2 border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors duration-300">
+            View More News
+          </button></Link>
+         </div>
+        </div>
 
-      <div className="grid lg:grid-cols-3 gap-5 mt-5">
-        {data?.map((d, i) => {
-          const publishedAt = formatDate(new Date(d?.publishedAt));
-
-          if (i < 3 && d?.isPublished) {
-            return (
-              <div
-                key={i}
-                className="p-4  w-full shadow-lg rounded-md  hover:-translate-y-3 transition ease-linear duration-150"
-              >
-                <div className="relative h-[330px] overflow-hidden rounded-lg">
-                  {d?.image && (
-                    <Image
-                      src={d?.image}
-                      className="object-cover rounded-lg transform transition-transform duration-1000  hover:scale-110 overflow-hidden"
-                      alt=""
-                      layout="fill"
-                    />
-                  )}
-
-                  <div className="bg-customgreen w-fit py-1 px-2 h-fit absolute right-1 bottom-1 rounded">
-                    <p className="text-sm  font-sa text-white">{publishedAt}</p>
-                  </div>
-                </div>
-                <div className="mt-4  relative">
-                  <h4 className="text-sm lg:text-lg text-gray-700 font-bold   overflow-hidden  ">
-                    {d?.title}
-                  </h4>
-
-                  <div className="border-t mt-3   py-2 cursor-pointer bg-white text-customgreen rounded-md transition-colors hover:bg-customgreen  hover:text-white duration-300 ease-linear ">
-                    <Link href={`/news/${d?.slug}`}>
-                      <p className="font-sans  text-center">Read</p>
-                    </Link>
-                  </div>
-                </div>
+        {/* News Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {data?.map((news) => (
+                 
+            <div key={news?.publishedAt}    data-aos-duration="1000" className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+              {/* News Image */}
+              <div className="h-80 relative">
+               {news.image &&  <Image
+                  src={news.image}
+                  alt={news.title}
+                  layout='fill'
+                  className="object-cover"
+                />}
               </div>
-            );
-          } else {
-            return;
-          }
-        })}
+              
+              {/* News Content */}
+              <div className="p-6">
+                <span className="text-sm text-gray-500">{formatDate(new Date(news?.publishedAt))}</span>
+                <h3 className="text-lg font-semibold text-gray-800 mt-1 mb-2">{news.title}</h3>
+                <Link href={`/news/${news?.slug}`}>
+                <button className="text-secondary hover:text-primary font-medium flex items-center">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button></Link>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className=' md:hidden flex'>
+         <Link   href={`/Newses`}><button className="px-6 m-auto mt-10  py-2 border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors duration-300">
+            View More  
+          </button></Link>
       </div>
-
-      <Link href={`/Newses`}>
-           <div className="flex mt-8 bg-green-900 px-4 py-2 text-white rounded-md w-fit m-auto">
-           <button className="m-auto">View More</button>
-           </div>
-                    </Link>
-    </div>
+     </div>
+    </section>
   );
-}
+};
+
+export default NewsSection;

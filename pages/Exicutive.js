@@ -5,22 +5,39 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import Image from "next/image";
-  
  
-import asafNurani from "../assets/images/senate/asaf-nurani.jpg";
- 
-import vajidNurani    from "../assets/images/academic-council/vajid-nurani.jpeg";
-import thahaNurani     from "../assets/images/academic-council/thaha-nurani.jpeg";
-
-import irshadNurani    from "../assets/images/exicutive/irshad-nurani.jpeg";
-import yunusAhsani    from "../assets/images/exicutive/yunus-ahsani.jpeg";
-import shibiliNurani    from "../assets/images/exicutive/shibili-nurani.jpeg";
-import mujthabaNurani    from "../assets/images/exicutive/mujthaba-nurani.jpeg";
-
-
-import ashfaqNurani    from "../assets/images/academic-council/ashfaq-nurani.jpeg";
-
- 
+const data = [
+  {
+    name: "Asaf Nurani",
+    image: "/images/senate/asaf-nurani.jpg",
+    designation: "Pro-Rector",
+  },
+  {
+    name: "Sayyid Thwaha Nurani",
+    image: "/images/academic-council/thaha-nurani.jpeg",
+    designation: "Dean of Academic Affairs",
+  },
+  {
+    name: "Irshad Nurani",
+    image: "/images/exicutive/irshad-nurani.jpeg",
+    designation: "Dean of Faculty Affairs",
+  },
+  {
+    name: "Yunus Ahsani",
+    image: "/images/exicutive/yunus-ahsani.jpeg",
+    designation: "Chief Librarian",
+  },
+  {
+    name: "Shibili Nurani",
+    image: "/images/exicutive/shibili-nurani.jpeg",
+    designation: "Dean of Student Affairs",
+  },
+  {
+    name: "Mujthaba Nurani",
+    image: "/images/exicutive/mujthaba-nurani.jpeg",
+    designation: "Principal - Baithul Izza, Narikkuni",
+  },
+];
 
 export default function Exicutive() {
   return (
@@ -32,68 +49,15 @@ export default function Exicutive() {
       <div className="we" style={{ scrollBehavior: "smooth" }}>
         <div className="we__content">
           <div className="we__row grid gap-6 grid-cols-2   lg:grid-cols-4">
-      
-             
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={asafNurani} alt=''/>
+            {data.map((item) => (
+              <div className="we__item" key={item.name}>
+                <div className="we__img relative">
+                  <Image src={item.image} alt="" layout="fill" />
+                </div>
+                <h6>{item.name}</h6>
+                <h5> {item.designation}</h5>
               </div>
-              <h6>Asaf Nurani</h6>
-              <h5>Pro-Rector</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={thahaNurani} alt=''/>
-              </div>
-              <h6>Sayyid Thwaha Nurani</h6>
-              <h5>Dean of Academic Affairs</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={irshadNurani} alt=''/>
-              </div>
-              <h6>Irshad Nurani</h6>
-              <h5>Dean of Faculty Affairs</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={yunusAhsani} alt=''/>
-              </div>
-              <h6>Yunus Ahsani</h6>
-              <h5>Chief Librarian</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={shibiliNurani} alt=''/>
-              </div>
-              <h6>Shibli Thwahir Nurani</h6>
-              <h5>Dean of Student Affairs</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={mujthabaNurani} alt=''/>
-              </div>
-              <h6>Mujthaba Nurani</h6>
-              <h5>Principal - Baithul Izza, Narikkuni</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={ashfaqNurani} alt=''/>
-              </div>
-              <h6>Ashfaque Nurani</h6>
-              <h5>Academic Director i/c</h5>
-            </div>
-            <div className="we__item">
-              <div className="we__img">
-                <Image src={vajidNurani} alt=''/>
-              </div>
-              <h6>Vajid Nurani</h6>
-              <h5>Registrar i/c</h5>
-            </div>
-             
-
-             
-             
+            ))}
           </div>
         </div>
       </div>
@@ -101,5 +65,3 @@ export default function Exicutive() {
     </div>
   );
 }
-
-  

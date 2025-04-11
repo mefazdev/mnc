@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
-import admission from "../assets/images/admission.jpg";
  
+
 import dots from "../assets/images/dots-white.png";
 import Footer from "../components/Footer";
-import PeopleAltIcon from "@material-ui/icons/PeopleAlt"; 
-import {   LocalLibrary } from "@material-ui/icons";
- 
+import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
+import { LocalLibrary } from "@material-ui/icons";
+
 import DomainIcon from "@mui/icons-material/Domain";
 import Head from "next/head";
 import SchoolIcon from "@mui/icons-material/School";
@@ -16,47 +16,50 @@ export default function About() {
     <>
       <Head>
         <title> About</title>
-        <meta name="description" content=" Markaz Garden Group of Institutions was established on the onset
-                of these millennia by blending the religious wisdom and secular
-                studies with a sake to enable Islamic renaissance possible.
-                Jamia Madeenathunnoor is the chief institution under Markaz
-                Garden Group of Institutions. Currently Jamia Madeenathunnoor
-                has become an ensemble of multilayered educational system
-                covering higher secondary studies, bachelors and post-graduation
-                levels. Spread over a dozen of departments, more than three
-                hundred students are pursuing their studies here. The
-                institution is also providing residential facilities on the
-                campus for students doing their courses in various disciplines
-                and subjects." />
+        <meta
+          name="description"
+          content=" Jamia Madeenathunnoor epitomizes excellence,
+blending traditional Islamic studies with diverse aca-
+demic disciplines. Its multicultural environment
+fosters vibrant discourse, while its serene campus
+promotes holistic growth. Emphasizing moral values
+and well-being, the Jamia cultivates leaders who
+embody intellect, integrity, and compassion. With
+dedicated faculties, Jamia Madeenathunnoor stands
+as a beacon of enlightenment, shaping future gener-
+ations poised to make meaningful contributions to
+society."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="about bg-white">
+      <div className="about bg-white" >
         <div className="about__header">
           <h2>ABOUT </h2>
         </div>
 
         <div className="about__content">
           <div className="about__text grid gap-5 lg:gap-10 grid-cols-1 md:grid-cols-3">
-            <div  >
-              <Image src={admission} alt="Madeenthunnoor" className="rounded" />
+            <div>
+              <Image src={'/photos/admissionjpg'} alt="Madeenthunnoor" className="rounded" />
             </div>
 
             <div className="col-span-2">
-              <h2  className="text-green font-bold text-2xl">Jamia Madeenathunnoor</h2>
+              <h2 className="text-green font-bold text-2xl">
+                Jamia Madeenathunnoor
+              </h2>
               <p>
-                Markaz Garden Group of Institutions was established on the onset
-                of these millennia by blending the religious wisdom and secular
-                studies with a sake to enable Islamic renaissance possible.
-                Jamia Madeenathunnoor is the chief institution under Markaz
-                Garden Group of Institutions. Currently Jamia Madeenathunnoor
-                has become an ensemble of multilayered educational system
-                covering higher secondary studies, bachelors and post-graduation
-                levels. Spread over a dozen of departments, more than three
-                hundred students are pursuing their studies here. The
-                institution is also providing residential facilities on the
-                campus for students doing their courses in various disciplines
-                and subjects.
+              Jamia Madeenathunnoor epitomizes excellence,
+blending traditional Islamic studies with diverse aca-
+demic disciplines. Its multicultural environment
+fosters vibrant discourse, while its serene campus
+promotes holistic growth. Emphasizing moral values
+and well-being, the Jamia cultivates leaders who
+embody intellect, integrity, and compassion. With
+dedicated faculties, Jamia Madeenathunnoor stands
+as a beacon of enlightenment, shaping future gener-
+ations poised to make meaningful contributions to
+society.  
               </p>
             </div>
           </div>
@@ -140,8 +143,7 @@ export default function About() {
               </div>
             </div>
           </div>
-
-           </div>
+        </div>
       </div>
       <Footer />
     </>

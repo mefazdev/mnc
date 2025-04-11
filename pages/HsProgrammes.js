@@ -2,9 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 import Image from "next/image";
-// import hs2 from "../assets/images/hs.JPG";
-// import hs1 from "../assets/images/hs1.jpg";
-import hs1 from "../assets/images/students/img-1.jpeg";
+ 
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -53,26 +51,27 @@ export default function HsProgrammes() {
                 </p>
                 <a   href="https://docs.google.com/forms/d/e/1FAIpQLSd3JChgrFpRN5QebID-_nFwBT0lpCrJqmwEbgdbAslV7mBdEg/viewform?usp=sf_linkc">
                 <button
-                style={{background:'rgb(3, 39, 14)'}}
-                className="text-white p-1 px-3 mt-3
+               
+                className="text-white p-2 px-4 rounded-md mt-3 bg-primary
                 hover:translate-x-1 hover:transition ease-linear duration-150
                 "
                 >Register Now</button></a>
              
               </div>
-              <div className="hs__img ">
-                <Image src={hs1} alt="" className="rounded" />
+              <div className="hs__img relative">
+                <Image src={'/photos/img-1.jpeg'}  layout='fill' alt="" className="rounded object-cover" />
               </div>
             </div>  
 
-            <div className="hs__accordion">
+            <div  className="mt-6">
               {hsData
                 ? hsData.map((data, index) => {
                     return (
                       <Accordion
                         key={index}
                         id="opening__accordion"
-                        className="pt-2 pl-3 pr-3   text-white "
+                        className="pt-2 pl-3 pr-3   text-whit bg-primary"
+
                       >
                         <AccordionSummary
                           expandIcon={<ExpandMoreIcon className="text-white" />}
