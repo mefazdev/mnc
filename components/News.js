@@ -43,7 +43,7 @@ const NewsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {data?.map((news) => (
                  
-            <div key={news?.publishedAt}    data-aos-duration="1000" className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div key={news?.publishedAt}      className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               {/* News Image */}
               <div className="h-80 relative">
                {news.image &&  <Image

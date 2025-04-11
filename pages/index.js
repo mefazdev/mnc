@@ -60,37 +60,37 @@ With dedicated faculties, Jamia Madeenathunnoor stands as a beacon of enlightenm
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
 
-      <Navbar />
+      {/* <Navbar /> */}
 
-      <div className="home">
+      <div className="hom">
         {/* <<<<<<<<<<<  HERO >>>>>>>>> */}
         <Hero />
 
-        <Posters poster={poster} />
+        {/* <Posters poster={poster} /> */}
 
-        <About />
+        {/* <About /> */}
         {/* <<<<<<<<<< STATUS >>>>>>>>> */}
 
-        <MileStone />
-        <Logos />
+        {/* <MileStone /> */}
+        {/* <Logos /> */}
 
         {/* <<<<<<<<<<< Chairman message>>>>>>>>>>>>>> */}
 
-        <ChairmanMessage />
+        {/* <ChairmanMessage /> */}
 
         {/* <<<<<< HOME ADMISSION >>>>>>>>>> */}
 
-        <Admission />
+        {/* <Admission /> */}
         {/* <<<<<<<<<<< Rector message>>>>>>>>>>>>>> */}
-        <RectorMessage />
+        {/* <RectorMessage /> */}
 
         {/* <<<<<<<<<<<  FEATURES >>>>>>>>> */}
-        <Features />
+        {/* <Features /> */}
 
         {/* <<<<< NEWS >>>>>>>>> */}
-        <News />
+        {/* <News /> */}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

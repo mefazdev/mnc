@@ -41,7 +41,7 @@ const UniversityDifferentiators = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div 
-            //  data-aos="fade-right" data-aos-duration="1000"
+             data-aos="fade-up" data-aos-duration="1000"
               key={index}
               className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6 hover:bg-opacity-25 transition-all duration-300 hover:-translate-y-2 border border-white/20 border-opacity-20"
             >

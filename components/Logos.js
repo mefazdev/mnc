@@ -123,8 +123,7 @@ const GraduateLogosSection = () => {
               >
                 {row.map((university) => (
                   <div
-                    // data-aos="fade-up"
-                    // data-aos-duration="1000"
+                  
                     key={university}
                     className="flex flex-col items-center group"
                   >
