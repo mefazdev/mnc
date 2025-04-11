@@ -207,9 +207,7 @@ font-family: "Poppins", sans-serif;
   margin-top: -20px;
 }
  
-.main__banner__text:first-of-type{
-    /* animation: showup 4s infinite; */
-}
+ 
 
 .main__banner__text__first__row:last-of-type {
 width:0px;
