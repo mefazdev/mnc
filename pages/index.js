@@ -62,7 +62,7 @@ With dedicated faculties, Jamia Madeenathunnoor stands as a beacon of enlightenm
 
       <Navbar />
 
-      <div className="hom">
+      <div className="home">
         {/* <<<<<<<<<<<  HERO >>>>>>>>> */}
         <Hero />
 
