@@ -109,7 +109,7 @@ const MobNav = () => {
         <div className="flex items-center gap-2">
           <Link passHref href={"/"}>
             <div className="p-1 bg-white rounded-md">
-              <div className="relative   h-12 w-14 rounded bg-primary transition ease-linear duration-200">
+              <div className="relative   h-12 w-14 rounded   transition ease-linear duration-200">
                 <Image
                   src={logo}
                   className="object-cover  rounded"
@@ -120,7 +120,7 @@ const MobNav = () => {
             </div>
           </Link>{" "}
           <Link passHref href={"/"}>
-            <div className="relative h-10 w-32 rounded bg-primary transition ease-linear duration-200">
+            <div className="relative h-10 w-32 rounded   transition ease-linear duration-200">
               <Image
                 src={caligraphy}
                 className="object-cover  rounded"
