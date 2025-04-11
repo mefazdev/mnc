@@ -65,7 +65,8 @@ const HeroBanner = () => {
       subheading: "Shaping Future Leaders",
     },
   ];
-
+  const  h ='Hjdknfjdfnlkja'
+   const i = h
   return (
     <section className="relative h-screen w-full ">
       <Slider {...settings} className="h-full w-full">
