@@ -40,19 +40,19 @@ const HeroBanner = () => {
     // },
     {
       id: 2,
-      image: "/photos/9.jpg",
+      image: "/photos/3.jpg",
       heading: "Jamia Madeenthunnoor",
       subheading: "Shaping Future Leaders",
     },
     {
       id: 3,
-      image: "/photos/19.jpg",
+      image: "/photos/4.jpg",
       heading: "Jamia Madeenthunnoor",
       subheading: "Pioneering a Promising Future",
     },
     {
       id: 4,
-      image: "/photos/17.jpg",
+      image: "/photos/5.jpg",
       heading: "Jamia Madeenthunnoor",
       subheading: "Shaping Future Leaders",
     },
