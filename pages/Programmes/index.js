@@ -7,24 +7,24 @@ const ProgrammesPage = () => {
   const programmes = [
     {
       id: 1,
-      title: "HS Programme",
+      title: "HS Programmes",
       icon: <FaSchool className="text-3xl text-blue-600" />,
       description: "Students complete Higher School course under SCERT, Government of Kerala alongside foundation courses in Islamic studies. Admission based on entrance examination marks and course preference.",
-      link: "/programmes/hs"
+      link: "/Programmes/Hs"
     },
     {
       id: 2,
-      title: "HSS Programme",
+      title: "HSS Programmes",
       icon: <FaGraduationCap className="text-3xl text-green-600" />,
       description: "Higher Secondary program offering Science, Commerce, and Humanities streams with Islamic studies foundation. Admission through entrance examination and course preference.",
-      link: "/programmes/hss"
+      link: "/Programmes/Hss"
     },
     {
       id: 3,
-      title: "BS Programme",
+      title: "BS Programmes",
       icon: <FaUserGraduate className="text-3xl text-purple-600" />,
       description: "Bachelor programs in Science, Commerce, History, Sociology, Psychology, English literature, and Arabic literature. Admission based on selection process scores.",
-      link: "/programmes/bs"
+      link: "/Programmes/Bs"
     }
   ];
 

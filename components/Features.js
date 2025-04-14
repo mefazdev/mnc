@@ -25,7 +25,9 @@ const UniversityDifferentiators = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary to-primary/90 text-white"  data-aos="fade-up" data-aos-duration="1000">
+    <section className="py-20 bg-gradient-to-br from-primary to-primary/90 text-white"  
+    data-aos="fade-up" data-aos-duration="1000"
+    >
       <div className="container mx-auto px-4  ">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -39,10 +41,11 @@ const UniversityDifferentiators = () => {
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+          {features.map((feature ) => (
             <div 
-             data-aos="fade-up" data-aos-duration="1000"
-              key={index}
+             data-aos="fade-up" 
+            //  data-aos-duration="1000"
+              key={feature.title}
               className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6 hover:bg-opacity-25 transition-all duration-300 hover:-translate-y-2 border border-white/20 border-opacity-20"
             >
               <div className="flex items-center mb-">
