@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import News from "../components/News";
 import Footer from "../components/Footer";
 import Head from "next/head";
-import Admission from "../components/Admission";
 import { useState } from "react";
 import Script from "next/script";
 import Posters from "../components/Updates";
@@ -14,6 +13,7 @@ import MileStone from "../components/MileStone";
 import Logos from "../components/Logos";
 import Features from "../components/Features";
 import Hero from "../components/HeroBanner";
+import Mission from "../components/Mission";
 
 export default function Home() {
   const [poster, setPoster] = useState([]);
@@ -50,11 +50,7 @@ export default function Home() {
         <title>Jamia Madeenathunnoor</title>
         <meta
           name="description"
-          content="Jamia Madeenathunnoor epitomizes excellence, blending traditional Islamic studies with diverse aca- demic disciplines.
-
-Its multicultural environment fosters vibrant discourse, while its serene campus promotes holistic growth. Emphasizing moral values and well-being, the Jamia cultivates leaders who embody intellect, integrity, and compassion.
-
-With dedicated faculties, Jamia Madeenathunnoor stands as a beacon of enlightenment, shaping future gener- ations poised to make meaningful contributions to society."
+          content="Jamia Madeenathunnoor epitomizes excellence, blending traditional Islamic studies with diverse aca- demic disciplines. Its multicultural environment fosters vibrant discourse, while its serene campus promotes holistic growth. Emphasizing moral values and well-being, the Jamia cultivates leaders who embody intellect, integrity, and compassion. With dedicated faculties, Jamia Madeenathunnoor stands as a beacon of enlightenment, shaping future gener- ations poised to make meaningful contributions to society."
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -80,7 +76,7 @@ With dedicated faculties, Jamia Madeenathunnoor stands as a beacon of enlightenm
 
         {/* <<<<<< HOME ADMISSION >>>>>>>>>> */}
 
-        <Admission />
+        <Mission />
         {/* <<<<<<<<<<< Rector message>>>>>>>>>>>>>> */}
         <RectorMessage />
 

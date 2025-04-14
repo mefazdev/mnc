@@ -18,15 +18,15 @@ const MobNav = () => {
   const programmes = [
     {
       name: "HS Programmes",
-      link: "/HsProgrammes",
+      link: "/Programmes/Hs",
     },
     {
       name: "HSS Programmes",
-      link: "/HssProgrammes",
+      link: "/Programmes/Hss",
     },
     {
       name: "BS Programmes",
-      link: "/BsProgrammes",
+      link: "/Programmes/Bs",
     },
   ];
   const campuses = [
@@ -36,7 +36,7 @@ const MobNav = () => {
     },
     {
       name: "Science Academy",
-      link: "/campuses/ScienceCampuses",
+      link: "/campuses/Science",
     },
     {
       name: "Erthunnabavi Campuses",
@@ -80,9 +80,9 @@ const MobNav = () => {
     if (menuItem == "programmes") {
       if (
         item == "programmes" ||
-        router.pathname == "/HsProgrammes" ||
-        router.pathname == "/HssProgrammes" ||
-        router.pathname == "/BsProgrammes"
+        router.pathname == "/Programmes/Hs" ||
+        router.pathname == "Programmes/Hss" ||
+        router.pathname == "Programmes/Bs"
       ) {
         return true;
       } else {
@@ -93,7 +93,7 @@ const MobNav = () => {
       if (
         item == "campuses" ||
         router.pathname == "/campuses/OnCampuses" ||
-        router.pathname == "/campuses/ScienceCampuses" ||
+        router.pathname == "/campuses/Science" ||
         router.pathname == "/campuses/Erthunnabavi"
       ) {
         return true;
@@ -109,7 +109,7 @@ const MobNav = () => {
         <div className="flex items-center gap-2">
           <Link passHref href={"/"}>
             <div className="p-1 bg-white rounded-md">
-              <div className="relative   h-12 w-14 rounded   transition ease-linear duration-200">
+              <div className="relative   h-10 w-12 rounded   transition ease-linear duration-200">
                 <Image
                   src={logo}
                   className="object-cover  rounded"
@@ -187,7 +187,7 @@ const MobNav = () => {
               </div>
             </Link>{" "}
             {/* About */}
-            <div className="bg-primary p-2 rounded text-white relative flex items-center">
+            <div className="bg-primar p-2 rounded text-white relative flex items-center">
               <button
                 onClick={() => setItem("about")}
                 className="w-full flex items-center gap-1"
@@ -204,7 +204,8 @@ const MobNav = () => {
 
               {item == "about" && (
                 <div className="z-50  absolute right-0 top-0 mt-1 mr-2 w-7/12 p-3 rounded grid gap-1 bg-gray-900 bg-opacity-60 ">
-                  <Link passHref
+                  <Link
+                    passHref
                     href={"/About"}
                     onClick={() => {
                       setMenu(false);
@@ -231,7 +232,9 @@ const MobNav = () => {
               {item == "leadership" && (
                 <div className="z-50  absolute right-0 top-0 mt-1 mr-2 w-7/12 p-3 rounded grid gap-1 bg-gray-900 bg-opacity-60 ">
                   {leadership.map((d) => (
-                    <Link passHref key={d.name}
+                    <Link
+                      passHref
+                      key={d.name}
                       href={d.link}
                       onClick={() => {
                         setMenu(false);
@@ -250,7 +253,7 @@ const MobNav = () => {
               )}
             </div>
             {/* Programmes */}
-            <div className="bg-primary p-2 rounded text-white relative flex items-center">
+            <div className="  p-2 rounded text-white relative flex items-center">
               <button
                 onClick={() => setItem("programmes")}
                 className="w-full flex items-center gap-1"
@@ -258,7 +261,7 @@ const MobNav = () => {
                 {checkActive("programmes") && (
                   <div className=" rounded-full h-2 w-2 bg-green-600"></div>
                 )}
-                Programmes
+                Programmes           
                 <MdOutlineKeyboardArrowRight
                   className="text-lg"
                   onClick={() => setItem("programmes")}
@@ -268,7 +271,8 @@ const MobNav = () => {
               {item == "programmes" && (
                 <div className="z-50  absolute right-0 top-0 mt-1 mr-2 w-7/12 p-3 rounded grid gap-1 bg-gray-900 bg-opacity-60 ">
                   {programmes.map((d) => (
-                    <Link passHref
+                    <Link
+                      passHref
                       key={d.name}
                       href={d.link}
                       onClick={() => {
@@ -288,7 +292,7 @@ const MobNav = () => {
               )}
             </div>
             {/* Campuses */}
-            <div className="bg-primary p-2 rounded text-white relative flex items-center">
+            <div className="  p-2 rounded text-white relative flex items-center">
               <button
                 onClick={() => setItem("campuses")}
                 className="w-full flex items-center gap-1"
@@ -306,7 +310,8 @@ const MobNav = () => {
               {item == "campuses" && (
                 <div className="z-50  absolute right-0 top-0 mt-1  w-fit p-3 rounded grid gap-1 bg-gray-900 bg-opacity-60 ">
                   {campuses.map((d) => (
-                    <Link passHref
+                    <Link
+                      passHref
                       key={d.name}
                       href={d.link}
                       onClick={() => {

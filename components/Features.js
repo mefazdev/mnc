@@ -49,7 +49,7 @@ const UniversityDifferentiators = () => {
                 <div className="p-3 rounded-lg bg-white text-secondary mr-4">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold">{feature.title}</h3>
+                <h3 className="text-xl ">{feature.title}</h3>
               </div>
               
             </div>

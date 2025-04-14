@@ -90,7 +90,7 @@ const MilestoneSection = () => {
                  delayedCall
                ><div
                   data-aos="fade-up"
-                  data-aos-duration="1000"
+                  data-aos-duration="500"
                   key={item.id}
                   className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
                 >

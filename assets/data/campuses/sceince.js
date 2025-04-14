@@ -1,4 +1,4 @@
-const science   = [
+const scienceCampuses   = [
     {
         sn: "01",
         an: "jms001",
@@ -52,4 +52,4 @@ const science   = [
 ];
 
 
-export default science 
+export default scienceCampuses 

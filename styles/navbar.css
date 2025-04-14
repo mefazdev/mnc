@@ -1,5 +1,5 @@
 .navbar {
-    font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   min-height: 65px;
   position: absolute;
 
@@ -8,18 +8,13 @@
   position: fixed;
   display: flex;
 }
- 
 
 .navbar__right {
- 
   align-items: center;
-   
-     color: #fff;
+
+  color: #fff;
 }
- 
- 
- 
- 
+
 .nav__logo {
   max-width: 80px;
 
@@ -34,7 +29,7 @@
   max-width: 180px;
   padding: 10px;
 }
- 
+
 .dorpdown__div {
   position: absolute;
   margin-top: 10px;
@@ -42,11 +37,9 @@
 .dropdown-menu li {
   color: #fff;
 }
- 
 
-.active__sub__nav{
+.active__sub__nav {
   background-color: rgb(9, 95, 35);
-
 }
 
 .service__group__span:hover {
@@ -54,32 +47,25 @@
 }
 
 @media only screen and (max-width: 900px) {
-   
   .navbar__left {
     background-color: rgba(0, 0, 0, 0.705);
   }
 }
- 
 
 #menu__icon {
   color: #fff;
   font-size: 40px;
- 
 }
 
 /* <<<<<<<<< NAV COLLAPSE>>>>>>> */
 .nav__collapse {
   position: absolute;
   width: 100%;
- 
 
   background-color: rgba(0, 0, 0, 0.957);
   margin-top: 85px;
 }
- 
- 
- 
- 
+
 .service__group__span {
   align-items: center;
   justify-content: space-between;
@@ -99,7 +85,6 @@
 }
 .development__list > li {
   width: 180px;
- 
 }
 .development__head:hover .development__list {
   display: flex;

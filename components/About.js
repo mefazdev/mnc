@@ -7,7 +7,7 @@ const AboutSection = () => {
     <section
       className="py-16 bg-white "
       data-aos="fade-up"
-      data-aos-duration="2000"
+      data-aos-duration="1000"
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -23,7 +23,7 @@ const AboutSection = () => {
           </div>
 
           {/* Content Section */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2" >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               About <span className="text-secondary">JMN</span>
             </h2>

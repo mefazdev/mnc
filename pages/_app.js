@@ -1,18 +1,8 @@
 import '../styles/globals.css'
 import '../styles/navbar.css'
 import '../styles/home.css'
-import '../styles/footer.css'
-import '../styles/about.css'
-import '../styles/programmes.css'
-import '../styles/contact.css'
-import '../styles/blogs.css'
-import '../styles/status.css'
-import '../styles/alumni.css'
-import '../styles/blog.css'
-import '../styles/faculty.css'
-import '../styles/we.css'
-import '../styles/result.css'
-import '../styles/events.css'
+ 
+ 
 import Head from 'next/head'
 import Script from 'next/script'
 function MyApp({ Component, pageProps }) {

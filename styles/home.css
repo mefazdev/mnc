@@ -1,447 +1,73 @@
-
-.home{
-    /* background: transparent linear-gradient(369deg, rgba(229, 229, 226, 0.527) 0%, rgba(5, 73, 25, 0.233) 100%) 0% 0% no-repeat padding-box; */
-    font-family: 'Nunito', sans-serif;
-}
- 
-
- 
- 
- 
-  
- 
-
-
-
-
-
- 
- 
-
-    /* <<<<< HOME ADMISSION >>>>>>>>>>> */
-.home__admission{
- 
-    min-height: 350px;
-
-    background-position: bottom;
-background-size: cover;
-
-/* background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.5)), url("../assets/images/admission.jpg"); */
-background-image: linear-gradient(rgba(0, 0, 0, 0.369), rgba(0, 0, 0, 0.262)), url("/photos/1.jpg");
-align-items: center;
-display: flex;
-background-attachment: fixed;
-
-}
-.home__admission__content{
- 
-width: 100%;
-max-width: 800px;
-margin: auto;
-display: flex;
-flex-direction: column;
-
-
-}
-.home__admission__content h3{
-    color: #fff;
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: .5px;
-    font-style: italic;
-    
-}
-.home__admission__content button{
-    color: #fff;
-    margin: auto;
-    margin-top: 20px;
- 
-    padding: 10px;
-    border-radius: 3px;
-}
- 
-@media only screen and (max-width: 800px) {
-    .home__admission__content{
-      padding: 15px;
-    }
-    .home__admission__content h3{
-        color: #fff;
-        font-size: 18px;
-     
-        line-height: 25px;
-    }
-    .home__admission{
-        min-height: auto;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .home__admission__content button{
-        color: #fff;
-        margin: auto;
-        margin-top: 20px;
-      background-color: rgb(3, 39, 14); 
-        padding: 10px;
-        border-radius: 3px; 
-    }
-}
-/* <<<<<<<<<<<<< NEWS >>>>>>>>>>>> */
- 
-.home__news__content{ 
-    margin-top: 20px;
-    width: 100%;
-}
-.news__box{
-    cursor: pointer; 
-    margin: auto;
-    box-shadow: 1px 0px 4px 1px rgb(3, 39, 14);
-}
-.news__box:hover{
-  opacity: .9; 
-  
-}
-.home__news__more{
-    width: 100%;
-    max-width: 200px; 
-display: flex;
-align-items: center;
-}
-.home__news__more__round{
-    border: solid 1px gray;
-    box-shadow: gray ;
-    margin: auto;
-    height: 45px;
-    width: 45px;
- 
-    border-radius: 50%;
-    display: inline-block;
-    box-shadow: 0 0 98px 6px rgba(0, 0, 0, 0.2);
-}
-#news__more__icon{
-    margin: auto;
-    margin-top: 10px;
-    margin-left: 10px;
-    height: 24px;
-    width: 24px;
-}
-.news__box__img  {
-    max-height: 300px;
-    min-height: 150px;
-    max-width: 280px;
-}
-
-.news__box__text{
-    margin-top: 3px;
-   
-    min-height: 130px; 
-    padding-top: 10px;
-    padding-left: 10px;
-   
-  
-}
-.news__box__text p{ 
-font-size: 14px;
-font: normal normal normal 14px/15px Poppins;
-font-family: "Poppins", sans-serif;
-}
-.news__box__text h4{
-/* color: #fff; */
-font-size: 16px;
-line-height: 20px;
-margin-top: 10px;
-/* font-weight: 300; */
-font: normal normal bold  14px/22px Poppins;
-font-family: "Poppins", sans-serif;
-}
-
-.home__news__more__p{
-    text-align: center;
-    margin-top: 0px;
-    font: normal normal bold 14px/12px Poppins;
-    font-family: "Poppins", sans-serif;
-    color: rgba(0, 0, 0, 0.829);
-}
-@media only screen and (max-width: 800px) {
-    .home__news{
-        border: solid red;
-        
-        margin-top: 20px;
-        margin-bottom: 100px;
-        /* padding: 15px; */
-        }
-    
-        .home__news__head h2{
-       
-            text-align: center;
-        }
-         
-}
-
- 
-
-.main__banner__text__first__row h2{
-
-    display:inline-block;
- overflow:hidden; 
-  white-space:nowrap; 
-  margin-top: -20px;
+.home {
+  /* font-family: "Nunito", sans-serif; */
 }
  
  
 
-.main__banner__text__first__row:last-of-type {
-width:0px;
-animation: reveal 5s infinite;
-}
-
-.main__banner__text__first__row:last-of-type span {
-margin-left:-355px;
-animation: slidein 6s infinite;
-}
+ 
 
 @keyframes showup {
-0% {opacity:0;}
-20% {opacity:1;}
-80% {opacity:1;}
-100% {opacity:0;}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes slidein {
-0% { margin-left:-800px; }
-20% { margin-left:-800px; }
-35% { margin-left:0px; }
-100% { margin-left:0px; }
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
 }
 
 @keyframes reveal {
-0% {opacity:0;width:0px;}
-20% {opacity:1;width:0px;}
-30% {width:355px;}
-80% {opacity:1;}
-100% {opacity:0;width:355px;}
-}
-
-
-
-
-
-
-
-
-
-.hm__blogs{ 
-padding-bottom: 50px;
-margin-top: 50px;
-}
-.hm__blogs__content{
- 
-margin: auto;
-}
-@media only screen and (min-width: 800px) {
-    .hm__blogs__content{
-     max-width: 85%;
-    }
+  0% {
+    opacity: 0;
+    width: 0px;
   }
-
-  .hm__blogs__head{
-    background-color: rgb(18, 66, 42);  
-    max-width: 150px;
-padding: 3px;
-color: #fff;
-    
+  20% {
+    opacity: 1;
+    width: 0px;
   }
-  .hm__blogs__head h3{
-    
-  margin-left: 5px;
- 
+  30% {
+    width: 355px;
   }
-.hm__blogs__row{ 
-    margin-top: 30px;
-}
-.hm__blogs__box{
-    padding: 15px; 
-    background-color: rgba(255, 255, 255, 0.685);
-    box-shadow: 2px 3px 12px 1px rgba(184, 185, 106, 0.198) ;
-}
-.hm__blogs__box h3{
-    /* font-family: 'Heebo', sans-serif; */
-    color: rgb(83, 79, 79);
-}
-.hm__blogs__box  p{
-    font-family: 'Heebo', sans-serif;
-    font-size: 15px;
-    color: gray;
-    margin-top: 5px;
-}
-.hm__blogs__box__more{
-    color: #fff;
-    background-color: rgb(18, 66, 42);
-    font-family: 'Heebo', sans-serif;
-    height: 27px;
-  font-size: 14px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.hm__blogs__box__more:hover{
-  color: #fff;
-  cursor: pointer;
-}
-
-@media only screen and (max-width: 800px) {
-    .hm__blogs{
-        padding: 15px;
-    }
-    .hm__blogs{
-        /* border: saddlebrown solid; */
-    padding-bottom: 50px;
-    margin-top: 0px;
-    }
+  80% {
+    opacity: 1;
   }
-
-
-
-.blogs__more__btn {
-display: flex;
-justify-content: center;
-margin-top: 30px;
-}
-.blogs__more__btn button{
-    font-family: 'Poppins', sans-serif;
-    /* background-color: gray; */
-    color: rgb(70, 68, 68);
-    font-size: 15px;
-    padding: 4px;
-    border-radius: 3px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-}
- 
-
-
-.modal{
-    
-/* background-image: url('../assets/images/events/eve-1.jpg'); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.226)), url("../assets/images/students/img-1.jpeg");
- 
-    outline: none;
-    max-width: 600px;
-    margin: auto;
-    margin-top: 150px;
-    height: 500px;
-    /* background-image: url(''); */
-    background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 5px;
-    position: relative;
-}
-.modal__close{
-   background-color: rgb(201, 11, 11);
-    max-width: 40px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #fff;
-    display: flex;
-    align-items: center;
-}
-
-.modal__main{
-    /* border: solid red; */
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-}
-
-.modal__main {
-    /* height: 100px; */
-    /* background-color: rgba(0, 0, 0, 0.548); */
-    background-color: rgba(0, 0, 0, 0.683);
-    
-     
-}
-.modal__main h2{
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    /* font-weight: bold; */
-    color: #fff;
-    text-align: center;
-}
-.modal__main h3{
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    color: #fff;
-    text-align: center;
-}
-.modal__btn{
-
-justify-content: space-around;
-
-/* margin-top: 10px; */
-/* border: saddlebrown solid; */
-max-width: 400px;
-margin: auto;
-}
-.modal__btn button{
-    /* margin: auto; */
-    border-radius: 3px;
-    /* margin: 20px; */
-    /* margin-top: 5px; */
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    background-color: #043a07;
-color: #fff;
-padding: 7px;
-width: 100%;
-max-width:90%;
-}
-
-
-
-@media only screen and (max-width: 800px) {
-    .modal{
-        background-image: url('../assets/images/students/img-1.jpeg');
-
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.226)), url("../assets/images/students/img-2.jpeg"); */
-    
-    
-        /* border: rgba(7, 73, 7, 0.411) solid; */
-        outline: none;
-        max-width: 600px;
-        margin: auto;
-        margin-top: 100px;
-        height: 430px;
-        /* background-image: url(''); */
-        background-size: cover;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        border-radius: 5px;
-        position: relative;
-    }
-    #modal{
-        padding: 15px;
-    }
+  100% {
+    opacity: 0;
+    width: 355px;
   }
-
-
+}
 
  
 
+ 
 
+/* @import "../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-icons/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-lists/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css";
 
-
-
-
-
-
-
-
-
-  @import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';
-  @import '../node_modules/@syncfusion/ej2-icons/styles/bootstrap5.css';
-  @import '../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';
-  @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
-  @import '../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';
-  @import '../node_modules/@syncfusion/ej2-lists/styles/bootstrap5.css';
-  @import '../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
-  @import '../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
-  
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/bootstrap5.css';   
+@import "../node_modules/@syncfusion/ej2-richtexteditor/styles/bootstrap5.css"; */

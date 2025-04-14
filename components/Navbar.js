@@ -70,7 +70,7 @@ export default function Navbar() {
             }
           )}
         >
-          <div className=" flex w-full justify-between items-center py-1">
+          <div className=" flex w-full justify-between items-center py-1 ">
             <div className="flex gap-2">
               <div className="bg-white p-0.5 rounded-md">
                 <div className=" h-11 w-14 relative rounded">
@@ -99,14 +99,14 @@ export default function Navbar() {
             </span>
           </div>
 
-          <div className="navbar__right col-span-2 hidden  lg:flex justify-end  relative   ">
+          <div className="text-white col-span-2 hidden  lg:flex justify-end  relative   ">
             <div className="flex gap-3 items-center">
               <Link passHref href="/">
                 <span className="group">
                   <h3
                     className={
                       router.pathname == "/"
-                        ? " cursor-pointer font-semibold"
+                        ? " cursor-pointer"
                         : "  cursor-pointer"
                     }
                   >
@@ -153,7 +153,7 @@ export default function Navbar() {
                             }
                           >
                             <li className=" px-4 block whitespace-no-wrap text-sm ">
-                              <p> JAMIA</p>
+                              <p> OVERVIEW</p>
                             </li>
                           </div>
                         </Link>
@@ -168,7 +168,7 @@ export default function Navbar() {
                           router.pathname == "/Academic" ||
                           router.pathname == "/Exicutive" ||
                           router.pathname == "/Finance"
-                            ? "bg-bg-primary  flex rounded-b  service__group__spa      py-2"
+                            ? "bg-primary  flex rounded-b  service__group__spa      py-2"
                             : "flex rounded-b   bg-navbg hover:bg-primary     py-2"
                         }
                       >
@@ -238,14 +238,14 @@ export default function Navbar() {
 
                   <ArrowDropDownIcon id="dropdown__icon" />
 
-                  <div className="dorpdown__di absolute -ml-5">
+                  <div className="dorpdown__di absolute -ml-5 mt-2 ">
                     <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-6">
                       <span className="development__head cursor-pointer group">
-                        <Link passHref href="/HsProgrammes">
+                        <Link passHref href="/Programmes/Hs">
                           <div
                             style={{ minWidth: "150px" }}
                             className={
-                              router.pathname == "/HsProgrammes"
+                              router.pathname == "/Programmes/Hs"
                                 ? "bg-primary py-2"
                                 : "bg-navbg hover:bg-primary py-2"
                             }
@@ -255,11 +255,11 @@ export default function Navbar() {
                             </li>
                           </div>
                         </Link>
-                        <Link passHref href="/HssProgrammes">
+                        <Link passHref href="/Programmes/Hss">
                           <div
                             style={{ minWidth: "160px" }}
                             className={
-                              router.pathname == "/HssProgrammes"
+                              router.pathname == "/Programmes/HSS"
                                 ? "bg-primary py-2"
                                 : "bg-navbg hover:bg-primary py-2"
                             }
@@ -269,11 +269,11 @@ export default function Navbar() {
                             </li>
                           </div>
                         </Link>
-                        <Link passHref href="/BsProgrammes">
+                        <Link passHref href="/Programmes/Bs">
                           <div
                             style={{ minWidth: "150px" }}
                             className={
-                              router.pathname == "/BsProgrammes"
+                              router.pathname == "/Programmes/Bs"
                                 ? "bg-primary py-2 rounded-b"
                                 : "bg-navbg hover:bg-primary py-2 rounded-b"
                             }
@@ -287,14 +287,14 @@ export default function Navbar() {
                     </ul>
                   </div>
                 </div>
-                <div
+                {/* <div
                   className={
                     router.pathname == "/HsProgrammes" ||
                     router.pathname == "/HsProgrammes"
                       ? "bg-secondary rounded-full h-0.5    group-hover:block absolute bottom-0 w-full"
                       : ""
                   }
-                ></div>
+                ></div> */}
               </div>
               {/* Campuses */}
               <div className="relative group ">
@@ -322,11 +322,11 @@ export default function Navbar() {
                             </li>
                           </div>
                         </Link>
-                        <Link passHref href="/campuses/ScienceCampuses">
+                        <Link passHref href="/campuses/Science">
                           <div
                             style={{ minWidth: "160px" }}
                             className={
-                              router.pathname == "/campuses/ScienceCampuses"
+                              router.pathname == "/campuses/Science"
                                 ? "bg-primary py-2"
                                 : "bg-navbg hover:bg-primary py-2"
                             }
@@ -494,3 +494,6 @@ export default function Navbar() {
     </div>
   );
 }
+
+
+

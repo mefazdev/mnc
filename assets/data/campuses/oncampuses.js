@@ -1,4 +1,4 @@
-const campusData = [
+const onCampuses= [
     {
         sn: "01",
         an: "jm001",
@@ -171,7 +171,7 @@ const campusData = [
     }
 ];
 
-export default campusData
+export default onCampuses
 
 
  

@@ -1,4 +1,3 @@
- 
 import React from "react";
 
 import Image from "next/image";
@@ -29,7 +28,8 @@ const HeroBanner = () => {
     {
       id: 1,
       image: "/photos/2.jpg",
-      heading: "Jamia Madeenthunnoor",
+      heading: `Jamia 
+       Madeenthunnoor`,
       subheading: "Pioneering a Promising Future",
     },
     // {
@@ -41,28 +41,28 @@ const HeroBanner = () => {
     {
       id: 2,
       image: "/photos/3.jpg",
-      heading: "Jamia Madeenthunnoor",
-      subheading: "Shaping Future Leaders",
+      heading: "40+ Nations",
+      subheading: "A Global Tapestry of Learning ",
     },
     {
       id: 3,
       image: "/photos/4.jpg",
-      heading: "Jamia Madeenthunnoor",
-      subheading: "Pioneering a Promising Future",
+      heading: "24+ States",
+      subheading: "Expanding Horizons of Education Across Nation",
     },
     {
       id: 4,
       image: "/photos/5.jpg",
-      heading: "Jamia Madeenthunnoor",
-      subheading: "Shaping Future Leaders",
+      heading: "40+ Campuses",
+      subheading: "One Curriculum, 40+ Gateways to Knowledge",
     },
   ];
 
   return (
-    <section className="relative h-screen w-full bg-red overflow-hidden">
+    <section className="relative h-scree w-full bg-red overflow-hidden">
       <Slider {...settings} className="h-full w-full">
         {slides.map((slide) => (
-          <div key={slide.id} className="relative h-screen w-full">
+          <div key={slide.id} className="relative h-[70vh]  md:h-screen w-full">
             <div className="absolute inset-0">
               <Image
                 src={slide.image}
@@ -74,12 +74,20 @@ const HeroBanner = () => {
               <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             </div>
 
-            <div className="relative h-full flex items-center justify-center text-center">
-              <div className="px-4 text-white max-w-4xl mx-auto">
-                <h1 className="text-3xl md:text-6xl font-bold mb-4 font-montserrat">
-                  Jamia <br /> Madeenthunnoor
+            <div className="relative h-full flex items-center justify-center text-center font-montserrat">
+              <div
+                className="px-4 text-white max-w-4xl mx-auto"
+                data-aos="flip-up"
+              >
+                <h1 className="text-3xl md:text-6xl font-bold mb-4 ">
+                  {/* Jamia <br /> Madeenthunnoor */}
+                  {slide.heading.split(" ").map((word, index) => (
+                    <span key={index} className="block">
+                      {word}
+                    </span>
+                  ))}
                 </h1>
-                <p className="text-xl md:text-3xl mb-8 font-medium">
+                <p className="text-xl md:text-3xl mb-8 font-bol font-montserra">
                   {slide.subheading}
                 </p>
                 <div className="flex justify-center gap-4">
@@ -90,7 +98,7 @@ const HeroBanner = () => {
                   </a>
                   <Link passHref href={"/Programmes"}>
                     <button className="bg-white hover:bg-white/80 text-primary px-6 py-3 rounded-md flex items-center transition-colors">
-                      Programs <FaBookOpen className="ml-2" />
+                      Programmes <FaBookOpen className="ml-2" />
                     </button>
                   </Link>
                 </div>
