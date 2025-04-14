@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AdminNav from "../../../../components/AdminNav";
-import Dialog from "@mui/material/Dialog";
+// import Dialog from "@mui/material/Dialog";
 
 import { IoIosCloseCircle } from "react-icons/io";
 
@@ -16,7 +16,7 @@ export default function Index() {
   const [file, setFile] = useState(null);
   const [isUploading, setIsUploading] = useState(false);
   const router = useRouter();
-
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const adminUser = cookies.get("admin");
 
@@ -45,7 +45,7 @@ export default function Index() {
     console.log(fileSizeInKB);
     if (fileSizeInKB > 500) {
       alert("File size exceeds 500KB. Please upload a smaller file.");
-      setOpen(false);
+      setIsOpen(false);
       return;
     }
 
@@ -74,7 +74,7 @@ export default function Index() {
       });
 
       setIsUploading(false);
-      setOpen(false);
+      setIsOpen(false);
       getData();
       setImg(null);
       setFile(null);
@@ -166,7 +166,7 @@ export default function Index() {
           <h4 className="text-lg font-semibold">Posters</h4>{" "}
           <button
             className="bg-emerald-600 py-1 px-7 text-white rounded "
-            onClick={() => setOpen(true)}
+            onClick={() => setIsOpen(true)}
           >
             Add
           </button>
@@ -190,9 +190,8 @@ export default function Index() {
         </div>
       </div>
 
-      <Dialog open={open}>
-        {/* <DialogTitle>Select Poster <IoIosCloseCircle/></DialogTitle> */}
-        <div className="relative p-4 pb-0">
+      {/* <Dialog open={open}>
+         <div className="relative p-4 pb-0">
           <h4 className="text-md font-semibold">Select A Poster</h4>
           <IoIosCloseCircle
             className="absolute right-4 top-4 text-2xl text-red-500"
@@ -215,7 +214,7 @@ export default function Index() {
             {file ? (
               <div className="border w-fit">
                 <img style={{ maxWidth: "300px" }} src={img} />
-                {/* {img ? ( */}
+                
                 <button
                   className="p-1 bg-red-500 text-white m-auto w-full mt-2 rounded"
                   onClick={() => setFile(null)}
@@ -225,7 +224,7 @@ export default function Index() {
 
                 <button
                   className="p-1 bg-emerald-500 text-white m-auto w-full mt-4 rounded"
-                  // onClick={handleSubmit}
+                  
                   type="submit"
                   disabled={isUploading}
                 >
@@ -237,7 +236,58 @@ export default function Index() {
             )}
           </div>
         </form>
-      </Dialog>
+      </Dialog> */}
+      {isOpen && <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+      <div className="bg-white rounded-2xl shadow-xl p-6 w-full max-w-md relative">
+        
+        <div className="relative p-4 pb-0">
+          <h4 className="text-md font-semibold">Select A Poster</h4>
+          <IoIosCloseCircle
+            className="absolute right-4 top-4 text-2xl text-red-500"
+            onClick={() => setIsOpen(false)}
+          />
+        </div>
+        <form onSubmit={handleUpload}>
+          <div className="  p-5   w-10/12">
+            {!file ? (
+              <input
+                onChange={handleImg}
+                accept="image/*"
+                type="file"
+                className="  m-auto"
+              />
+            ) : (
+              ""
+            )}
+
+            {file ? (
+              <div className="border w-fit">
+                <img style={{ maxWidth: "300px" }} src={img} />
+                
+                <button
+                  className="p-1 bg-red-500 text-white m-auto w-full mt-2 rounded"
+                  onClick={() => setFile(null)}
+                >
+                  CHANGE
+                </button>
+
+                <button
+                  className="p-1 bg-emerald-500 text-white m-auto w-full mt-4 rounded"
+                  
+                  type="submit"
+                  disabled={isUploading}
+                >
+                  {isUploading ? "UPLOADING..." : " UPLOAD"}
+                </button>
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
+        </form>
+
+      </div>
+    </div>}
     </div>
   );
 }

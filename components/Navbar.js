@@ -5,13 +5,15 @@ import Image from "next/image";
 import Link from "next/link";
 // import NavLink from 'next/navlink'
 import { useRouter } from "next/router";
-import MenuIcon from "@material-ui/icons/Menu";
+ 
 import { useEffect, useState } from "react";
-import ArrowRightIcon from "@material-ui/icons/ArrowRight";
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+ 
 
 import { clsx } from "clsx";
 import MobNav from "./MobNav";
+import { BsArrowRight } from "react-icons/bs";
+import { MdArrowDropDown, MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
+import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Navbar() {
   const [collapse, setCollapse] = useState(false);
@@ -92,7 +94,7 @@ export default function Navbar() {
             </div>
 
             <span className="lg:hidden">
-              <MenuIcon
+              <AiOutlineMenu
                 id="menu__icon"
                 onClick={() => setCollapse(!collapse)}
               />
@@ -124,9 +126,9 @@ export default function Navbar() {
               </Link>
 
               <div className=" group cursor-pointer relative ">
-                <div className="flex   justify-between">
+                <div className="flex   items-center">
                   <h3>ABOUT</h3>
-                  <ArrowDropDownIcon />
+                  <MdKeyboardArrowDown className="text-lg" />
                 </div>
                 <div
                   className={
@@ -168,14 +170,14 @@ export default function Navbar() {
                           router.pathname == "/Academic" ||
                           router.pathname == "/Exicutive" ||
                           router.pathname == "/Finance"
-                            ? "bg-primary  flex rounded-b  service__group__spa      py-2"
+                            ? "bg-primary  flex rounded-b      py-2"
                             : "flex rounded-b   bg-navbg hover:bg-primary     py-2"
                         }
                       >
                         <li className=" px-4 block whitespace-no-wrap text-sm ">
                           <p>LEADERSHIP</p>
                         </li>
-                        <ArrowRightIcon style={{ color: "#fff" }} />
+                        <MdKeyboardArrowRight className="text-white" />
                       </div>
                       <ul className="design__list">
                         <Link passHref href="/Senate">
@@ -231,12 +233,12 @@ export default function Navbar() {
               </div>
               {/* Programmes */}
               <div className="relative group ">
-                <div className="flex cursor-pointer  relative ">
+                <div className="flex items-center cursor-pointer  relative ">
                   <Link passHref href="/Programmes">
                     <h3>PROGRAMMES</h3>
                   </Link>
 
-                  <ArrowDropDownIcon id="dropdown__icon" />
+                  <MdKeyboardArrowDown className="text-lg" />
 
                   <div className="dorpdown__di absolute -ml-5 mt-2 ">
                     <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-6">
@@ -298,12 +300,12 @@ export default function Navbar() {
               </div>
               {/* Campuses */}
               <div className="relative group ">
-                <div className="flex cursor-pointer  relative ">
+                <div className="flex items-center cursor-pointer  relative ">
                   <Link passHref href="/Programmes">
                     <h3> CAMPUSES</h3>
                   </Link>
 
-                  <ArrowDropDownIcon id="dropdown__icon" />
+                  <MdKeyboardArrowDown className="text-lg" />
 
                   <div className="dorpdown__di absolute -ml-5">
                     <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-6">

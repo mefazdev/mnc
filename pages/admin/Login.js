@@ -1,12 +1,9 @@
- 
-import { TextField } from "@mui/material";
+// import { TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
- 
+
 import cookies from "js-cookie";
 
- 
 export default function Login() {
-
   const [data, setData] = useState([]);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -15,7 +12,7 @@ export default function Login() {
   const [showPw, setShowPw] = useState(false);
   const login = async () => {
     setVerifying(true);
-    console.log(data)
+    console.log(data);
 
     try {
       const res = await fetch(
@@ -36,7 +33,7 @@ export default function Login() {
       );
       if (res.ok) {
         // Redirect to the admin dashboard or another page
-        cookies.set("admin","true")
+        cookies.set("admin", "true");
         window.location.href = "/admin/dashboard";
         setVerifying(false);
         // redirect('/admin/dashboard')
@@ -54,7 +51,7 @@ export default function Login() {
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/auth`, {});
       const { data } = await res.json();
-      console.log(data)
+      console.log(data);
       setData(data);
     } catch (error) {
       console.log(error);
@@ -66,7 +63,7 @@ export default function Login() {
   }, []);
 
   //  const create = async () => {
-   
+
   //   try {
   //     const res = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/auth`, {
   //       method: "POST",
@@ -79,54 +76,48 @@ export default function Login() {
   //         password: password,
   //       }),
   //     });
-  //   } catch (error) {  
+  //   } catch (error) {
   //     alert(error);
   //   }
   // };
   return (
     <div className="h-screen bg-emerald-500 flex justify-center items-center">
-   <div className="bg-white w-10/12 md:w-6/12 lg:w-4/12 p-8 rounded">
-      {/* <h2 className="text-center">Logo</h2> */}
+      <div className="bg-white w-10/12 md:w-6/12 lg:w-4/12 p-8 rounded">
+        {/* <h2 className="text-center">Logo</h2> */}
 
-      <div className="mt-6">
-        <TextField
-          fullWidth
-          id="outlined-basic"
-          label="Username"
-          variant="outlined"
-          size="small"
-          value={username}
-          error={wrong}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <div className="mt-5"><TextField
-          
-          fullWidth
-          id="outlined"
-          label="Password"
-          variant="outlined"
-          type={!showPw ? "password" : "text"}
-          size="small"
-          error={wrong}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        /> </div>
-        
-        <button
-          onClick={() => setShowPw(!showPw)}
-          className="text-right mt-1 text-sm   float-right"
-        >
-          {showPw ? "Hide Password" : "Show Password"}
-        </button>
-        <button
-          disabled={!username && !password}
-          className="mt-6 w-full bg-emerald-500 text-white rounded p-2"
-          onClick={login}
-        >
-          {verifying ? "VERIFYING.." : "LOGIN"}
-        </button>
+        <div className="mt-6">
+          <input
+            className="border border-gray-400 rounded w-full p-2"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <div className="mt-5">
+            <input
+              className="border border-gray-400 rounded w-full p-2"
+              placeholder="Password"
+              type={!showPw ? "password" : "text"}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />{" "}
+          </div>
+
+          <button
+            onClick={() => setShowPw(!showPw)}
+            className="text-right mt-1 text-sm   float-right"
+          >
+            {showPw ? "Hide Password" : "Show Password"}
+          </button>
+          <button
+            disabled={verifying || !username || !password}
+            className="mt-6 w-full bg-emerald-500 text-white rounded p-2"
+            onClick={login}
+
+          >
+            {verifying ? "VERIFYING.." : "LOGIN"}
+          </button>
+        </div>
       </div>
     </div>
-    </div>
   );
-} 
+}

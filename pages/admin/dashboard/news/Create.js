@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+ 
 import React, { useEffect, useState } from "react";
  
 
@@ -137,12 +137,23 @@ export default function Component() {
         <form onSubmit={handleUpload}>
         <div className="mt-16">
           <div>
-            <TextField
+          {/* <TextField
               className="mt-6"
               fullWidth
               id="outlined-basic"
               label="Title"
               variant="outlined"
+              value={title}
+              onChange={handleTitle}
+            /> */}
+            <input
+              className="mt-6 border placeholder:text-red-700"
+              placeholder="Title"
+              // fullWidth
+              // id="outlined-basic"
+              // label="Title"
+              // variant="outlined"
+            
               value={title}
               onChange={handleTitle}
             />
