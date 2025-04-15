@@ -35,7 +35,7 @@ const MobNav = () => {
       link: "/campuses/OnCampuses",
     },
     {
-      name: "Junio Schools",
+      name: "Junior Schools",
       link: "/campuses/JuniorSchools",
     },
     {
