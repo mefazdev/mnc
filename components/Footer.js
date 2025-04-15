@@ -166,7 +166,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-gray-400 text-sm">
-              Powered by <a href="https://booreact.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">Booreact</a>
+              Powered by <a href="https://api.whatsapp.com/send/?phone=%2B918606256402&text=I%27m+interested+in+your+car+for+sale&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="hover:text-blue-100">Booreact</a>
             </div>
           </div>
         </div>
