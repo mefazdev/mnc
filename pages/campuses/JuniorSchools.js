@@ -1,17 +1,17 @@
+ 
 
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { FaSearch, FaMapMarkerAlt, FaUniversity, FaPhoneAlt, FaUserTie } from 'react-icons/fa';
- 
-import onCampuses from '../../assets/data/campuses/oncampuses';
-import Footer from '../../components/Footer';
+  import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
+import juniorSchools from '../../assets/data/campuses/juniorSchools';
 
 const CampusListPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filterType, setFilterType] = useState('all');
 
-  const campuses =  onCampuses
+  const campuses = juniorSchools
 
   const filteredCampuses = campuses.filter(campus => {
     const matchesSearch = 
@@ -36,17 +36,17 @@ const CampusListPage = () => {
 
       <div className="relative h-64 md:h-80 bg-blue-900 pt-80 pb-10 lg:py-54  ">
       <Image
-          src="/photos/28.jpg"
+          src="/photos/38.jpg"
           alt="Jamia Madeenathunnoor Campuses"
           layout='fill'
           className="object-cover opacity-80"
         />
         <div className="absolute inset-0 flex items-center justify-center text-center px-4 mt-10 md:mt-0">
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 uppercase">On Campuses</h1>
-            <p className="text-xl text-white">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 uppercase">Junior Schools</h1>
+            {/* <p className="text-xl text-white">
               {campuses.length} On campuses across India
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

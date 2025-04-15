@@ -12,12 +12,13 @@ const Footer = () => {
     { name: "Contact us", url: "/Contact" },
     { name: "Programmes", url: "/Programmes" },
     { name: "On-Campuses", url: "/campuses/OnCampuses" },
-    { name: "Science Academies", url: "/campuses/Science" },
-    { name: "Erthunnabavi Campuses", url: "/campuses/Erthunnabavi" },
-    { name: "Admin", url: "/admin/Login" },
+    { name: "Junior Schools", url: "/campuses/JuniorSchools" },
+    { name: "Open Schools", url: "/campuses/OpenSchools" },
+    { name: "Interstate Campuses", url: "/campuses/Interstate" },
     { name: "Alumni", url: "/Alumni" },
     { name: "Updates", url: "/Newses" },
-    { name: "Contact", url: "/Contact" }
+ 
+    { name: "Admin", url: "/admin/Login" },
   ];
 
   const socialLinks = [

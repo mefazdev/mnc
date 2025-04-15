@@ -35,12 +35,16 @@ const MobNav = () => {
       link: "/campuses/OnCampuses",
     },
     {
-      name: "Science Academy",
-      link: "/campuses/Science",
+      name: "Junio Schools",
+      link: "/campuses/JuniorSchools",
     },
     {
-      name: "Erthunnabavi Campuses",
-      link: "/campuses/Erthunnabavi",
+      name: "Open Schools",
+      link: "/campuses/OpenSchools",
+    },
+    {
+      name: "Interstate Campuses",
+      link: "/campuses/Interstate",
     },
   ];
   const leadership = [
@@ -93,8 +97,9 @@ const MobNav = () => {
       if (
         item == "campuses" ||
         router.pathname == "/campuses/OnCampuses" ||
-        router.pathname == "/campuses/Science" ||
-        router.pathname == "/campuses/Erthunnabavi"
+        router.pathname == "/campuses/JuniorSchools" ||
+        router.pathname == "/campuses/OpenSchools"||
+        router.pathname == "/campuses/Interstate"
       ) {
         return true;
       } else {
@@ -103,7 +108,7 @@ const MobNav = () => {
     }
   };
   return (
-    <div className="lg:hidden   fixed w-full  z-50 backdrop-blur-lg shadow bg-black/70 text-white   ">
+    <div className="lg:hidden   fixed w-full  z-50 backdrop-blur-lg shadow bg-black/70 text-white  font-montserrat ">
       {/* Top Row  */}
       <div className="flex justify-between items-center  p-2 px-4  ">
         <div className="flex items-center gap-2">
@@ -213,7 +218,7 @@ const MobNav = () => {
                     }}
                   >
                     <div className="bg-white text-gray-800 p-2 px-3 rounded  ">
-                      Jamia
+                    Overview
                     </div>
                   </Link>
                   <button

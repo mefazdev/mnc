@@ -65,9 +65,9 @@ export default function Navbar() {
           className={clsx(
             "transition  ease-linear duration-200 flex justify-between",
             {
-              "bg-black/60 backdrop-blur-lg px-8 bg-opacity-95  py-1":
+              "bg-black/60 backdrop-blur-lg px-14 bg-opacity-95  py-1":
                 navScroll,
-              "bg-black/10 backdrop-blur-md w-11/12 px-4 pl-2 mx-auto rounded":
+              "bg-black/10 backdrop-blur-md md:w-full w-11/12 xl:w-10/12 px-4 pl-2 mx-auto rounded":
                 !navScroll,
             }
           )}
@@ -101,7 +101,7 @@ export default function Navbar() {
             </span>
           </div>
 
-          <div className="text-white col-span-2 hidden  lg:flex justify-end  relative   ">
+          <div className="text-white col-span-2 hidden  lg:flex justify-end  relative  font-montserrat ">
             <div className="flex gap-3 items-center">
               <Link passHref href="/">
                 <span className="group">
@@ -253,7 +253,7 @@ export default function Navbar() {
                             }
                           >
                             <li className=" px-4 block whitespace-no-wrap text-sm ">
-                              HS PROGRAMMES
+                             <p className="whitespace-nowrap">  HS PROGRAMMES</p>
                             </li>
                           </div>
                         </Link>
@@ -267,7 +267,7 @@ export default function Navbar() {
                             }
                           >
                             <li className=" px-4 block whitespace-no-wrap text-sm ">
-                              HSS PROGRAMMES
+                            <p className="whitespace-nowrap">  HSS PROGRAMMES</p>
                             </li>
                           </div>
                         </Link>
@@ -281,7 +281,7 @@ export default function Navbar() {
                             }
                           >
                             <li className=" px-4 block whitespace-no-wrap text-sm ">
-                              BS PROGRAMMES
+                            <p className="whitespace-nowrap">   BS PROGRAMMES</p>
                             </li>
                           </div>
                         </Link>
@@ -307,7 +307,7 @@ export default function Navbar() {
 
                   <MdKeyboardArrowDown className="text-lg" />
 
-                  <div className="dorpdown__di absolute -ml-5">
+                  <div className="dorpdown__di absolute -ml-5 uppercase ">
                     <ul className="dropdown-menu absolute hidden   group-hover:block  text-gray-700 pt-6">
                       <span className="development__head cursor-pointer group">
                         <Link passHref href="/campuses/OnCampuses">
@@ -320,35 +320,50 @@ export default function Navbar() {
                             }
                           >
                             <li className=" px-4 block whitespace-no-wrap text-sm ">
-                              ON-CAMPUSES
+                              On-Campuses
                             </li>
                           </div>
                         </Link>
-                        <Link passHref href="/campuses/Science">
+                        <Link passHref href="/campuses/JuniorSchools">
                           <div
                             style={{ minWidth: "160px" }}
                             className={
-                              router.pathname == "/campuses/Science"
+                              router.pathname == "/campuses/JuniorSchools"
                                 ? "bg-primary py-2"
                                 : "bg-navbg hover:bg-primary py-2"
                             }
                           >
                             <li className=" px-4 block whitespace-no-wrap text-sm ">
-                              SCIENCE ACADEMY
+                             Junior Schools
                             </li>
                           </div>
                         </Link>
-                        <Link passHref href="/campuses/Erthunnabavi">
+                        <Link passHref href="/campuses/OpenSchools">
                           <div
                             style={{ minWidth: "150px" }}
                             className={
-                              router.pathname == "/campuses/Erthunnabavi"
+                              router.pathname == "/campuses/OpenSchools"
+                                ? "bg-primary py-2  "
+                                : "bg-navbg hover:bg-primary py-2  "
+                            }
+                          >
+                            <li className=" px-4 block whitespace-no-wrap text-sm ">
+                            <p className="whitespace-nowrap">   Open Schools</p>
+                            </li>
+                          </div>
+                        </Link>
+
+                        <Link passHref href="/campuses/Interstate">
+                          <div
+                            // style={{ minWidth: "150px" }}
+                            className={
+                              router.pathname == "/campuses/Interstate"
                                 ? "bg-primary py-2 rounded-b"
                                 : "bg-navbg hover:bg-primary py-2 rounded-b"
                             }
                           >
                             <li className=" px-4 block whitespace-no-wrap text-sm ">
-                              ERTHUNNABAVI CAMPUSES
+                           <p className="whitespace-nowrap">  Interstate Campuses</p>
                             </li>
                           </div>
                         </Link>
@@ -356,7 +371,7 @@ export default function Navbar() {
                     </ul>
                   </div>
                 </div>
-                <div
+                {/* <div
                   className={
                     router.pathname == "/campuses/OnCampuses" ||
                     router.pathname == "/campuses/ScienceCampuses" ||
@@ -364,7 +379,7 @@ export default function Navbar() {
                       ? "bg-secondary rounded-full h-0.5    group-hover:block absolute bottom-0 w-full"
                       : ""
                   }
-                ></div>
+                ></div> */}
               </div>
 
               {/* <span className="flex group cursor-pointer ml-4 ">
