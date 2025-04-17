@@ -34,7 +34,7 @@ const ProgrammesPage = () => {
       {/* Hero Section */}
       <div className="relative h-64 md:h-80 bg-blue-900 pt-80 pb-10 lg:py-40  ">
         <Image
-          src="/photos/7.jpg"
+          src="/photos/8.jpg"
           alt="Students studying"
          layout='fill'
           className="object-cover opacity-80"
